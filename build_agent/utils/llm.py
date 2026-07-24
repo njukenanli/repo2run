@@ -13,7 +13,7 @@
 # limitations under the License. 
 
 
-import openai
+from cloudgpt_aoai import get_chat_completion
 import time
 
 def get_llm_response(model: str, messages, temperature = 0.0, n = 1, max_tokens = 1024):
@@ -21,16 +21,16 @@ def get_llm_response(model: str, messages, temperature = 0.0, n = 1, max_tokens 
     count = 0
     while count < max_retry:
         try:
-            response = openai.ChatCompletion.create(
+            response = get_chat_completion(
                 model=model,
                 messages=messages,
-                temperature=temperature,
+                #temperature=temperature,
                 n=n,
-                max_tokens=max_tokens
+                max_completion_tokens=max_tokens
             )
             return response.choices[0].message.content, response.usage
         except Exception as e:
             print(f"Error: {e}")
             count += 1
-            time.sleep(3)
+            time.sleep(60)
     return None, None

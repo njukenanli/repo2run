@@ -301,19 +301,22 @@ VERY IMPORTANT TIPS:
             GPT_start_time = time.time()
             current_messages = manage_token_usage(self.messages)
 
-            configuration_agent_list, usage = get_llm_response(self.model, current_messages)
+            configuration_agent, usage = get_llm_response(self.model, current_messages)
             # configuration_agent_list, usage = get_llm_response(self.model, self.messages)
+            print(configuration_agent)
             GPT_end_time = time.time()
             GPT_elasped_time = GPT_end_time - GPT_start_time
             self.outer_commands.append({"GPT_time": GPT_elasped_time})
-            configuration_agent = configuration_agent_list[0]
-            cost_tokens += usage["total_tokens"]
+            # Handle both dict and object access for usage
+            if isinstance(usage, dict):
+                cost_tokens += usage["total_tokens"]
+            else:
+                cost_tokens += usage.total_tokens
 
             # 将模型回答加入记忆
             assistant_message = {"role": "assistant", "content": configuration_agent}
             self.messages.append(assistant_message)
             print('---------------------------')
-            print(configuration_agent)
             system_res = '### Observation:\n'
             init_commands = extract_commands(configuration_agent)
             commands = list()
@@ -328,9 +331,11 @@ VERY IMPORTANT TIPS:
                     self.outer_commands.append({"command": commands[i], "returncode": -2, "time": -1})
                     start_time = time.time()
                     vdb = subprocess.run("df -h | grep '/dev/vdb' | awk '{print $5}'", shell=True, capture_output=True, text=True)
-                    if float(vdb.stdout.strip().split('%')[0]) > 90:
-                        print('Warning! The disk /dev/vdb has occupied over 90% memories!')
-                        sys.exit(3)
+                    vdb_output = vdb.stdout.strip()
+                    if vdb_output and '%' in vdb_output:
+                        if float(vdb_output.split('%')[0]) > 90:
+                            print('Warning! The disk /dev/vdb has occupied over 90% memories!')
+                            sys.exit(3)
                     
                     # 切换python版本
                     if commands[i].strip().startswith('change_python_version'):

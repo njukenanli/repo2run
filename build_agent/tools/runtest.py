@@ -56,15 +56,16 @@ def run_pytest():
             # 使用subprocess.run并传递标准输出和标准错误到文件
             result = subprocess.run(
                 # ['pytest', '/repo', '--collect-only', '-q', '--disable-warnings'],
-                ['pytest', '--collect-only', '-q', '--disable-warnings'],
+                ['pytest', '-vv', '--disable-warnings'],
                 cwd='/repo',
                 stdout=file,
                 stderr=subprocess.STDOUT  # 将标准错误重定向到标准输出
             )
-        if result.returncode == 5:
-            print('No unit tests were detected in this repository, so it passes. Congratulations, you have successfully configured the environment!')
-            sys.exit(5)
-        if result.returncode != 0:
+        with open('/home/tools/.test_func') as file:
+            res = file.read()
+        log_lower = res.lower()
+        num_pass = int(log_lower.count("pass"))
+        if (num_pass <= 5) or (num_pass <= int(log_lower.count("fail")) + int(log_lower.count("error"))):
             print('Error: Please modify the configuration according to the error messages below. Once all issues are resolved, rerun the tests.')
             subprocess.run('cat /home/tools/.test_func', shell=True)
             sys.exit(result.returncode)

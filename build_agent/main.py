@@ -59,6 +59,8 @@ def download_repo(root_path, full_name, sha):
     repo_name = full_name.split('/')[1]
     if not os.path.exists(f'{root_path}/utils/repo/{author_name}/{repo_name}'):
         os.system(f'mkdir -p {root_path}/utils/repo/{author_name}/{repo_name}')
+    else:
+        os.system(f'sudo rm -rf {root_path}/utils/repo/{author_name}/{repo_name} && mkdir -p {root_path}/utils/repo/{author_name}/{repo_name}')
     download_cmd = f"git clone https://github.com/{full_name}.git"
     subprocess.run(download_cmd, cwd=f'{root_path}/utils/repo/{author_name}', check=True, shell=True)
     move_files_to_repo(f'{root_path}/utils/repo/{author_name}/{repo_name}')
@@ -109,12 +111,12 @@ def main():
     #     sys.exit(123)
     print(sha)
     if os.path.exists(f'{root_path}/output/{full_name}/patch'):
-        rm_cmd = f"rm -rf {root_path}/output/{full_name}/patch"
+        rm_cmd = f"sudo rm -rf {root_path}/output/{full_name}/patch"
         subprocess.run(rm_cmd, shell=True, check=True)
     if not os.path.exists(f'{root_path}/output/{full_name.split("/")[0]}/{full_name.split("/")[1]}'):
         subprocess.run(f'mkdir -p {root_path}/output/{full_name.split("/")[0]}/{full_name.split("/")[1]}', shell=True)
     if os.path.exists(f'{root_path}/utils/repo/{full_name}'):
-        init_cmd = f"rm -rf {root_path}/utils/repo/{full_name} && mkdir -p {root_path}/utils/repo/{full_name}"
+        init_cmd = f"sudo rm -rf {root_path}/utils/repo/{full_name} && mkdir -p {root_path}/utils/repo/{full_name}"
     else:
         init_cmd = f"mkdir -p {root_path}/utils/repo/{full_name}"
     subprocess.run(init_cmd, check=True, shell=True)
@@ -135,8 +137,8 @@ def main():
 
     configuration_sandbox = Sandbox("python:3.10", full_name, root_path)
     configuration_sandbox.start_container()
-    configuration_agent = Configuration(configuration_sandbox, 'python:3.10', full_name, root_path, 100)
-    msg, outer_commands = configuration_agent.run('/tmp', trajectory, waiting_list, conflict_list)
+    configuration_agent = Configuration(configuration_sandbox, 'python:3.10', full_name, root_path, llm=llm, max_turn=100)
+    msg, outer_commands = configuration_agent.run('/repo', trajectory, waiting_list, conflict_list)
     with open(f'{root_path}/output/{full_name.split("/")[0]}/{full_name.split("/")[1]}/track.json', 'w') as w1:
         w1.write(json.dumps(msg, indent=4))
     commands = configuration_sandbox.stop_container()

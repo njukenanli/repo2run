@@ -69,7 +69,7 @@ def truncate_msg(result_message, command, truncate=2000, bar_truncate=20):
 
 def delete_dangling_image():
     # 获取所有 dangling 镜像的 ID
-    dangling_images = subprocess.check_output('docker images --filter "dangling=true" -q', shell=True).decode('utf-8').strip()
+    dangling_images = subprocess.check_output('docker images --filter "dangling=true" -q', shell=True).decode('utf-8', errors='replace').strip()
     # 如果有 dangling 镜像，则删除它们
     if dangling_images:
         subprocess.run(f'docker rmi {dangling_images} > /dev/null 2>&1', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -272,7 +272,8 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                 tty=True, 
                 stdin_open=True, 
                 privileged=True,
-                volumes={host_path: {'bind': container_path, 'mode': 'rw'}}
+                volumes={host_path: {'bind': container_path, 'mode': 'rw'},
+                        f'{self.root_path}/utils/repo/{self.full_name}/repo': {'bind': "/repo", 'mode': 'rw'}}
                 )
 
             print(f"Container {self.container.name} {self.container.short_id} started with image {image}")
@@ -318,7 +319,7 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                 self.sandbox.shell.sendline(echo_returncode)
                 self.sandbox.shell.expect([r'root@.*:.*# '], timeout=600)
                 # 获取 shell.before 中匹配到的模式之前的输出
-                output = self.sandbox.shell.before.decode('utf-8').strip()
+                output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                 output = output.replace('\x1b[?2004l\r', '')
 
                 # 分析输出行，排除发送的命令行和最后的提示符行
@@ -354,7 +355,7 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                 self.sandbox.commands[-1]["time"] = elasped_time
 
                 # 获取 shell.before 中匹配到的模式之前的输出
-                output = self.sandbox.shell.before.decode('utf-8').strip()
+                output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                 output = output.replace('\x1b[?2004l\r', '')
 
                 # 分析输出行，排除发送的命令行和最后的提示符行
@@ -388,7 +389,7 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                         self.sandbox.shell.sendline(command)
                         self.sandbox.shell.expect([r'root@.*:.*# '], timeout=600)  # 等待bash提示符，带超时
                         # 获取 shell.before 中匹配到的模式之前的输出
-                        output = self.sandbox.shell.before.decode('utf-8').strip()
+                        output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                         output = output.replace('\x1b[?2004l\r', '')
                         
                         # 分析输出行，排除发送的命令行和最后的提示符行
@@ -407,7 +408,7 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                         self.sandbox.shell.sendline(command)
                         self.sandbox.shell.expect([r'root@.*:.*# '], timeout=600)  # 等待bash提示符，带超时
                         # 获取 shell.before 中匹配到的模式之前的输出
-                        output = self.sandbox.shell.before.decode('utf-8').strip()
+                        output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                         output = output.replace('\x1b[?2004l\r', '')
                         
                         # 分析输出行，排除发送的命令行和最后的提示符行
@@ -520,7 +521,7 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
                         self.sandbox.commands[-1]["time"] = elasped_time
 
                         # 获取 shell.before 中匹配到的模式之前的输出
-                        output = self.sandbox.shell.before.decode('utf-8').strip()
+                        output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                         output = output.replace('\x1b[?2004l\r', '')
 
                         # 分析输出行，排除发送的命令行和最后的提示符行
@@ -589,7 +590,7 @@ Explanation: Clear all the items in the waiting list.'''
                     if match_runtest(command) or match_poetryruntest(command):
                         os.sytem(f'touch {self.sandbox.root_path}/output/{self.sandbox.full_name}/TIMEOUT')
                         sys.exit(123)
-                    partial_output = self.sandbox.shell.before.decode('utf-8').strip()
+                    partial_output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                     partial_output_lines = partial_output.split('\n')
                     if len(partial_output_lines) > 1:
                         partial_output_lines = partial_output_lines[1:-1]
@@ -617,7 +618,7 @@ Explanation: Clear all the items in the waiting list.'''
                     self.sandbox.shell.expect([r'root@.*:.*# '], timeout=timeout)  # 等待bash提示符，带超时
 
                     # 获取 shell.before 中匹配到的模式之前的输出
-                    output = self.sandbox.shell.before.decode('utf-8').strip()
+                    output = self.sandbox.shell.before.decode('utf-8', errors='replace').strip()
                 
                     # 分析输出行，排除发送的命令行和最后的提示符行
                     output_lines = output.split('\r\n')

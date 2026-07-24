@@ -118,9 +118,11 @@ Once you want to modify the code you MUST:
 #         commands = list(filter(None, command_text.strip().split('\n')))
 #     return commands
 def extract_commands(text):
-    BASH_FENCE = ('```bash', '```')
+    #print("hit extract commands.")
+    #print(text)
     pattern = rf'{re.escape(BASH_FENCE[0])}([\s\S]*?){re.escape(BASH_FENCE[1])}'
     matches = re.findall(pattern, text)
+    #print(matches, flush=True)
     
     return matches
 
