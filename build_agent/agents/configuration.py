@@ -233,7 +233,7 @@ VERY IMPORTANT TIPS:
         print(self.init_prompt)
         start_time0 = time.time()
         self.messages = []
-        if "gpt" in self.model:
+        if "claude" not in self.model:
             system_message = {"role": "system", "content": self.init_prompt}
             self.messages.append(system_message)
             user_message = {"role": "user", "content": f"[Project root Path]: /repo"}

@@ -285,9 +285,9 @@ RUN mkdir -p /repo && git config --global --add safe.directory /repo
             cmd = f"chmod -R 777 {project_directory}/tools && docker cp {project_directory}/tools {self.container.name}:/home"
             subprocess.run(cmd, check=True, shell=True)
 
-            # 把utils/repo中的内容复制到根目录/中
-            cmd = f"docker cp {project_directory}/utils/repo/{self.full_name}/repo {self.container.name}:/"
-            subprocess.run(cmd, check=True, shell=True)
+            # The repo is already mounted at /repo; copying from build_agent/utils/repo uses the wrong path.
+            # cmd = f"docker cp {project_directory}/utils/repo/{self.full_name}/repo {self.container.name}:/"
+            # subprocess.run(cmd, check=True, shell=True)
             return 1
         except Exception as e:
             print(f"Container start faild: {e}")
