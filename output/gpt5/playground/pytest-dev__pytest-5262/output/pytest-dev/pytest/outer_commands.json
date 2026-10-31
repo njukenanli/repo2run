@@ -1,0 +1,453 @@
+[
+    {
+        "GPT_time": 5.730287313461304
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6801414489746094
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6838030815124512
+    },
+    {
+        "GPT_time": 3.944429874420166
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6777236461639404
+    },
+    {
+        "command": "sed -n '1,200p' pyproject.toml",
+        "returncode": 0,
+        "time": 0.683419942855835
+    },
+    {
+        "command": "echo '---'",
+        "returncode": 0,
+        "time": 0.6771516799926758
+    },
+    {
+        "command": "sed -n '1,200p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6830244064331055
+    },
+    {
+        "command": "echo '---'",
+        "returncode": 0,
+        "time": 0.6771962642669678
+    },
+    {
+        "command": "sed -n '1,220p' setup.py",
+        "returncode": 0,
+        "time": 0.6824970245361328
+    },
+    {
+        "GPT_time": 3.9370737075805664
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6777758598327637
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.468200206756592
+    },
+    {
+        "GPT_time": 3.259495735168457
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6773900985717773
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 13.877544641494751
+    },
+    {
+        "GPT_time": 3.8866536617279053
+    },
+    {
+        "command": "waitinglist add -p pytest -t pip",
+        "returncode": 0,
+        "time": 0.022396326065063477
+    },
+    {
+        "GPT_time": 3.5816943645477295
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 2.378840208053589
+    },
+    {
+        "GPT_time": 2.7035086154937744
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6781303882598877
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.870569229125977
+    },
+    {
+        "GPT_time": 5.633415222167969
+    },
+    {
+        "command": "python -c \"import sys,importlib.util; print(sys.executable); spec=importlib.util.find_spec('pytest'); print(spec); import pytest; print('pytest file:', pytest.__file__); print('version:', getattr(pytest,'__version__',None))\"",
+        "returncode": 0,
+        "time": 0.02211737632751465
+    },
+    {
+        "GPT_time": 4.2378010749816895
+    },
+    {
+        "command": "python -m pip show pytest",
+        "returncode": 0,
+        "time": 2.106358528137207
+    },
+    {
+        "command": "python -m pip list | grep -i pytest",
+        "returncode": 0,
+        "time": 2.2879607677459717
+    },
+    {
+        "GPT_time": 4.600722074508667
+    },
+    {
+        "command": "pip uninstall -y pytest",
+        "returncode": 0,
+        "time": 2.2145793437957764
+    },
+    {
+        "GPT_time": 4.706065654754639
+    },
+    {
+        "command": "waitinglist add -p pytest -t pip -v \">=8\"",
+        "returncode": 0,
+        "time": 0.022452116012573242
+    },
+    {
+        "GPT_time": 2.935007095336914
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 3.7811059951782227
+    },
+    {
+        "GPT_time": 3.041620969772339
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.677971363067627
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.8676016330718994
+    },
+    {
+        "GPT_time": 6.146689414978027
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6778883934020996
+    },
+    {
+        "command": "sed -n '1,200p' tox.ini",
+        "returncode": 0,
+        "time": 0.1778409481048584
+    },
+    {
+        "command": "echo '---'",
+        "returncode": 0,
+        "time": 0.6770122051239014
+    },
+    {
+        "command": "ls -la testing | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6808493137359619
+    },
+    {
+        "GPT_time": 4.170571804046631
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6779494285583496
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6803648471832275
+    },
+    {
+        "GPT_time": 5.60196328163147
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 2.300581932067871
+    },
+    {
+        "GPT_time": 3.286059617996216
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6781888008117676
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6827468872070312
+    },
+    {
+        "GPT_time": 3.983640193939209
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6778714656829834
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 11.84647536277771
+    },
+    {
+        "command": "pip install -q \"pytest>=8\"",
+        "returncode": 0,
+        "time": 4.065047979354858
+    },
+    {
+        "GPT_time": 3.4835283756256104
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.677764892578125
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 13.854390859603882
+    },
+    {
+        "GPT_time": 5.034769296646118
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6783771514892578
+    },
+    {
+        "command": "pip install -q \"pytest==4.6.11\"",
+        "returncode": 0,
+        "time": 3.6081480979919434
+    },
+    {
+        "GPT_time": 2.8118896484375
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.678642749786377
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.8188042640686035
+    },
+    {
+        "GPT_time": 5.789507150650024
+    },
+    {
+        "diff": "\n/repo/pytest.ini\n<<<<<<< SEARCH\n=======\n[pytest]\ntestpaths = testing\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.22042131423950195
+    },
+    {
+        "GPT_time": 3.17010235786438
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6788132190704346
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.7538697719573975
+    },
+    {
+        "GPT_time": 4.841023683547974
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6771929264068604
+    },
+    {
+        "command": "find testing -maxdepth 2 -type f | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6804022789001465
+    },
+    {
+        "GPT_time": 4.776870965957642
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6776828765869141
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6794333457946777
+    },
+    {
+        "GPT_time": 4.528944730758667
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 2.2135796546936035
+    },
+    {
+        "GPT_time": 4.362055540084839
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.677128791809082
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6825549602508545
+    },
+    {
+        "GPT_time": 5.618122339248657
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6781575679779053
+    },
+    {
+        "command": "find testing -maxdepth 2 -type f | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6832103729248047
+    },
+    {
+        "GPT_time": 6.468986988067627
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6778390407562256
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 11.819547176361084
+    },
+    {
+        "command": "pip install -q \"pytest==4.6.11\"",
+        "returncode": 0,
+        "time": 3.5354137420654297
+    },
+    {
+        "GPT_time": 4.376211881637573
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6778192520141602
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 13.505493640899658
+    },
+    {
+        "GPT_time": 8.825338125228882
+    },
+    {
+        "command": "pip uninstall -y pytest",
+        "returncode": 0,
+        "time": 2.298844814300537
+    },
+    {
+        "GPT_time": 3.977872371673584
+    },
+    {
+        "command": "pip install -q pytest",
+        "returncode": 0,
+        "time": 3.7748172283172607
+    },
+    {
+        "GPT_time": 5.124012470245361
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6786739826202393
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.8758628368377686
+    },
+    {
+        "GPT_time": 5.810802698135376
+    },
+    {
+        "diff": "\n/repo/pytest.ini\n<<<<<<< SEARCH\n=======\n[pytest]\ntestpaths = testing\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.2165820598602295
+    },
+    {
+        "GPT_time": 3.6846001148223877
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6789655685424805
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.7814340591430664
+    },
+    {
+        "GPT_time": 6.486896514892578
+    },
+    {
+        "command": "python -c \"import pathlib; print(pathlib.Path('/home/tools/runtest.py').read_text()[:2000])\"",
+        "returncode": 0,
+        "time": 1.7693202495574951
+    },
+    {
+        "GPT_time": 4.9579176902771
+    },
+    {
+        "command": "python -c \"import pathlib; t=pathlib.Path('/home/tools/runtest.py').read_text().splitlines(); print('\\n'.join(t[40:140]))\"",
+        "returncode": 0,
+        "time": 1.686577320098877
+    }
+]

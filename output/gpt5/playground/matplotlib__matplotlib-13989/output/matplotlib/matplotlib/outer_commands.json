@@ -1,0 +1,691 @@
+[
+    {
+        "GPT_time": 6.079227924346924
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6899638175964355
+    },
+    {
+        "GPT_time": 3.527466297149658
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6764507293701172
+    },
+    {
+        "command": "sed -n '1,220p' setup.py",
+        "returncode": 0,
+        "time": 0.6949970722198486
+    },
+    {
+        "GPT_time": 4.303953409194946
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6763007640838623
+    },
+    {
+        "command": "find requirements -maxdepth 2 -type f -print",
+        "returncode": 0,
+        "time": 0.6808676719665527
+    },
+    {
+        "GPT_time": 5.3515706062316895
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6805577278137207
+    },
+    {
+        "command": "cat requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.6833651065826416
+    },
+    {
+        "GPT_time": 3.367570400238037
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.04397749900817871
+    },
+    {
+        "GPT_time": 6.739527463912964
+    },
+    {
+        "command": "ls -la /repo/requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.6820154190063477
+    },
+    {
+        "GPT_time": 4.758054256439209
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.05032849311828613
+    },
+    {
+        "GPT_time": 7.260535955429077
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6815941333770752
+    },
+    {
+        "command": "ls -la requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.681865930557251
+    },
+    {
+        "GPT_time": 3.317453145980835
+    },
+    {
+        "command": "waitinglist addfile requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.0440061092376709
+    },
+    {
+        "GPT_time": 5.713010549545288
+    },
+    {
+        "command": "waitinglist add -p codecov -t pip",
+        "returncode": 0,
+        "time": 0.025026559829711914
+    },
+    {
+        "command": "waitinglist add -p coverage -t pip",
+        "returncode": 0,
+        "time": 0.020418643951416016
+    },
+    {
+        "command": "waitinglist add -p cycler -t pip",
+        "returncode": 0,
+        "time": 0.01993274688720703
+    },
+    {
+        "command": "waitinglist add -p numpy -t pip",
+        "returncode": 0,
+        "time": 0.021814823150634766
+    },
+    {
+        "command": "waitinglist add -p pillow -t pip",
+        "returncode": 0,
+        "time": 0.019031047821044922
+    },
+    {
+        "command": "waitinglist add -p pyparsing -t pip",
+        "returncode": 0,
+        "time": 0.018494844436645508
+    },
+    {
+        "command": "waitinglist add -p pytest -t pip",
+        "returncode": 0,
+        "time": 0.017244577407836914
+    },
+    {
+        "command": "waitinglist add -p pytest-cov -t pip",
+        "returncode": 0,
+        "time": 0.01722407341003418
+    },
+    {
+        "command": "waitinglist add -p pytest-faulthandler -t pip",
+        "returncode": 0,
+        "time": 0.017035484313964844
+    },
+    {
+        "command": "waitinglist add -p pytest-rerunfailures -t pip",
+        "returncode": 0,
+        "time": 0.017436742782592773
+    },
+    {
+        "command": "waitinglist add -p pytest-timeout -t pip",
+        "returncode": 0,
+        "time": 0.017390966415405273
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -t pip",
+        "returncode": 0,
+        "time": 0.017213106155395508
+    },
+    {
+        "command": "waitinglist add -p python-dateutil -t pip",
+        "returncode": 0,
+        "time": 0.01713705062866211
+    },
+    {
+        "command": "waitinglist add -p tornado -t pip",
+        "returncode": 0,
+        "time": 0.017328262329101562
+    },
+    {
+        "command": "waitinglist add -p tox -t pip",
+        "returncode": 0,
+        "time": 0.01783466339111328
+    },
+    {
+        "GPT_time": 4.170828104019165
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6771633625030518
+    },
+    {
+        "command": "cat requirements/doc/doc-requirements.txt",
+        "returncode": 0,
+        "time": 0.686713695526123
+    },
+    {
+        "GPT_time": 3.966207504272461
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.026301145553588867
+    },
+    {
+        "GPT_time": 2.8349814414978027
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 96.80090570449829
+    },
+    {
+        "GPT_time": 3.8026270866394043
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6789999008178711
+    },
+    {
+        "command": "pip install -e .",
+        "returncode": 0,
+        "time": 33.549057483673096
+    },
+    {
+        "GPT_time": 5.336503982543945
+    },
+    {
+        "command": "export PYTHONPATH=/repo/lib:$PYTHONPATH",
+        "returncode": 0,
+        "time": 1.6653602123260498
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6762285232543945
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.936065435409546
+    },
+    {
+        "GPT_time": 4.9252378940582275
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6751573085784912
+    },
+    {
+        "command": "sed -n '1,220p' tests.py",
+        "returncode": 0,
+        "time": 0.17618942260742188
+    },
+    {
+        "GPT_time": 4.018534421920776
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6763198375701904
+    },
+    {
+        "command": "ls -la | grep -E 'test|Test' || true",
+        "returncode": 0,
+        "time": 0.6801567077636719
+    },
+    {
+        "GPT_time": 3.986706018447876
+    },
+    {
+        "command": "ls -la /repo | head -80",
+        "returncode": 0,
+        "time": 0.6877841949462891
+    },
+    {
+        "GPT_time": 5.7304112911224365
+    },
+    {
+        "command": "find / -maxdepth 3 -name setup.py -print 2>/dev/null | head",
+        "returncode": 0,
+        "time": 1.9127235412597656
+    },
+    {
+        "GPT_time": 3.5061097145080566
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 8.309502363204956
+    },
+    {
+        "GPT_time": 3.1618738174438477
+    },
+    {
+        "command": "ls -la /repo | head -40",
+        "returncode": 0,
+        "time": 0.682145357131958
+    },
+    {
+        "GPT_time": 4.5556089878082275
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6781599521636963
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 17.03294563293457
+    },
+    {
+        "GPT_time": 5.025331020355225
+    },
+    {
+        "command": "waitinglist add -p numpy -t pip",
+        "returncode": 0,
+        "time": 0.025016069412231445
+    },
+    {
+        "command": "waitinglist add -p cycler -t pip",
+        "returncode": 0,
+        "time": 0.021050691604614258
+    },
+    {
+        "command": "waitinglist add -p python-dateutil -t pip",
+        "returncode": 0,
+        "time": 0.02068471908569336
+    },
+    {
+        "command": "waitinglist add -p pyparsing -t pip",
+        "returncode": 0,
+        "time": 0.0251462459564209
+    },
+    {
+        "command": "waitinglist add -p pillow -t pip",
+        "returncode": 0,
+        "time": 0.02086925506591797
+    },
+    {
+        "command": "waitinglist add -p kiwisolver -t pip",
+        "returncode": 0,
+        "time": 0.019016742706298828
+    },
+    {
+        "GPT_time": 2.7253546714782715
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 38.03013491630554
+    },
+    {
+        "GPT_time": 3.91434645652771
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.683962345123291
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 2.0329113006591797
+    },
+    {
+        "GPT_time": 5.9462974071502686
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.683539628982544
+    },
+    {
+        "command": "cat pytest.ini",
+        "returncode": 0,
+        "time": 0.021144390106201172
+    },
+    {
+        "GPT_time": 3.720306158065796
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6828963756561279
+    },
+    {
+        "command": "python -c \"print(open('pytest.ini','r',encoding='utf-8').read())\"",
+        "returncode": 0,
+        "time": 0.024615049362182617
+    },
+    {
+        "GPT_time": 5.296086072921753
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.684185266494751
+    },
+    {
+        "command": "python -c \"import pathlib;print(pathlib.Path('tests.py').read_text(encoding='utf-8')[:2000])\"",
+        "returncode": 0,
+        "time": 12.867478847503662
+    },
+    {
+        "GPT_time": 4.202951669692993
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6828067302703857
+    },
+    {
+        "command": "ls -la tests.py",
+        "returncode": 0,
+        "time": 0.18408846855163574
+    },
+    {
+        "command": "python -c \"import pathlib;print(pathlib.Path('tests.py').read_text(encoding='utf-8')[:2200])\"",
+        "returncode": 0,
+        "time": 12.908134698867798
+    },
+    {
+        "GPT_time": 4.5226686000823975
+    },
+    {
+        "command": "ls -la /repo | head -60",
+        "returncode": 0,
+        "time": 0.6877377033233643
+    },
+    {
+        "GPT_time": 4.153412342071533
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 8.90347957611084
+    },
+    {
+        "GPT_time": 3.926931142807007
+    },
+    {
+        "command": "ls -la /repo | head -50",
+        "returncode": 0,
+        "time": 0.6895549297332764
+    },
+    {
+        "GPT_time": 4.380099773406982
+    },
+    {
+        "command": "waitinglist add -p numpy -t pip",
+        "returncode": 0,
+        "time": 0.027919292449951172
+    },
+    {
+        "command": "waitinglist add -p cycler -t pip",
+        "returncode": 0,
+        "time": 0.02123403549194336
+    },
+    {
+        "command": "waitinglist add -p python-dateutil -t pip",
+        "returncode": 0,
+        "time": 0.02053093910217285
+    },
+    {
+        "command": "waitinglist add -p pyparsing -t pip",
+        "returncode": 0,
+        "time": 0.019839048385620117
+    },
+    {
+        "command": "waitinglist add -p pillow -t pip",
+        "returncode": 0,
+        "time": 0.019934654235839844
+    },
+    {
+        "command": "waitinglist add -p kiwisolver -t pip",
+        "returncode": 0,
+        "time": 0.019328594207763672
+    },
+    {
+        "GPT_time": 3.7414302825927734
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 37.27616238594055
+    },
+    {
+        "GPT_time": 3.7185072898864746
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6811480522155762
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 19.030126094818115
+    },
+    {
+        "GPT_time": 6.965426921844482
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6833045482635498
+    },
+    {
+        "command": "sed -n '200,380p' src/ft2font.cpp",
+        "returncode": 0,
+        "time": 0.18386483192443848
+    },
+    {
+        "GPT_time": 6.1975929737091064
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6832330226898193
+    },
+    {
+        "command": "find src -maxdepth 2 -name '*ft2font*' -print",
+        "returncode": 0,
+        "time": 0.1795663833618164
+    },
+    {
+        "GPT_time": 4.584615468978882
+    },
+    {
+        "command": "ls -la /repo | head -20",
+        "returncode": 0,
+        "time": 0.6863126754760742
+    },
+    {
+        "GPT_time": 4.950617790222168
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 8.08085298538208
+    },
+    {
+        "GPT_time": 6.2731873989105225
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6772410869598389
+    },
+    {
+        "command": "find . -maxdepth 4 -name 'ft2font.cpp' -o -name '*ft2font*' | head -50",
+        "returncode": 0,
+        "time": 0.6908974647521973
+    },
+    {
+        "GPT_time": 4.595589637756348
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.682769775390625
+    },
+    {
+        "command": "nl -ba src/ft2font.cpp | sed -n '205,255p;320,360p'",
+        "returncode": 0,
+        "time": 1.658808946609497
+    },
+    {
+        "GPT_time": 6.206693172454834
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6824951171875
+    },
+    {
+        "command": "grep -n \"char \\\\*tags\\\\|tags;\" -n src/ft2font.cpp | head -40",
+        "returncode": 0,
+        "time": 0.6872169971466064
+    },
+    {
+        "GPT_time": 4.400890827178955
+    },
+    {
+        "diff": "\n/repo/src/ft2font.cpp\n<<<<<<< SEARCH\n    char *tags;\n=======\n    unsigned char *tags;\n>>>>>>> REPLACE\n\n<<<<<<< SEARCH\n    char *tags;\n=======\n    unsigned char *tags;\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.23873376846313477
+    },
+    {
+        "GPT_time": 8.078755378723145
+    },
+    {
+        "command": "apt-get update -qq",
+        "returncode": 0,
+        "time": 3.4532253742218018
+    },
+    {
+        "command": "apt-get install -y -qq build-essential pkg-config libfreetype6-dev libpng-dev zlib1g-dev libjpeg-dev libqhull-dev",
+        "returncode": 0,
+        "time": 5.6841113567352295
+    },
+    {
+        "GPT_time": 6.522801637649536
+    },
+    {
+        "command": "waitinglist add -p numpy -t pip",
+        "returncode": 0,
+        "time": 0.02465367317199707
+    },
+    {
+        "command": "waitinglist add -p cycler -t pip",
+        "returncode": 0,
+        "time": 0.021962881088256836
+    },
+    {
+        "command": "waitinglist add -p python-dateutil -t pip",
+        "returncode": 0,
+        "time": 0.02126145362854004
+    },
+    {
+        "command": "waitinglist add -p pyparsing -t pip",
+        "returncode": 0,
+        "time": 0.02046370506286621
+    },
+    {
+        "command": "waitinglist add -p pillow -t pip",
+        "returncode": 0,
+        "time": 0.020625591278076172
+    },
+    {
+        "command": "waitinglist add -p kiwisolver -t pip",
+        "returncode": 0,
+        "time": 0.01932215690612793
+    },
+    {
+        "command": "waitinglist add -p pytest -t pip",
+        "returncode": 0,
+        "time": 0.020268917083740234
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -t pip",
+        "returncode": 0,
+        "time": 0.019449949264526367
+    },
+    {
+        "command": "waitinglist add -p pytest-timeout -t pip",
+        "returncode": 0,
+        "time": 0.020535945892333984
+    },
+    {
+        "command": "waitinglist add -p pytest-rerunfailures -t pip",
+        "returncode": 0,
+        "time": 0.020305633544921875
+    },
+    {
+        "command": "waitinglist add -p pytest-cov -t pip",
+        "returncode": 0,
+        "time": 0.019046783447265625
+    },
+    {
+        "command": "waitinglist add -p pytest-faulthandler -t pip",
+        "returncode": 0,
+        "time": 0.01909780502319336
+    },
+    {
+        "GPT_time": 2.842075824737549
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 81.22504734992981
+    },
+    {
+        "GPT_time": 4.108350992202759
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6832926273345947
+    },
+    {
+        "command": "pip install -e .",
+        "returncode": 0,
+        "time": 127.91845440864563
+    },
+    {
+        "GPT_time": 3.8591291904449463
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6835598945617676
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 369.370760679245
+    }
+]

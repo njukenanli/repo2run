@@ -1,0 +1,524 @@
+[
+    {
+        "GPT_time": 5.2885026931762695
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6910934448242188
+    },
+    {
+        "GPT_time": 3.912853479385376
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6774232387542725
+    },
+    {
+        "command": "sed -n '1,220p' setup.py",
+        "returncode": 0,
+        "time": 0.6809260845184326
+    },
+    {
+        "command": "echo '----'",
+        "returncode": 0,
+        "time": 0.6770250797271729
+    },
+    {
+        "command": "sed -n '1,260p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6799814701080322
+    },
+    {
+        "GPT_time": 3.299567461013794
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6816203594207764
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 10.198608160018921
+    },
+    {
+        "GPT_time": 3.012681245803833
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6772928237915039
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 49.07324433326721
+    },
+    {
+        "GPT_time": 5.627969264984131
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6760513782501221
+    },
+    {
+        "command": "DJANGO_SETTINGS_MODULE=tests.settings python -m pytest -q",
+        "returncode": 0,
+        "time": 0.019472360610961914
+    },
+    {
+        "GPT_time": 4.154971122741699
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6754753589630127
+    },
+    {
+        "command": "DJANGO_SETTINGS_MODULE=tests.settings runtest",
+        "returncode": 0,
+        "time": 12.878485441207886
+    },
+    {
+        "GPT_time": 4.367218732833862
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6759519577026367
+    },
+    {
+        "command": "DJANGO_SETTINGS_MODULE=tests.settings python /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 13.64300537109375
+    },
+    {
+        "GPT_time": 5.222251892089844
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6752774715423584
+    },
+    {
+        "command": "python tests/runtests.py -v 2",
+        "returncode": 0,
+        "time": 12.712455034255981
+    },
+    {
+        "GPT_time": 3.812804937362671
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6760461330413818
+    },
+    {
+        "command": "ls -la tests | head",
+        "returncode": 0,
+        "time": 0.6780643463134766
+    },
+    {
+        "GPT_time": 4.608038663864136
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6759555339813232
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6785402297973633
+    },
+    {
+        "GPT_time": 4.511774778366089
+    },
+    {
+        "command": "ls -la /",
+        "returncode": 0,
+        "time": 0.6802186965942383
+    },
+    {
+        "GPT_time": 4.051469564437866
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6796157360076904
+    },
+    {
+        "GPT_time": 3.4596304893493652
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 6.994208097457886
+    },
+    {
+        "GPT_time": 2.780205726623535
+    },
+    {
+        "command": "ls -la /repo | head",
+        "returncode": 0,
+        "time": 0.6799633502960205
+    },
+    {
+        "GPT_time": 3.1031575202941895
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6761825084686279
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 10.14940071105957
+    },
+    {
+        "GPT_time": 4.968453884124756
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6752359867095947
+    },
+    {
+        "command": "find . -maxdepth 3 -name \"runtests.py\" -o -name \"pytest.ini\" -o -name \"conftest.py\" | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.019609928131103516
+    },
+    {
+        "GPT_time": 4.541043519973755
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6773693561553955
+    },
+    {
+        "command": "find . -maxdepth 4 -name \"runtests.py\" -o -name \"tox.ini\" -o -name \"conftest.py\" -o -name \"manage.py\" | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.7123439311981201
+    },
+    {
+        "GPT_time": 3.713447332382202
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6759343147277832
+    },
+    {
+        "command": "python tests/runtests.py -v 2",
+        "returncode": 0,
+        "time": 70.90091872215271
+    },
+    {
+        "GPT_time": 4.28969931602478
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6757714748382568
+    },
+    {
+        "command": "python tests/runtests.py -v 2 --parallel 1",
+        "returncode": 0,
+        "time": 12.709886312484741
+    },
+    {
+        "GPT_time": 5.668003797531128
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6751279830932617
+    },
+    {
+        "command": "ls -la tests | head",
+        "returncode": 0,
+        "time": 0.6780004501342773
+    },
+    {
+        "GPT_time": 4.843887090682983
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 8.00316333770752
+    },
+    {
+        "GPT_time": 3.1564862728118896
+    },
+    {
+        "command": "ls -la /repo/tests | head",
+        "returncode": 0,
+        "time": 0.6808152198791504
+    },
+    {
+        "GPT_time": 5.93752384185791
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6754672527313232
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 10.044278144836426
+    },
+    {
+        "GPT_time": 4.08480429649353
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6777184009552002
+    },
+    {
+        "command": "python tests/runtests.py --parallel 1",
+        "returncode": 0,
+        "time": 727.1978061199188
+    },
+    {
+        "GPT_time": 11.949846506118774
+    },
+    {
+        "command": "waitinglist add -p html5lib -t pip",
+        "returncode": 0,
+        "time": 0.019608259201049805
+    },
+    {
+        "command": "waitinglist add -p lxml -t pip",
+        "returncode": 0,
+        "time": 0.016903400421142578
+    },
+    {
+        "GPT_time": 4.2833251953125
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 7.858834266662598
+    },
+    {
+        "GPT_time": 3.80961275100708
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6763401031494141
+    },
+    {
+        "command": "python tests/runtests.py --parallel 1",
+        "returncode": 0,
+        "time": 12.708986282348633
+    },
+    {
+        "GPT_time": 4.3448121547698975
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 12.477869987487793
+    },
+    {
+        "GPT_time": 5.35648775100708
+    },
+    {
+        "command": "ls -la /repo/tests/runtests.py",
+        "returncode": 0,
+        "time": 0.1761634349822998
+    },
+    {
+        "GPT_time": 4.639772653579712
+    },
+    {
+        "command": "change_python_version 3.10",
+        "returncode": 0,
+        "time": 12.488768577575684
+    },
+    {
+        "GPT_time": 4.82294774055481
+    },
+    {
+        "command": "find / -maxdepth 4 -name setup.cfg 2>/dev/null | head -n 20",
+        "returncode": 0,
+        "time": 1.6524546146392822
+    },
+    {
+        "GPT_time": 5.396619558334351
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6793715953826904
+    },
+    {
+        "command": "ls -la /mnt 2>/dev/null",
+        "returncode": 0,
+        "time": 1.5866179466247559
+    },
+    {
+        "command": "ls -la /workspace 2>/dev/null",
+        "returncode": 0,
+        "time": 12.934545993804932
+    },
+    {
+        "GPT_time": 5.796215295791626
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 12.496136665344238
+    },
+    {
+        "GPT_time": 5.1190505027771
+    },
+    {
+        "command": "change_python_version 3.11",
+        "returncode": 0,
+        "time": 12.462759733200073
+    },
+    {
+        "GPT_time": 4.9377601146698
+    },
+    {
+        "command": "ls -la /home/tools",
+        "returncode": 0,
+        "time": 0.6824181079864502
+    },
+    {
+        "GPT_time": 5.9805872440338135
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6822025775909424
+    },
+    {
+        "GPT_time": 5.796701908111572
+    },
+    {
+        "command": "find / -maxdepth 3 -type d -name \".git\" 2>/dev/null | head -n 20",
+        "returncode": 0,
+        "time": 1.6223809719085693
+    },
+    {
+        "GPT_time": 6.87366509437561
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 1.7903904914855957
+    },
+    {
+        "GPT_time": 6.146564960479736
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6790399551391602
+    },
+    {
+        "command": "sed -n '1,120p' /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6823117733001709
+    },
+    {
+        "GPT_time": 7.541240453720093
+    },
+    {
+        "command": "echo \"BLOCKED: /repo is empty and reset tools (clear_configuration/change_python_version) error with: name 'e' is not defined.\"",
+        "returncode": 0,
+        "time": 0.6769001483917236
+    },
+    {
+        "GPT_time": 7.971424579620361
+    },
+    {
+        "command": "cat /proc/mounts | grep -E ' /repo |/repo$' || true",
+        "returncode": 0,
+        "time": 0.6790297031402588
+    },
+    {
+        "GPT_time": 6.161629915237427
+    },
+    {
+        "command": "df -h /repo",
+        "returncode": 0,
+        "time": 0.6792516708374023
+    },
+    {
+        "command": "sudo true 2>/dev/null || true",
+        "returncode": 0,
+        "time": 1.601370096206665
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6799795627593994
+    },
+    {
+        "GPT_time": 4.233701229095459
+    },
+    {
+        "command": "find /repo -maxdepth 2 -print",
+        "returncode": 0,
+        "time": 0.6782002449035645
+    },
+    {
+        "GPT_time": 7.305333375930786
+    },
+    {
+        "command": "echo \"Cannot proceed: /repo mount is empty (find shows only /repo). Reset commands error: name 'e' is not defined.\"",
+        "returncode": 0,
+        "time": 0.6761660575866699
+    },
+    {
+        "GPT_time": 4.0293660163879395
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 1.7252399921417236
+    },
+    {
+        "GPT_time": 5.485354900360107
+    },
+    {
+        "command": "echo \"Final status: BLOCKED due to empty /repo; please restore repository mount or fix reset utilities.\"",
+        "returncode": 0,
+        "time": 0.6766030788421631
+    },
+    {
+        "GPT_time": 3.206897497177124
+    },
+    {
+        "command": "true",
+        "returncode": 0,
+        "time": 1.6568012237548828
+    },
+    {
+        "GPT_time": 4.625272035598755
+    },
+    {
+        "command": "echo \"STOP\"",
+        "returncode": 0,
+        "time": 0.6806347370147705
+    },
+    {
+        "GPT_time": 5.440179824829102
+    },
+    {
+        "command": "echo \"BLOCKED: Restore /repo contents or fix reset commands, then rerun.\"",
+        "returncode": 0,
+        "time": 0.6823711395263672
+    }
+]
