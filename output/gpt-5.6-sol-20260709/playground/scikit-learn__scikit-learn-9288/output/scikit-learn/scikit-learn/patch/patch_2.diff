@@ -1,0 +1,12 @@
+diff --git a/setup.cfg b/setup.cfg
+index 852310c1ee..18ba1a0f7c 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -13,6 +13,7 @@ addopts =
+     --ignore maint_tools
+     --doctest-modules
+     --disable-pytest-warnings
++    -n 16
+     -rs
+ 
+ filterwarnings =

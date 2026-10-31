@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.20, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+architecture: 64-bit
+cache:        yes
+ground types: python 
+
+rootdir: /repo
+configfile: pytest.ini
+testpaths: sympy/core/tests/test_basic.py
+collecting ... collected 15 items
+
+sympy/core/tests/test_basic.py::test_structure PASSED                    [  6%]
+sympy/core/tests/test_basic.py::test_equality PASSED                     [ 13%]
+sympy/core/tests/test_basic.py::test_matches_basic PASSED                [ 20%]
+sympy/core/tests/test_basic.py::test_has PASSED                          [ 26%]
+sympy/core/tests/test_basic.py::test_subs PASSED                         [ 33%]
+sympy/core/tests/test_basic.py::test_atoms PASSED                        [ 40%]
+sympy/core/tests/test_basic.py::test_free_symbols_empty PASSED           [ 46%]
+sympy/core/tests/test_basic.py::test_doit PASSED                         [ 53%]
+sympy/core/tests/test_basic.py::test_S PASSED                            [ 60%]
+sympy/core/tests/test_basic.py::test_xreplace PASSED                     [ 66%]
+sympy/core/tests/test_basic.py::test_Singleton PASSED                    [ 73%]
+sympy/core/tests/test_basic.py::test_preorder_traversal PASSED           [ 80%]
+sympy/core/tests/test_basic.py::test_sorted_args PASSED                  [ 86%]
+sympy/core/tests/test_basic.py::test_call PASSED                         [ 93%]
+sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable PASSED [100%]
+
+============================== 15 passed in 0.06s ==============================

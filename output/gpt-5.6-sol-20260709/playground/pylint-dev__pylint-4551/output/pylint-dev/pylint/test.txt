@@ -1,0 +1,761 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-6.2.5, py-1.11.0, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+benchmark: 3.4.1 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /repo, configfile: setup.cfg, testpaths: tests
+plugins: benchmark-3.4.1
+collecting ... collected 1628 items / 199 deselected / 1429 selected
+
+tests/test_check_parallel.py::TestCheckParallelFramework::test_worker_initialize PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallelFramework::test_worker_check_single_file_uninitialised PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallelFramework::test_worker_check_single_file_no_checkers PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallelFramework::test_worker_check_sequential_checker PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_sequential_checkers_work PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_invoke_single_job PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[1-2-1] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[1-2-2] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[1-2-3] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-2-1] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-2-2] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-2-3] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-2-1] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-2-2] PASSED [  0%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-2-3] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-1-1] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-1-2] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-1-3] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-5-1] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-5-2] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[3-5-3] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[10-2-1] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[10-2-2] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[10-2-3] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-10-1] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-10-2] PASSED [  1%]
+tests/test_check_parallel.py::TestCheckParallel::test_compare_workers_to_single_proc[2-10-3] PASSED [  1%]
+tests/test_config.py::test_can_read_ini FAILED                           [  1%]
+
+=================================== FAILURES ===================================
+______________________________ test_can_read_ini _______________________________
+
+self = Checker 'master' (responsible for 'F0001', 'F0002', 'F0010', 'I0001', 'I0010', 'I0011', 'I0013', 'I0020', 'I0021', 'I0022', 'E0001', 'E0011', 'E0012', 'E0013')
+reporter_name = 'text'
+
+    def _load_reporter_by_name(self, reporter_name: str) -> reporters.BaseReporter:
+        name = reporter_name.lower()
+        if name in self._reporters:
+            return self._reporters[name]()
+    
+        try:
+>           reporter_class = _load_reporter_by_class(reporter_name)
+
+pylint/lint/pylinter.py:598: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+reporter_class = 'text'
+
+    def _load_reporter_by_class(reporter_class: str) -> type:
+        qname = reporter_class
+>       module_part = astroid.modutils.get_module_part(qname)
+
+pylint/lint/pylinter.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+dotted_name = 'text', context_file = None
+
+    def get_module_part(dotted_name, context_file=None):
+        """given a dotted name return the module part of the name :
+    
+        >>> get_module_part('astroid.as_string.dump')
+        'astroid.as_string'
+    
+        :type dotted_name: str
+        :param dotted_name: full name of the identifier we are interested in
+    
+        :type context_file: str or None
+        :param context_file:
+          context file to consider, necessary if the identifier has been
+          introduced using a relative import unresolvable in the actual
+          context (i.e. modutils)
+    
+    
+        :raise ImportError: if there is no such module in the directory
+    
+        :rtype: str or None
+        :return:
+          the module part of the name or None if we have not been able at
+          all to import the given name
+    
+        XXX: deprecated, since it doesn't handle package precedence over module
+        (see #10066)
+        """
+        # os.path trick
+        if dotted_name.startswith("os.path"):
+            return "os.path"
+        parts = dotted_name.split(".")
+        if context_file is not None:
+            # first check for builtin module which won't be considered latter
+            # in that case (path != None)
+            if parts[0] in BUILTIN_MODULES:
+                if len(parts) > 2:
+                    raise ImportError(dotted_name)
+                return parts[0]
+            # don't use += or insert, we want a new list to be created !
+        path = None
+        starti = 0
+        if parts[0] == "":
+            assert (
+                context_file is not None
+            ), "explicit relative import, but no context_file?"
+            path = []  # prevent resolving the import non-relatively
+            starti = 1
+        while parts[starti] == "":  # for all further dots: change context
+            starti += 1
+            context_file = os.path.dirname(context_file)
+        for i in range(starti, len(parts)):
+            try:
+>               file_from_modpath(
+                    parts[starti : i + 1], path=path, context_file=context_file
+                )
+
+/usr/local/lib/python3.10/site-packages/astroid/modutils.py:440: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+modpath = ['text'], path = None, context_file = None
+
+    def file_from_modpath(modpath, path=None, context_file=None):
+>       return file_info_from_modpath(modpath, path, context_file).location
+
+/usr/local/lib/python3.10/site-packages/astroid/modutils.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+modpath = ['text'], path = None, context_file = None
+
+    def file_info_from_modpath(modpath, path=None, context_file=None):
+        """given a mod path (i.e. split module / package name), return the
+        corresponding file, giving priority to source file over precompiled
+        file if it exists
+    
+        :type modpath: list or tuple
+        :param modpath:
+          split module's name (i.e name of a module or package split
+          on '.')
+          (this means explicit relative imports that start with dots have
+          empty strings in this list!)
+    
+        :type path: list or None
+        :param path:
+          optional list of path where the module or package should be
+          searched (use sys.path if nothing or None is given)
+    
+        :type context_file: str or None
+        :param context_file:
+          context file to consider, necessary if the identifier has been
+          introduced using a relative import unresolvable in the actual
+          context (i.e. modutils)
+    
+        :raise ImportError: if there is no such module in the directory
+    
+        :rtype: (str or None, import type)
+        :return:
+          the path to the module's file or None if it's an integrated
+          builtin module such as 'sys'
+        """
+        if context_file is not None:
+            context = os.path.dirname(context_file)
+        else:
+            context = context_file
+        if modpath[0] == "xml":
+            # handle _xmlplus
+            try:
+                return _spec_from_modpath(["_xmlplus"] + modpath[1:], path, context)
+            except ImportError:
+                return _spec_from_modpath(modpath, path, context)
+        elif modpath == ["os", "path"]:
+            # FIXME: currently ignoring search_path...
+            return spec.ModuleSpec(
+                name="os.path",
+                location=os.path.__file__,
+                module_type=spec.ModuleType.PY_SOURCE,
+            )
+>       return _spec_from_modpath(modpath, path, context)
+
+/usr/local/lib/python3.10/site-packages/astroid/modutils.py:386: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+modpath = ['text'], path = None, context = None
+
+    def _spec_from_modpath(modpath, path=None, context=None):
+        """given a mod path (i.e. split module / package name), return the
+        corresponding spec
+    
+        this function is used internally, see `file_from_modpath`'s
+        documentation for more information
+        """
+        assert modpath
+        location = None
+        if context is not None:
+            try:
+                found_spec = spec.find_spec(modpath, [context])
+                location = found_spec.location
+            except ImportError:
+                found_spec = spec.find_spec(modpath, path)
+                location = found_spec.location
+        else:
+>           found_spec = spec.find_spec(modpath, path)
+
+/usr/local/lib/python3.10/site-packages/astroid/modutils.py:607: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+modpath = [], path = None
+
+    def find_spec(modpath, path=None):
+        """Find a spec for the given module.
+    
+        :type modpath: list or tuple
+        :param modpath:
+          split module's name (i.e name of a module or package split
+          on '.'), with leading empty strings for explicit relative import
+    
+        :type path: list or None
+        :param path:
+          optional list of path where the module or package should be
+          searched (use sys.path if nothing or None is given)
+    
+        :rtype: ModuleSpec
+        :return: A module spec, which describes how the module was
+                 found and where.
+        """
+        _path = path or sys.path
+    
+        # Need a copy for not mutating the argument.
+        modpath = modpath[:]
+    
+        submodule_path = None
+        module_parts = modpath[:]
+        processed = []
+    
+        while modpath:
+            modname = modpath.pop(0)
+>           finder, spec = _find_spec_with_path(
+                _path, modname, module_parts, processed, submodule_path or path
+            )
+
+/usr/local/lib/python3.10/site-packages/astroid/interpreter/_import/spec.py:365: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+search_path = ['/repo/tests', '/repo/tests/testutils', '/repo/tests/regrtest_data', '/repo/tests/profile', '/repo/tests', '/repo/tests/benchmark', ...]
+modname = 'text', module_parts = ['text'], processed = [], submodule_path = None
+
+    def _find_spec_with_path(search_path, modname, module_parts, processed, submodule_path):
+        finders = [finder(search_path) for finder in _SPEC_FINDERS]
+        for finder in finders:
+            spec = finder.find_module(modname, module_parts, processed, submodule_path)
+            if spec is None:
+                continue
+            return finder, spec
+    
+>       raise ImportError("No module named %s" % ".".join(module_parts))
+E       ImportError: No module named text
+
+/usr/local/lib/python3.10/site-packages/astroid/interpreter/_import/spec.py:334: ImportError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_can_read_ini0')
+
+    def test_can_read_ini(tmp_path):
+        # Check that we can read the "regular" INI .pylintrc file
+        config_file = tmp_path / ".pylintrc"
+        config_file.write_text(
+            """
+    [messages control]
+    disable = logging-not-lazy,logging-format-interpolation
+    jobs = 10
+    reports = yes
+    """
+        )
+>       check_configuration_file_reader(config_file)
+
+tests/test_config.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_config.py:20: in check_configuration_file_reader
+    runner = pylint.lint.Run(args)
+pylint/lint/run.py:277: in __init__
+    linter.load_default_plugins()
+pylint/lint/pylinter.py:529: in load_default_plugins
+    self._load_reporters()
+pylint/lint/pylinter.py:567: in _load_reporters
+    reporter = self._load_reporter_by_name(reporter_name)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Checker 'master' (responsible for 'F0001', 'F0002', 'F0010', 'I0001', 'I0010', 'I0011', 'I0013', 'I0020', 'I0021', 'I0022', 'E0001', 'E0011', 'E0012', 'E0013')
+reporter_name = 'text'
+
+    def _load_reporter_by_name(self, reporter_name: str) -> reporters.BaseReporter:
+        name = reporter_name.lower()
+        if name in self._reporters:
+            return self._reporters[name]()
+    
+        try:
+            reporter_class = _load_reporter_by_class(reporter_name)
+        except (ImportError, AttributeError) as e:
+>           raise exceptions.InvalidReporterError(name) from e
+E           pylint.exceptions.InvalidReporterError: text
+
+pylint/lint/pylinter.py:600: InvalidReporterError
+----------------------------- Captured stderr call -----------------------------
+Problem importing module variables.py: Unable to find module for /repo/pylint/checkers/variables.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module newstyle.py: Unable to find module for /repo/pylint/checkers/newstyle.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module similar.py: Unable to find module for /repo/pylint/checkers/similar.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module utils.py: Unable to find module for /repo/pylint/checkers/utils.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module raw_metrics.py: Unable to find module for /repo/pylint/checkers/raw_metrics.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module typecheck.py: Unable to find module for /repo/pylint/checkers/typecheck.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module classes.py: Unable to find module for /repo/pylint/checkers/classes.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module deprecated.py: Unable to find module for /repo/pylint/checkers/deprecated.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module strings.py: Unable to find module for /repo/pylint/checkers/strings.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module base.py: Unable to find module for /repo/pylint/checkers/base.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module misc.py: Unable to find module for /repo/pylint/checkers/misc.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module refactoring: Unable to find module for /repo/pylint/checkers/refactoring in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module mapreduce_checker.py: Unable to find module for /repo/pylint/checkers/mapreduce_checker.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module base_checker.py: Unable to find module for /repo/pylint/checkers/base_checker.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module design_analysis.py: Unable to find module for /repo/pylint/checkers/design_analysis.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module python3.py: Unable to find module for /repo/pylint/checkers/python3.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module imports.py: Unable to find module for /repo/pylint/checkers/imports.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module logging.py: Unable to find module for /repo/pylint/checkers/logging.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module async.py: Unable to find module for /repo/pylint/checkers/async.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module stdlib.py: Unable to find module for /repo/pylint/checkers/stdlib.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module spelling.py: Unable to find module for /repo/pylint/checkers/spelling.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module exceptions.py: Unable to find module for /repo/pylint/checkers/exceptions.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module format.py: Unable to find module for /repo/pylint/checkers/format.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module json_reporter.py: Unable to find module for /repo/pylint/reporters/json_reporter.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module ureports: Unable to find module for /repo/pylint/reporters/ureports in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module collecting_reporter.py: Unable to find module for /repo/pylint/reporters/collecting_reporter.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module base_reporter.py: Unable to find module for /repo/pylint/reporters/base_reporter.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module reports_handler_mix_in.py: Unable to find module for /repo/pylint/reporters/reports_handler_mix_in.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module multi_reporter.py: Unable to find module for /repo/pylint/reporters/multi_reporter.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+Problem importing module text.py: Unable to find module for /repo/pylint/reporters/text.py in /repo/tests, 
+/repo/tests/testutils, 
+/repo/tests/regrtest_data, 
+/repo/tests/profile, 
+/repo/tests, 
+/repo/tests/benchmark, 
+/repo/tests/acceptance, 
+/repo/tests, 
+/repo/tests/regrtest_data, 
+/usr/local/bin, 
+/usr/local/lib/python310.zip, 
+/usr/local/lib/python3.10, 
+/usr/local/lib/python3.10/lib-dynload, 
+/usr/local/lib/python3.10/site-packages, 
+/usr/local/lib/python3.10/site-packages/setuptools/_vendor
+=========================== short test summary info ============================
+FAILED tests/test_config.py::test_can_read_ini - pylint.exceptions.InvalidRep...
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+=========== 1 failed, 27 passed, 199 deselected, 1 warning in 3.05s ============

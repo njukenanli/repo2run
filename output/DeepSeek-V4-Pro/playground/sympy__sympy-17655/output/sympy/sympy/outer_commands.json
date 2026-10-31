@@ -1,0 +1,1130 @@
+[
+    {
+        "GPT_time": 4.226589918136597
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6725492477416992
+    },
+    {
+        "GPT_time": 2.215860366821289
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.679426908493042
+    },
+    {
+        "GPT_time": 3.1616642475128174
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6727762222290039
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.797439336776733
+    },
+    {
+        "GPT_time": 2.2747085094451904
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6716561317443848
+    },
+    {
+        "command": "pip install -q mpmath>=0.19",
+        "returncode": 0,
+        "time": 3.4752516746520996
+    },
+    {
+        "GPT_time": 2.272155284881592
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.4621179103851318
+    },
+    {
+        "GPT_time": 3.1750736236572266
+    },
+    {
+        "command": "cat /repo/conftest.py",
+        "returncode": 0,
+        "time": 0.16747140884399414
+    },
+    {
+        "GPT_time": 2.531860589981079
+    },
+    {
+        "command": "ls /repo/conftest.py",
+        "returncode": 0,
+        "time": 0.16353726387023926
+    },
+    {
+        "command": "ls /repo/pytest.ini",
+        "returncode": 0,
+        "time": 0.012207508087158203
+    },
+    {
+        "GPT_time": 2.3887062072753906
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6699690818786621
+    },
+    {
+        "GPT_time": 4.619129180908203
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6672844886779785
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6678695678710938
+    },
+    {
+        "GPT_time": 4.285021781921387
+    },
+    {
+        "command": "find / -name \"sympy\" -type d 2>/dev/null | head -10",
+        "returncode": 0,
+        "time": 1.861603021621704
+    },
+    {
+        "GPT_time": 4.776389122009277
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4563202857971191
+    },
+    {
+        "GPT_time": 2.630096912384033
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6736514568328857
+    },
+    {
+        "GPT_time": 2.8971264362335205
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.675057888031006
+    },
+    {
+        "GPT_time": 2.564932107925415
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 2.8449673652648926
+    },
+    {
+        "GPT_time": 2.4903602600097656
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.3329885005950928
+    },
+    {
+        "GPT_time": 2.4063427448272705
+    },
+    {
+        "command": "cat /repo/pytest.ini",
+        "returncode": 0,
+        "time": 0.006776332855224609
+    },
+    {
+        "command": "cat /repo/conftest.py",
+        "returncode": 0,
+        "time": 0.16628503799438477
+    },
+    {
+        "GPT_time": 5.388354063034058
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6792287826538086
+    },
+    {
+        "GPT_time": 4.524312257766724
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5601112842559814
+    },
+    {
+        "GPT_time": 3.078408718109131
+    },
+    {
+        "command": "ls /repo/conftest.py /repo/pytest.ini /repo/setup.py",
+        "returncode": 0,
+        "time": 0.007033348083496094
+    },
+    {
+        "GPT_time": 2.3199095726013184
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6780507564544678
+    },
+    {
+        "GPT_time": 3.229151487350464
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 3.229321241378784
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1200.849766254425
+    },
+    {
+        "GPT_time": 3.34635591506958
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6669213771820068
+    },
+    {
+        "command": "cat conftest.py",
+        "returncode": 0,
+        "time": 0.6738340854644775
+    },
+    {
+        "GPT_time": 3.4062116146087646
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6694374084472656
+    },
+    {
+        "command": "cat pytest.ini",
+        "returncode": 0,
+        "time": 0.006060600280761719
+    },
+    {
+        "GPT_time": 5.000421047210693
+    },
+    {
+        "command": "ls -la /repo/pytest.ini",
+        "returncode": 0,
+        "time": 0.005332469940185547
+    },
+    {
+        "GPT_time": 2.704129695892334
+    },
+    {
+        "command": "ls /repo/ | head -20",
+        "returncode": 0,
+        "time": 0.6681814193725586
+    },
+    {
+        "GPT_time": 4.7142720222473145
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6682302951812744
+    },
+    {
+        "command": "timeout 120 runtest",
+        "returncode": 0,
+        "time": 12.1952064037323
+    },
+    {
+        "GPT_time": 2.7045414447784424
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.2340977191925049
+    },
+    {
+        "GPT_time": 2.917487859725952
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6698708534240723
+    },
+    {
+        "command": "python -c \"from sympy.utilities.runtests import _get_doctest_blacklist; print(_get_doctest_blacklist())\"",
+        "returncode": 0,
+        "time": 11.989030122756958
+    },
+    {
+        "GPT_time": 4.331460952758789
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6680872440338135
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.437533855438232
+    },
+    {
+        "GPT_time": 2.7873427867889404
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.17026734352111816
+    },
+    {
+        "GPT_time": 3.3123977184295654
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5934813022613525
+    },
+    {
+        "GPT_time": 3.279392719268799
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6713459491729736
+    },
+    {
+        "command": "ls /repo/sympy",
+        "returncode": 0,
+        "time": 0.6693775653839111
+    },
+    {
+        "GPT_time": 2.623220443725586
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 2.9027273654937744
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6651010513305664
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 3.24647855758667
+    },
+    {
+        "GPT_time": 2.4970014095306396
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1201.161644935608
+    },
+    {
+        "GPT_time": 3.899235963821411
+    },
+    {
+        "command": "cat /repo/pytest.ini",
+        "returncode": 0,
+        "time": 0.005606651306152344
+    },
+    {
+        "GPT_time": 3.016057014465332
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6668012142181396
+    },
+    {
+        "command": "python -c \"print(open('pytest.ini').read())\"",
+        "returncode": 0,
+        "time": 0.008416414260864258
+    },
+    {
+        "GPT_time": 2.9337661266326904
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6682968139648438
+    },
+    {
+        "command": "head -20 pytest.ini",
+        "returncode": 0,
+        "time": 0.008824825286865234
+    },
+    {
+        "GPT_time": 2.53283429145813
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.670353889465332
+    },
+    {
+        "command": "ls -la | grep pytest",
+        "returncode": 0,
+        "time": 0.0056209564208984375
+    },
+    {
+        "GPT_time": 3.6619088649749756
+    },
+    {
+        "command": "ls /repo/sympy/core/tests/",
+        "returncode": 0,
+        "time": 0.6696567535400391
+    },
+    {
+        "GPT_time": 2.761836290359497
+    },
+    {
+        "command": "cat /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6782321929931641
+    },
+    {
+        "GPT_time": 4.491397142410278
+    },
+    {
+        "command": "ls -la /repo/.ci/",
+        "returncode": 0,
+        "time": 0.6724381446838379
+    },
+    {
+        "GPT_time": 14.621044635772705
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6698606014251709
+    },
+    {
+        "command": "python -c \"from sympy.utilities.runtests import _get_doctest_blacklist; print(len(_get_doctest_blacklist())); print(_get_doctest_blacklist()[:5])\"",
+        "returncode": 0,
+        "time": 2.130337953567505
+    },
+    {
+        "GPT_time": 5.238218545913696
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6664085388183594
+    },
+    {
+        "command": "grep -r \"import \" /repo/sympy/utilities/runtests.py | head -20",
+        "returncode": 0,
+        "time": 0.6720035076141357
+    },
+    {
+        "GPT_time": 2.6248321533203125
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.669762134552002
+    },
+    {
+        "command": "python -c \"import conftest; print('ok')\"",
+        "returncode": 0,
+        "time": 2.2279601097106934
+    },
+    {
+        "GPT_time": 3.4032492637634277
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6663722991943359
+    },
+    {
+        "command": "cat setupegg.py",
+        "returncode": 0,
+        "time": 0.6667492389678955
+    },
+    {
+        "GPT_time": 2.8669395446777344
+    },
+    {
+        "command": "ls /repo/.github/",
+        "returncode": 0,
+        "time": 0.6741836071014404
+    },
+    {
+        "GPT_time": 2.3895626068115234
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6695878505706787
+    },
+    {
+        "command": "head -60 .travis.yml",
+        "returncode": 0,
+        "time": 0.6669862270355225
+    },
+    {
+        "GPT_time": 2.8986074924468994
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6635992527008057
+    },
+    {
+        "command": "cat bin/test",
+        "returncode": 0,
+        "time": 0.6678059101104736
+    },
+    {
+        "GPT_time": 6.978055953979492
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6622722148895264
+    },
+    {
+        "command": "grep -r \"gmpy\" sympy/core/grounds.py 2>/dev/null | head -5",
+        "returncode": 0,
+        "time": 1.5083777904510498
+    },
+    {
+        "GPT_time": 7.366729021072388
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6632311344146729
+    },
+    {
+        "command": "grep -r \"import matplotlib\\|import numpy\\|import scipy\\|import cython\" sympy/ | head -10",
+        "returncode": 0,
+        "time": 0.6872169971466064
+    },
+    {
+        "GPT_time": 7.041332006454468
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6614363193511963
+    },
+    {
+        "command": "python -c \"import sympy; print('sympy imported successfully'); print(sympy.__version__)\"",
+        "returncode": 0,
+        "time": 2.0618350505828857
+    },
+    {
+        "GPT_time": 2.9673068523406982
+    },
+    {
+        "command": "cat /repo/final_patch.diff",
+        "returncode": 0,
+        "time": 0.6746301651000977
+    },
+    {
+        "GPT_time": 3.7488303184509277
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6678125858306885
+    },
+    {
+        "command": "ls *.cfg *.ini 2>/dev/null; ls setup.cfg 2>/dev/null; cat tox.ini 2>/dev/null",
+        "returncode": 0,
+        "time": 12.112714290618896
+    },
+    {
+        "GPT_time": 2.978111982345581
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 1.8303494453430176
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6664488315582275
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.362261533737183
+    },
+    {
+        "GPT_time": 2.505239248275757
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.6674585342407227
+    },
+    {
+        "GPT_time": 3.01604962348938
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4655814170837402
+    },
+    {
+        "GPT_time": 3.042454481124878
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6669323444366455
+    },
+    {
+        "command": "ls /repo/sympy",
+        "returncode": 0,
+        "time": 0.6721169948577881
+    },
+    {
+        "command": "ls /repo/.pipreqs",
+        "returncode": 0,
+        "time": 0.6665964126586914
+    },
+    {
+        "GPT_time": 8.418677806854248
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6639418601989746
+    },
+    {
+        "command": "grep -r \"subprocess\\|pexpect\\|timeout\" conftest.py",
+        "returncode": 0,
+        "time": 0.1648235321044922
+    },
+    {
+        "GPT_time": 3.190812587738037
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6686716079711914
+    },
+    {
+        "command": "head -30 sympy/__init__.py",
+        "returncode": 0,
+        "time": 0.6764607429504395
+    },
+    {
+        "GPT_time": 2.978015661239624
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6690223217010498
+    },
+    {
+        "command": "time python -c \"import sympy\" 2>&1",
+        "returncode": 0,
+        "time": 11.913285970687866
+    },
+    {
+        "GPT_time": 8.525243997573853
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 2.830705165863037
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6661007404327393
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.528429508209229
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.3270962238311768
+    },
+    {
+        "GPT_time": 5.1108410358428955
+    },
+    {
+        "command": "cd /tmp",
+        "returncode": 0,
+        "time": 0.6657943725585938
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 2.116793155670166
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6703164577484131
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.415346384048462
+    },
+    {
+        "GPT_time": 2.886319637298584
+    },
+    {
+        "command": "ls /repo/setup.py 2>/dev/null",
+        "returncode": 0,
+        "time": 11.937315225601196
+    },
+    {
+        "command": "echo \"exists\" || echo \"not found\"",
+        "returncode": 0,
+        "time": 0.668583869934082
+    },
+    {
+        "GPT_time": 4.986566543579102
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4824485778808594
+    },
+    {
+        "GPT_time": 4.206295967102051
+    },
+    {
+        "command": "waitinglist add -p mpmath -v \">=0.19\" -t pip",
+        "returncode": 0,
+        "time": 0.009347915649414062
+    },
+    {
+        "GPT_time": 4.297501564025879
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.675541877746582
+    },
+    {
+        "GPT_time": 2.5946044921875
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 2.9669439792633057
+    },
+    {
+        "GPT_time": 2.4480512142181396
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6692631244659424
+    },
+    {
+        "GPT_time": 3.0259671211242676
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6640360355377197
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 3.1642909049987793
+    },
+    {
+        "GPT_time": 12.287892818450928
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6690614223480225
+    },
+    {
+        "command": "timeout 30 python -m pytest --collect-only -q 2>&1 | head -20",
+        "returncode": 0,
+        "time": 0.01134347915649414
+    },
+    {
+        "GPT_time": 6.577250957489014
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6672947406768799
+    },
+    {
+        "command": "python -c \"import json; d = json.load(open('.ci/durations.json')); print(len(d)); print(list(d.keys())[:3])\"",
+        "returncode": 0,
+        "time": 12.264346361160278
+    },
+    {
+        "GPT_time": 3.6235108375549316
+    },
+    {
+        "command": "waitinglist add -p mpmath -v \">=0.19\" -t pip",
+        "returncode": 0,
+        "time": 0.01018381118774414
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 1.9597432613372803
+    },
+    {
+        "GPT_time": 155.32562136650085
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6636948585510254
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.377765655517578
+    },
+    {
+        "GPT_time": 7.755178213119507
+    },
+    {
+        "command": "ls /repo/pyproject.toml 2>/dev/null; ls /repo/poetry.lock 2>/dev/null; echo \"done\"",
+        "returncode": 0,
+        "time": 1.2852649688720703
+    },
+    {
+        "GPT_time": 86.35217308998108
+    },
+    {
+        "command": "poetryruntest",
+        "returncode": 0,
+        "time": 12.587685108184814
+    },
+    {
+        "GPT_time": 10.219890832901001
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4347810745239258
+    },
+    {
+        "GPT_time": 4.53461480140686
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.469010353088379
+    },
+    {
+        "GPT_time": 4.615498065948486
+    },
+    {
+        "command": "waitinglist add -p mpmath -v \">=0.19\" -t pip",
+        "returncode": 0,
+        "time": 0.00991511344909668
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 2.771003484725952
+    },
+    {
+        "GPT_time": 4.207260608673096
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.16515040397644043
+    },
+    {
+        "GPT_time": 10.40767502784729
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.6752891540527344
+    },
+    {
+        "GPT_time": 4.107845067977905
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4174368381500244
+    },
+    {
+        "GPT_time": 4.711646556854248
+    },
+    {
+        "command": "cp -r /repo /repo_backup",
+        "returncode": 0,
+        "time": 2.0828843116760254
+    },
+    {
+        "command": "ls /repo_backup/setup.py",
+        "returncode": 0,
+        "time": 0.6734004020690918
+    },
+    {
+        "GPT_time": 4.715962886810303
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 5.297799825668335
+    },
+    {
+        "command": "cp -r /repo_backup /repo",
+        "returncode": 0,
+        "time": 4.138874292373657
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6637833118438721
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 5.8279502391815186
+    },
+    {
+        "GPT_time": 5.793056488037109
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6654114723205566
+    },
+    {
+        "command": "python -c \"import sympy; print('sympy imported')\"",
+        "returncode": 0,
+        "time": 4.667248249053955
+    },
+    {
+        "GPT_time": 6.3274619579315186
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.664804220199585
+    },
+    {
+        "command": "python -c \"from sympy.utilities.runtests import _get_doctest_blacklist; bl = _get_doctest_blacklist(); print('blacklist count:', len(bl))\"",
+        "returncode": 0,
+        "time": 4.855475425720215
+    },
+    {
+        "GPT_time": 6.918894052505493
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6650893688201904
+    },
+    {
+        "command": "find sympy -name \"tests\" -type d | wc -l",
+        "returncode": 0,
+        "time": 0.6821672916412354
+    },
+    {
+        "GPT_time": 5.467620372772217
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1203.3734018802643
+    },
+    {
+        "GPT_time": 17.307225227355957
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6659853458404541
+    },
+    {
+        "command": "cat > setup.cfg << 'EOF' [tool:pytest] testpaths = sympy/core/tests EOF",
+        "returncode": 0,
+        "time": 0.008263349533081055
+    },
+    {
+        "GPT_time": 4.63179612159729
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6722958087921143
+    },
+    {
+        "command": "python -c \" config = '''[tool:py%s] testpaths = sympy/core/tests ''' % 'test' with open('setup.cfg', 'w') as f:     f.write(config) print('done') \"",
+        "returncode": 0,
+        "time": 15.676590204238892
+    },
+    {
+        "GPT_time": 5.890762805938721
+    },
+    {
+        "command": "cp -r /repo /repo_backup",
+        "returncode": 0,
+        "time": 1.141453742980957
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 1.939803123474121
+    },
+    {
+        "command": "cp -r /repo_backup /repo",
+        "returncode": 0,
+        "time": 1.71915602684021
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6695458889007568
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.402961254119873
+    },
+    {
+        "GPT_time": 5.8916051387786865
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.2664859294891357
+    },
+    {
+        "GPT_time": 6.071079730987549
+    },
+    {
+        "command": "cp -r /repo /repo_backup",
+        "returncode": 0,
+        "time": 2.163508892059326
+    },
+    {
+        "command": "pip install -q \"mpmath>=0.19\"",
+        "returncode": 0,
+        "time": 7.971337080001831
+    },
+    {
+        "command": "rm -rf /repo",
+        "returncode": 0,
+        "time": 19.15511441230774
+    },
+    {
+        "command": "cp -r /repo_backup /repo",
+        "returncode": 0,
+        "time": 12.253593444824219
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6679263114929199
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 12.406703233718872
+    },
+    {
+        "GPT_time": 9.892298221588135
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5407145023345947
+    },
+    {
+        "GPT_time": 4.851198434829712
+    },
+    {
+        "command": "cp -r /repo /repo_bak2",
+        "returncode": 0,
+        "time": 1.354435920715332
+    },
+    {
+        "command": "waitinglist add -p mpmath -v \">=0.19\" -t pip",
+        "returncode": 0,
+        "time": 0.009267568588256836
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 2.951920509338379
+    },
+    {
+        "command": "cp -r /repo_bak2 /repo",
+        "returncode": 0,
+        "time": 2.2277352809906006
+    },
+    {
+        "GPT_time": 4.767303943634033
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.16553449630737305
+    },
+    {
+        "command": "export PYTHONPATH=/repo:$PYTHONPATH",
+        "returncode": 0,
+        "time": 1.2743029594421387
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.669921875
+    },
+    {
+        "command": "python -c \"import sympy; print('ok')\"",
+        "returncode": 0,
+        "time": 11.904700517654419
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.1404879093170166
+    },
+    {
+        "GPT_time": 10.98872447013855
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4020216464996338
+    }
+]

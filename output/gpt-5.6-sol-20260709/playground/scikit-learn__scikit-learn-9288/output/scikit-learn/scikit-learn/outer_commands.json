@@ -1,0 +1,438 @@
+[
+    {
+        "GPT_time": 5.357459783554077
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6721696853637695
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.673332691192627
+    },
+    {
+        "GPT_time": 4.156269788742065
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.670229434967041
+    },
+    {
+        "command": "sed -n '1,240p' setup.py",
+        "returncode": 0,
+        "time": 0.683586835861206
+    },
+    {
+        "command": "printf '\\n--- setup.cfg ---\\n'",
+        "returncode": 0,
+        "time": 0.6717216968536377
+    },
+    {
+        "command": "sed -n '1,240p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6735551357269287
+    },
+    {
+        "command": "printf '\\n--- CI Python/dependencies ---\\n'",
+        "returncode": 0,
+        "time": 0.6721024513244629
+    },
+    {
+        "command": "grep -RniE 'python(_version)?:|python=|PYTHON_VERSION|numpy|scipy|cython' .travis.yml appveyor.yml azure-pipelines.yml .circleci/config.yml | head -240",
+        "returncode": 0,
+        "time": 0.6791565418243408
+    },
+    {
+        "GPT_time": 7.021414279937744
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6666982173919678
+    },
+    {
+        "command": "grep -n \"__version__\" sklearn/__init__.py",
+        "returncode": 0,
+        "time": 0.6689901351928711
+    },
+    {
+        "command": "sed -n '1,130p' .circleci/config.yml",
+        "returncode": 0,
+        "time": 0.6777780055999756
+    },
+    {
+        "command": "printf '\\n--- dependency list files ---\\n'",
+        "returncode": 0,
+        "time": 0.6675989627838135
+    },
+    {
+        "command": "find . -maxdepth 3 -type f \\( -iname 'requirements*.txt' -o -iname '*requirements*.txt' \\) -print",
+        "returncode": 0,
+        "time": 0.6752223968505859
+    },
+    {
+        "command": "printf '\\n--- generated extension sources ---\\n'",
+        "returncode": 0,
+        "time": 0.6685998439788818
+    },
+    {
+        "command": "find sklearn -type f \\( -name '*.c' -o -name '*.cpp' \\) | head -30",
+        "returncode": 0,
+        "time": 0.6806211471557617
+    },
+    {
+        "GPT_time": 4.335558652877808
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 4.640455007553101
+    },
+    {
+        "GPT_time": 3.7347846031188965
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6699373722076416
+    },
+    {
+        "command": "cat build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.6751601696014404
+    },
+    {
+        "command": "printf '\\n--- CI install commands ---\\n'",
+        "returncode": 0,
+        "time": 0.6717581748962402
+    },
+    {
+        "command": "grep -RniE 'pip install|conda install|CYTHON_VERSION|pytest' build_tools .travis.yml azure-pipelines.yml appveyor.yml | head -260",
+        "returncode": 0,
+        "time": 0.7060286998748779
+    },
+    {
+        "GPT_time": 4.221550226211548
+    },
+    {
+        "command": "waitinglist addfile /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.031291961669921875
+    },
+    {
+        "GPT_time": 3.488103151321411
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6759915351867676
+    },
+    {
+        "command": "ls -l /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.7594509124755859
+    },
+    {
+        "command": "readlink -f /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 2.365699529647827
+    },
+    {
+        "command": "stat /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.7077116966247559
+    },
+    {
+        "GPT_time": 7.110102415084839
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.21.6\" -t pip",
+        "returncode": 0,
+        "time": 0.01090693473815918
+    },
+    {
+        "command": "waitinglist add -p scipy -v \"==1.7.3\" -t pip",
+        "returncode": 0,
+        "time": 0.009793281555175781
+    },
+    {
+        "command": "waitinglist add -p cython -v \"==0.29.36\" -t pip",
+        "returncode": 0,
+        "time": 0.00963139533996582
+    },
+    {
+        "command": "waitinglist add -p pytest -v \"==4.6.11\" -t pip",
+        "returncode": 0,
+        "time": 0.010065555572509766
+    },
+    {
+        "command": "waitinglist add -p wheel -v \"==0.42.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010387420654296875
+    },
+    {
+        "command": "waitinglist add -p wheelhouse_uploader -t pip",
+        "returncode": 0,
+        "time": 0.009807109832763672
+    },
+    {
+        "command": "waitinglist add -p pillow -v \"==9.5.0\" -t pip",
+        "returncode": 0,
+        "time": 0.017363548278808594
+    },
+    {
+        "GPT_time": 9.069652318954468
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.011602163314819336
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.00905919075012207
+    },
+    {
+        "GPT_time": 5.059700012207031
+    },
+    {
+        "command": "waitinglist clear",
+        "returncode": 0,
+        "time": 0.010368585586547852
+    },
+    {
+        "command": "waitinglist add -p numpy -v ==1.21.6 -t pip",
+        "returncode": 0,
+        "time": 0.008745193481445312
+    },
+    {
+        "command": "waitinglist add -p scipy -v ==1.7.3 -t pip",
+        "returncode": 0,
+        "time": 0.008715629577636719
+    },
+    {
+        "command": "waitinglist add -p cython -v ==0.29.36 -t pip",
+        "returncode": 0,
+        "time": 0.008733272552490234
+    },
+    {
+        "command": "waitinglist add -p pytest -v ==4.6.11 -t pip",
+        "returncode": 0,
+        "time": 0.008707284927368164
+    },
+    {
+        "command": "waitinglist add -p wheel -v ==0.42.0 -t pip",
+        "returncode": 0,
+        "time": 0.009006738662719727
+    },
+    {
+        "command": "waitinglist add -p pillow -v ==9.5.0 -t pip",
+        "returncode": 0,
+        "time": 0.013957977294921875
+    },
+    {
+        "GPT_time": 3.7965636253356934
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 75.40151143074036
+    },
+    {
+        "GPT_time": 4.033702611923218
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6683146953582764
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 603.4227888584137
+    },
+    {
+        "GPT_time": 3.409132480621338
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.67330002784729
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1207.8570182323456
+    },
+    {
+        "GPT_time": 5.852517127990723
+    },
+    {
+        "command": "sed -n '1,260p' /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6818575859069824
+    },
+    {
+        "command": "printf '\\n--- CPU and current pytest config ---\\n'",
+        "returncode": 0,
+        "time": 0.02511453628540039
+    },
+    {
+        "command": "nproc",
+        "returncode": 0,
+        "time": 7.376198053359985
+    },
+    {
+        "command": "sed -n '1,80p' /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6842963695526123
+    },
+    {
+        "GPT_time": 4.236815690994263
+    },
+    {
+        "command": "wc -l /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7047204971313477
+    },
+    {
+        "command": "tail -120 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7100555896759033
+    },
+    {
+        "command": "printf '\\n--- outcome counts ---\\n'",
+        "returncode": 0,
+        "time": 0.6747348308563232
+    },
+    {
+        "command": "grep -Eoc ' PASSED| FAILED| ERROR' /home/tools/.test_func || true",
+        "returncode": 0,
+        "time": 0.6891493797302246
+    },
+    {
+        "command": "grep -En ' FAILED| ERROR|Traceback|INTERNALERROR' /home/tools/.test_func | tail -40 || true",
+        "returncode": 0,
+        "time": 0.6724121570587158
+    },
+    {
+        "GPT_time": 5.35050106048584
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -v ==1.34.0 -t pip",
+        "returncode": 0,
+        "time": 0.013954877853393555
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.011027097702026367
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.009472846984863281
+    },
+    {
+        "GPT_time": 3.3313281536102295
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 14.384151458740234
+    },
+    {
+        "GPT_time": 6.493983030319214
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\n    --doctest-modules\n    --disable-pytest-warnings\n    -rs\n=======\n    --doctest-modules\n    --disable-pytest-warnings\n    -n 8\n    -rs\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.28490781784057617
+    },
+    {
+        "GPT_time": 3.6585330963134766
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6908628940582275
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1214.028174161911
+    },
+    {
+        "GPT_time": 6.78537917137146
+    },
+    {
+        "command": "wc -l /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7362513542175293
+    },
+    {
+        "command": "tail -80 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7901723384857178
+    },
+    {
+        "command": "printf '\\n--- outcomes and worker issues ---\\n'",
+        "returncode": 0,
+        "time": 0.7002713680267334
+    },
+    {
+        "command": "grep -Eoc ' PASSED| FAILED| ERROR' /home/tools/.test_func || true",
+        "returncode": 0,
+        "time": 0.7665722370147705
+    },
+    {
+        "command": "grep -En ' FAILED| ERROR|Traceback|INTERNALERROR|worker.*crash|node down' /home/tools/.test_func | tail -80 || true",
+        "returncode": 0,
+        "time": 0.7649672031402588
+    },
+    {
+        "GPT_time": 8.798317670822144
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\n    --disable-pytest-warnings\n    -n 8\n    -rs\n=======\n    --disable-pytest-warnings\n    -n 16\n    -rs\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.3948402404785156
+    },
+    {
+        "GPT_time": 4.259318113327026
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.8279500007629395
+    },
+    {
+        "command": "export OMP_NUM_THREADS=1",
+        "returncode": 0,
+        "time": 11.519582509994507
+    },
+    {
+        "command": "export OPENBLAS_NUM_THREADS=1",
+        "returncode": 0,
+        "time": 10.694986343383789
+    },
+    {
+        "command": "export MKL_NUM_THREADS=1",
+        "returncode": 0,
+        "time": 10.479959964752197
+    },
+    {
+        "command": "export NUMEXPR_NUM_THREADS=1",
+        "returncode": 0,
+        "time": 8.894737958908081
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 547.8171510696411
+    }
+]

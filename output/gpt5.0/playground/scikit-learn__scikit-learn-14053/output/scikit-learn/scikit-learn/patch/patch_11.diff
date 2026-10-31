@@ -1,0 +1,26 @@
+diff --git a/sklearn/cross_decomposition/pls_.py b/sklearn/cross_decomposition/pls_.py
+index 175a472e6d..2e48a33049 100644
+--- a/sklearn/cross_decomposition/pls_.py
++++ b/sklearn/cross_decomposition/pls_.py
+@@ -9,7 +9,7 @@ import warnings
+ from abc import ABCMeta, abstractmethod
+ 
+ import numpy as np
+-from scipy.linalg import pinv2, svd
++from scipy.linalg import pinv as pinv2, svd
+ from scipy.sparse.linalg import svds
+ 
+ from ..base import BaseEstimator, RegressorMixin, TransformerMixin
+diff --git a/sklearn/metrics/tests/test_pairwise.py b/sklearn/metrics/tests/test_pairwise.py
+index 6828844944..30999eb79b 100644
+--- a/sklearn/metrics/tests/test_pairwise.py
++++ b/sklearn/metrics/tests/test_pairwise.py
+@@ -4,7 +4,7 @@ import numpy as np
+ from numpy import linalg
+ 
+ from scipy.sparse import dok_matrix, csr_matrix, issparse
+-from scipy.spatial.distance import cosine, cityblock, minkowski, wminkowski
++from scipy.spatial.distance import cosine, cityblock, minkowski
+ from scipy.spatial.distance import cdist, pdist, squareform
+ 
+ import pytest

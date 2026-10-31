@@ -1,0 +1,536 @@
+[
+    {
+        "GPT_time": 4.962061643600464
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.670799970626831
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6769018173217773
+    },
+    {
+        "GPT_time": 3.860140800476074
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6685957908630371
+    },
+    {
+        "command": "sed -n '1,260p' setup.py",
+        "returncode": 0,
+        "time": 0.6747939586639404
+    },
+    {
+        "command": "printf '\\n--- setup.cfg ---\\n'",
+        "returncode": 0,
+        "time": 0.6763997077941895
+    },
+    {
+        "command": "sed -n '1,260p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6717362403869629
+    },
+    {
+        "command": "printf '\\n--- CI Python/dependency clues ---\\n'",
+        "returncode": 0,
+        "time": 0.6760337352752686
+    },
+    {
+        "command": "grep -RInE 'python:|python_version|PYTHON_VERSION|pip install|numpy|scipy|cython' .travis.yml appveyor.yml azure-pipelines.yml .circleci/config.yml | head -250",
+        "returncode": 0,
+        "time": 0.6776127815246582
+    },
+    {
+        "GPT_time": 4.466358184814453
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6689836978912354
+    },
+    {
+        "command": "grep -nE '__version__|CYTHON|Cython|pytest|requirements' sklearn/__init__.py Makefile .travis.yml azure-pipelines.yml .circleci/config.yml",
+        "returncode": 0,
+        "time": 0.6694252490997314
+    },
+    {
+        "command": "find build_tools -type f \\( -iname '*requirements*.txt' -o -iname '*.yml' \\) -print -exec sh -c 'echo \"--- $1\"; cat \"$1\"' _ {} \\;",
+        "returncode": 0,
+        "time": 0.6846139430999756
+    },
+    {
+        "GPT_time": 3.8161256313323975
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 2.5099830627441406
+    },
+    {
+        "GPT_time": 4.9046525955200195
+    },
+    {
+        "command": "waitinglist addfile /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.03278660774230957
+    },
+    {
+        "GPT_time": 25.891456365585327
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6761116981506348
+    },
+    {
+        "command": "find /repo -maxdepth 3 -type f -name '*requirements*.txt' -print",
+        "returncode": 0,
+        "time": 0.6783909797668457
+    },
+    {
+        "GPT_time": 4.0610692501068115
+    },
+    {
+        "command": "waitinglist addfile /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.03747367858886719
+    },
+    {
+        "GPT_time": 6.394792795181274
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.21.6\" -t pip",
+        "returncode": 0,
+        "time": 0.007973670959472656
+    },
+    {
+        "command": "waitinglist add -p scipy -v \"==1.7.3\" -t pip",
+        "returncode": 0,
+        "time": 0.006013393402099609
+    },
+    {
+        "command": "waitinglist add -p cython -v \"==0.29.36\" -t pip",
+        "returncode": 0,
+        "time": 0.009023427963256836
+    },
+    {
+        "command": "waitinglist add -p joblib -v \"==1.1.1\" -t pip",
+        "returncode": 0,
+        "time": 0.005757570266723633
+    },
+    {
+        "command": "waitinglist add -p pillow -v \"==9.5.0\" -t pip",
+        "returncode": 0,
+        "time": 0.008090972900390625
+    },
+    {
+        "command": "waitinglist add -p wheel -v \"==0.42.0\" -t pip",
+        "returncode": 0,
+        "time": 0.006520509719848633
+    },
+    {
+        "GPT_time": 3.037051200866699
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.009130239486694336
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.0069675445556640625
+    },
+    {
+        "GPT_time": 3.235649347305298
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 46.025851249694824
+    },
+    {
+        "GPT_time": 3.611628293991089
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6702408790588379
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 378.61224579811096
+    },
+    {
+        "GPT_time": 3.6404759883880615
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6713821887969971
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1204.33668923378
+    },
+    {
+        "GPT_time": 7.591506481170654
+    },
+    {
+        "command": "sed -n '1,260p' /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6808338165283203
+    },
+    {
+        "command": "printf '\\n--- versions ---\\n'",
+        "returncode": 0,
+        "time": 0.6682696342468262
+    },
+    {
+        "command": "python -c \"import sys,numpy,scipy,joblib,pytest,sklearn; print(sys.version); print('numpy',numpy.__version__,'scipy',scipy.__version__,'joblib',joblib.__version__,'pytest',pytest.__version__,'sklearn',sklearn.__version__)\"",
+        "returncode": 0,
+        "time": 0.005006313323974609
+    },
+    {
+        "command": "pip show pytest-xdist 2>/dev/null || true",
+        "returncode": 0,
+        "time": 4.264450550079346
+    },
+    {
+        "GPT_time": 4.381945848464966
+    },
+    {
+        "command": "wc -l /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6740365028381348
+    },
+    {
+        "command": "tail -200 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6766743659973145
+    },
+    {
+        "command": "printf '\\n--- failure/error markers ---\\n'",
+        "returncode": 0,
+        "time": 0.6723453998565674
+    },
+    {
+        "command": "grep -nE 'FAILED|ERROR|Traceback|short test summary|collected ' /home/tools/.test_func | tail -100",
+        "returncode": 0,
+        "time": 0.673194408416748
+    },
+    {
+        "GPT_time": 6.697105407714844
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -v \"==3.3.1\" -t pip",
+        "returncode": 0,
+        "time": 0.006404399871826172
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.0061609745025634766
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.00469970703125
+    },
+    {
+        "GPT_time": 3.218205451965332
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 6.170628070831299
+    },
+    {
+        "GPT_time": 4.897513151168823
+    },
+    {
+        "command": "nproc",
+        "returncode": 0,
+        "time": 4.201536655426025
+    },
+    {
+        "command": "grep -E 'MemTotal|MemAvailable' /proc/meminfo",
+        "returncode": 0,
+        "time": 0.666754961013794
+    },
+    {
+        "command": "python -m pip show pytest pytest-xdist | grep -E '^(Name|Version):'",
+        "returncode": 0,
+        "time": 4.907158374786377
+    },
+    {
+        "GPT_time": 4.487202405929565
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6780831813812256
+    },
+    {
+        "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTEST_ADDOPTS=\"-n 32 --dist loadscope\" runtest",
+        "returncode": 0,
+        "time": 0.008176088333129883
+    },
+    {
+        "GPT_time": 5.808280944824219
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\naddopts =\n    --ignore build_tools\n    --ignore benchmarks\n=======\naddopts =\n    -n 32\n    --dist loadscope\n    --ignore build_tools\n    --ignore benchmarks\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.20573043823242188
+    },
+    {
+        "GPT_time": 5.088615417480469
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6732101440429688
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1204.4706318378448
+    },
+    {
+        "GPT_time": 4.736913442611694
+    },
+    {
+        "command": "wc -l /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6787559986114502
+    },
+    {
+        "command": "head -20 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6755435466766357
+    },
+    {
+        "command": "tail -120 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6766715049743652
+    },
+    {
+        "command": "printf '\\n--- progress/failures ---\\n'",
+        "returncode": 0,
+        "time": 0.6782028675079346
+    },
+    {
+        "command": "grep -nE 'FAILED|ERROR|Traceback|short test summary|collected |gw[0-9]+.*\\[[[:space:]]*[0-9]+%\\]' /home/tools/.test_func | tail -80",
+        "returncode": 0,
+        "time": 0.7574031352996826
+    },
+    {
+        "GPT_time": 8.027499198913574
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\naddopts =\n    -n 32\n    --dist loadscope\n    --ignore build_tools\n=======\naddopts =\n    -n 64\n    --dist load\n    --ignore build_tools\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.18471169471740723
+    },
+    {
+        "GPT_time": 3.280536651611328
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6748957633972168
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1203.2666928768158
+    },
+    {
+        "GPT_time": 5.830970287322998
+    },
+    {
+        "command": "wc -l /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6698622703552246
+    },
+    {
+        "command": "head -12 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.680955171585083
+    },
+    {
+        "command": "tail -80 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6976025104522705
+    },
+    {
+        "command": "printf '\\n--- last progress and failures ---\\n'",
+        "returncode": 0,
+        "time": 0.6665525436401367
+    },
+    {
+        "command": "grep -nE 'FAILED|ERROR|Traceback|short test summary|collected |\\[[[:space:]]*[0-9]+%\\]' /home/tools/.test_func | tail -60",
+        "returncode": 0,
+        "time": 0.7950749397277832
+    },
+    {
+        "GPT_time": 8.045339822769165
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\naddopts =\n    -n 64\n    --dist load\n=======\naddopts =\n    -n 80\n    --dist load\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.19102096557617188
+    },
+    {
+        "GPT_time": 148.18928480148315
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6898314952850342
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1203.4648776054382
+    },
+    {
+        "GPT_time": 6.5347747802734375
+    },
+    {
+        "command": "head -10 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6721365451812744
+    },
+    {
+        "command": "tail -40 /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.6848604679107666
+    },
+    {
+        "command": "printf '\\n--- counts ---\\n'",
+        "returncode": 0,
+        "time": 0.7145323753356934
+    },
+    {
+        "command": "grep -c ' PASSED ' /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7113175392150879
+    },
+    {
+        "command": "grep -c ' FAILED ' /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.7518763542175293
+    },
+    {
+        "command": "grep -c ' ERROR ' /home/tools/.test_func",
+        "returncode": 0,
+        "time": 0.17721104621887207
+    },
+    {
+        "command": "grep -oE '\\[[[:space:]]*[0-9]+%\\]' /home/tools/.test_func | tail -1",
+        "returncode": 0,
+        "time": 0.8403217792510986
+    },
+    {
+        "GPT_time": 4.461730241775513
+    },
+    {
+        "command": "grep -a -n ' FAILED ' /home/tools/.test_func | sed -n '1,120p'",
+        "returncode": 0,
+        "time": 0.680372953414917
+    },
+    {
+        "GPT_time": 6.402479648590088
+    },
+    {
+        "command": "cat /repo/build_tools/appveyor/requirements.txt",
+        "returncode": 0,
+        "time": 0.6633791923522949
+    },
+    {
+        "command": "printf '\\n--- CI dependency setup ---\\n'",
+        "returncode": 0,
+        "time": 0.6678726673126221
+    },
+    {
+        "command": "grep -RniE 'numpy|scipy|joblib|pandas|matplotlib|pytest' /repo/.travis.yml /repo/appveyor.yml /repo/azure-pipelines.yml /repo/.circleci /repo/build_tools | sed -n '1,240p'",
+        "returncode": 0,
+        "time": 0.6966919898986816
+    },
+    {
+        "command": "printf '\\n--- package version ---\\n'",
+        "returncode": 0,
+        "time": 0.6757853031158447
+    },
+    {
+        "command": "grep -nE '__version__|VERSION|numpy|scipy' /repo/sklearn/__init__.py /repo/setup.py | sed -n '1,160p'",
+        "returncode": 0,
+        "time": 0.6797795295715332
+    },
+    {
+        "GPT_time": 8.44750452041626
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.16.6\" -t pip",
+        "returncode": 0,
+        "time": 0.006230354309082031
+    },
+    {
+        "command": "waitinglist add -p scipy -v \"==1.2.3\" -t pip",
+        "returncode": 0,
+        "time": 0.006459474563598633
+    },
+    {
+        "command": "waitinglist add -p joblib -v \"==0.13.2\" -t pip",
+        "returncode": 0,
+        "time": 0.006381988525390625
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.007340908050537109
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.004305124282836914
+    },
+    {
+        "GPT_time": 3.374119281768799
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 31.44829487800598
+    },
+    {
+        "GPT_time": 6.451982498168945
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6682109832763672
+    },
+    {
+        "command": "python setup.py build_ext --inplace --force -q",
+        "returncode": 0,
+        "time": 402.3333389759064
+    },
+    {
+        "GPT_time": 7.662844657897949
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\naddopts =\n    -n 80\n    --dist load\n=======\naddopts =\n    --lf\n    -n 16\n    --dist load\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.19791388511657715
+    }
+]

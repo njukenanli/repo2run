@@ -1,0 +1,207 @@
+[
+    {
+        "GPT_time": 4.2595672607421875
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6737203598022461
+    },
+    {
+        "GPT_time": 2.2965457439422607
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6687920093536377
+    },
+    {
+        "GPT_time": 2.7939956188201904
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6763591766357422
+    },
+    {
+        "command": "cat /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 0.6729083061218262
+    },
+    {
+        "command": "cat /repo/requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.6782541275024414
+    },
+    {
+        "command": "cat /repo/requirements_test_pre_commit.txt",
+        "returncode": 0,
+        "time": 0.6667201519012451
+    },
+    {
+        "GPT_time": 3.936800718307495
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.79155158996582
+    },
+    {
+        "GPT_time": 3.222722053527832
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.668267011642456
+    },
+    {
+        "command": "pip install -e \".[testutils,spelling]\" -q",
+        "returncode": 0,
+        "time": 13.95763874053955
+    },
+    {
+        "GPT_time": 2.5449233055114746
+    },
+    {
+        "command": "ls -la /repo/setup.py",
+        "returncode": 0,
+        "time": 0.17281627655029297
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6712908744812012
+    },
+    {
+        "GPT_time": 2.257302761077881
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6691884994506836
+    },
+    {
+        "GPT_time": 6.20247483253479
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6730127334594727
+    },
+    {
+        "GPT_time": 4.393333196640015
+    },
+    {
+        "command": "ls /",
+        "returncode": 0,
+        "time": 0.6691544055938721
+    },
+    {
+        "GPT_time": 4.942787170410156
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.6038930416107178
+    },
+    {
+        "GPT_time": 2.78322696685791
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6737821102142334
+    },
+    {
+        "GPT_time": 3.1541361808776855
+    },
+    {
+        "command": "pip install -e /repo[testutils,spelling] -q 2>&1 | tail -20",
+        "returncode": 0,
+        "time": 7.9364237785339355
+    },
+    {
+        "GPT_time": 2.5078532695770264
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.677924394607544
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 17.58876395225525
+    },
+    {
+        "GPT_time": 3.5399420261383057
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6793138980865479
+    },
+    {
+        "command": "pip install -r requirements_test.txt -q 2>&1 | tail -30",
+        "returncode": 0,
+        "time": 1.8159551620483398
+    },
+    {
+        "GPT_time": 3.8323965072631836
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6763598918914795
+    },
+    {
+        "GPT_time": 4.047417879104614
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.3154239654541016
+    },
+    {
+        "GPT_time": 2.165177822113037
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6739864349365234
+    },
+    {
+        "GPT_time": 3.987471342086792
+    },
+    {
+        "command": "pip install -e \"/repo[testutils,spelling]\" -q",
+        "returncode": 0,
+        "time": 10.00426959991455
+    },
+    {
+        "command": "pip install -r /repo/requirements_test_min.txt -q 2>&1 | tail -10",
+        "returncode": 0,
+        "time": 2.66878604888916
+    },
+    {
+        "GPT_time": 5.063807964324951
+    },
+    {
+        "command": "pip install -q astroid==2.11.5 \"typing-extensions~=4.2\" \"pytest~=7.1\" \"pytest-benchmark~=3.4\" \"pytest-timeout~=2.1\" py 2>&1 | tail -10",
+        "returncode": 0,
+        "time": 4.943126678466797
+    },
+    {
+        "GPT_time": 2.185950756072998
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6747746467590332
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 197.81144094467163
+    }
+]

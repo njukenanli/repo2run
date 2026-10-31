@@ -1,0 +1,56 @@
+[
+    {
+        "GPT_time": 5.1704628467559814
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6677677631378174
+    },
+    {
+        "GPT_time": 2.4178473949432373
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6770403385162354
+    },
+    {
+        "command": "echo \"---\"",
+        "returncode": 0,
+        "time": 0.6699001789093018
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6774933338165283
+    },
+    {
+        "command": "echo \"---\"",
+        "returncode": 0,
+        "time": 0.6725747585296631
+    },
+    {
+        "command": "cat /repo/requirements-dev.txt",
+        "returncode": 0,
+        "time": 0.6808710098266602
+    },
+    {
+        "GPT_time": 2.667804479598999
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6761023998260498
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 4.680605173110962
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 72.01229190826416
+    }
+]

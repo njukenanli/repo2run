@@ -1,0 +1,13 @@
+diff --git a/setup.cfg b/setup.cfg
+index 35d960c6f..398252fcd 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -65,7 +65,7 @@ test = pytest
+ [tool:pytest]
+ testpaths = tests
+ python_files = *test_*.py
+-addopts = -m "not acceptance"
++addopts = -x -m "not acceptance"
+ markers =
+     acceptance:
+     benchmark: Baseline of pylint performance, if this regress something serious happened

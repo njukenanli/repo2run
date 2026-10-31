@@ -1,0 +1,29 @@
+diff --git a/astropy/conftest.py b/astropy/conftest.py
+index 5975f35906..ed471d4471 100644
+--- a/astropy/conftest.py
++++ b/astropy/conftest.py
+@@ -15,6 +15,11 @@ if find_spec('asdf') is not None:
+ 
+ enable_deprecations_as_exceptions(
+     include_astropy_deprecations=False,
++    # Python 3.7 deprecated importing ABCs directly from collections, but
++    # still provides the aliases used throughout this version of Astropy.
++    warnings_to_ignore_by_pyver={
++        (3, 7): [r"Using or importing the ABCs from 'collections' instead of "
++                 r"from 'collections\.abc' is deprecated.*"]},
+     # This is a workaround for the OpenSSL deprecation warning that comes from
+     # the `requests` module. It only appears when both asdf and sphinx are
+     # installed. This can be removed once pyopenssl 1.7.20+ is released.
+diff --git a/setup.cfg b/setup.cfg
+index 3421178cd9..661310388f 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -19,7 +19,7 @@ norecursedirs = "docs[\/]_build" "docs[\/]generated" "astropy[\/]extern" "astrop
+ doctest_plus = enabled
+ open_files_ignore = "astropy.log" "/etc/hosts"
+ remote_data_strict = true
+-addopts = -p no:warnings
++addopts = -p no:warnings -n 4
+ asdf_schema_root = astropy/io/misc/asdf/schemas
+ 
+ [bdist_wininst]

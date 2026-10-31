@@ -1,0 +1,369 @@
+[
+    {
+        "GPT_time": 4.09885573387146
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.666266918182373
+    },
+    {
+        "GPT_time": 3.6686079502105713
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6726126670837402
+    },
+    {
+        "GPT_time": 2.6431310176849365
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6638443470001221
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 8.585494756698608
+    },
+    {
+        "GPT_time": 2.2377102375030518
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 14.05876350402832
+    },
+    {
+        "GPT_time": 3.697739601135254
+    },
+    {
+        "command": "pip show jinja2",
+        "returncode": 0,
+        "time": 1.8653392791748047
+    },
+    {
+        "command": "cat /repo/sphinx/__init__.py | head -5",
+        "returncode": 0,
+        "time": 0.6654157638549805
+    },
+    {
+        "GPT_time": 3.4857771396636963
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\"",
+        "returncode": 0,
+        "time": 2.8701295852661133
+    },
+    {
+        "GPT_time": 2.403207778930664
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.3932523727416992
+    },
+    {
+        "GPT_time": 2.8646812438964844
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.668820858001709
+    },
+    {
+        "command": "pip install -q \".[test]\"",
+        "returncode": 0,
+        "time": 12.636720180511475
+    },
+    {
+        "GPT_time": 2.3290185928344727
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6661787033081055
+    },
+    {
+        "command": "pip install -q -e \".[test]\"",
+        "returncode": 0,
+        "time": 12.76070523262024
+    },
+    {
+        "GPT_time": 2.542510747909546
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.16292476654052734
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6644110679626465
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6629443168640137
+    },
+    {
+        "command": "pip install -q -e \".[test]\"",
+        "returncode": 0,
+        "time": 12.82825517654419
+    },
+    {
+        "GPT_time": 2.823840856552124
+    },
+    {
+        "command": "ls -la /repo/setup.py",
+        "returncode": 0,
+        "time": 0.1616501808166504
+    },
+    {
+        "GPT_time": 2.5479753017425537
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6673064231872559
+    },
+    {
+        "GPT_time": 2.453508138656616
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6648581027984619
+    },
+    {
+        "GPT_time": 4.454777479171753
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.669062614440918
+    },
+    {
+        "GPT_time": 3.4708902835845947
+    },
+    {
+        "command": "find / -name \"setup.py\" -type f 2>/dev/null",
+        "returncode": 0,
+        "time": 1.8746228218078613
+    },
+    {
+        "GPT_time": 6.96019721031189
+    },
+    {
+        "command": "ls -la /",
+        "returncode": 0,
+        "time": 0.6653852462768555
+    },
+    {
+        "command": "find / -maxdepth 3 -name \"sphinx\" -type d 2>/dev/null",
+        "returncode": 0,
+        "time": 1.4515645503997803
+    },
+    {
+        "GPT_time": 7.112115859985352
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.6685638427734375
+    },
+    {
+        "GPT_time": 2.611067771911621
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.652665376663208
+    },
+    {
+        "GPT_time": 2.104463815689087
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6649227142333984
+    },
+    {
+        "GPT_time": 2.929086685180664
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.663029670715332
+    },
+    {
+        "command": "pip install -e \".[test]\" -q",
+        "returncode": 0,
+        "time": 14.696517705917358
+    },
+    {
+        "GPT_time": 2.378586769104004
+    },
+    {
+        "command": "pip show jinja2 | grep Version",
+        "returncode": 0,
+        "time": 3.8445358276367188
+    },
+    {
+        "GPT_time": 3.0938475131988525
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\"",
+        "returncode": 0,
+        "time": 4.801862478256226
+    },
+    {
+        "GPT_time": 2.2413034439086914
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 23.330061674118042
+    },
+    {
+        "GPT_time": 3.5051872730255127
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.668755054473877
+    },
+    {
+        "command": "pip install -e \".[test]\" -q",
+        "returncode": 0,
+        "time": 13.291280746459961
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\" \"docutils<0.21\" \"roman\"",
+        "returncode": 0,
+        "time": 3.5569441318511963
+    },
+    {
+        "GPT_time": 3.188739061355591
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.6703658103942871
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6638240814208984
+    },
+    {
+        "GPT_time": 3.1703288555145264
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.7059998512268066
+    },
+    {
+        "GPT_time": 2.745192527770996
+    },
+    {
+        "command": "ls /repo/setup.py",
+        "returncode": 0,
+        "time": 0.67043137550354
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6661851406097412
+    },
+    {
+        "command": "pip install -e \".[test]\" -q",
+        "returncode": 0,
+        "time": 14.415520429611206
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\" \"docutils<0.21\" \"roman\"",
+        "returncode": 0,
+        "time": 5.0400190353393555
+    },
+    {
+        "GPT_time": 3.9695849418640137
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 152.68555784225464
+    },
+    {
+        "GPT_time": 6.196103811264038
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.7320399284362793
+    },
+    {
+        "GPT_time": 3.5754518508911133
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6723179817199707
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 8.042606592178345
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\" \"docutils<0.21\" \"roman\" \"sphinxcontrib-applehelp<1.1\" \"sphinxcontrib-devhelp<1.1\" \"sphinxcontrib-htmlhelp<2.1\" \"sphinxcontrib-serializinghtml<1.2\" \"sphinxcontrib-qthelp<1.1\" \"pytest\" \"pytest-cov\" \"html5lib\" \"cython\"",
+        "returncode": 0,
+        "time": 10.031124830245972
+    },
+    {
+        "GPT_time": 4.357385635375977
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 161.3899793624878
+    },
+    {
+        "GPT_time": 3.937798500061035
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4161031246185303
+    },
+    {
+        "GPT_time": 15.747636318206787
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6655097007751465
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 9.48450231552124
+    },
+    {
+        "command": "pip install -q \"jinja2<3.1\" \"docutils<0.21\" \"roman\" \"sphinxcontrib-applehelp==1.0.2\" \"sphinxcontrib-devhelp==1.0.2\" \"sphinxcontrib-htmlhelp==2.0.0\" \"sphinxcontrib-serializinghtml==1.1.5\" \"sphinxcontrib-qthelp==1.0.3\" \"pytest\" \"pytest-cov\" \"html5lib\" \"cython\"",
+        "returncode": 0,
+        "time": 10.654475688934326
+    },
+    {
+        "GPT_time": 2.5711491107940674
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 126.20553207397461
+    }
+]

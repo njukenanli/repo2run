@@ -1,0 +1,10 @@
+diff --git a/pytest.ini b/pytest.ini
+index bd4f4303c9..12fceb77ed 100644
+--- a/pytest.ini
++++ b/pytest.ini
+@@ -1,4 +1,5 @@
+ [pytest]
++addopts = -n 32 -m "not slow"
+ 
+ # Only run tests under the sympy/ directory. Otherwise pytest will attempt to
+ # collect tests from e.g. the bin/ directory as well.

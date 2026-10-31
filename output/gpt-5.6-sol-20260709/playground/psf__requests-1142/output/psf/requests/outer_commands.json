@@ -1,0 +1,546 @@
+[
+    {
+        "GPT_time": 7.471330881118774
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6727230548858643
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort",
+        "returncode": 0,
+        "time": 0.6813254356384277
+    },
+    {
+        "GPT_time": 3.1873509883880615
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6663062572479248
+    },
+    {
+        "command": "cat setup.py",
+        "returncode": 0,
+        "time": 0.680748462677002
+    },
+    {
+        "command": "printf '\\n--- requirements.txt ---\\n'",
+        "returncode": 0,
+        "time": 0.6699848175048828
+    },
+    {
+        "command": "cat requirements.txt",
+        "returncode": 0,
+        "time": 0.666644811630249
+    },
+    {
+        "command": "printf '\\n--- .travis.yml ---\\n'",
+        "returncode": 0,
+        "time": 0.6741542816162109
+    },
+    {
+        "command": "cat .travis.yml",
+        "returncode": 0,
+        "time": 0.6711397171020508
+    },
+    {
+        "command": "printf '\\n--- Makefile ---\\n'",
+        "returncode": 0,
+        "time": 0.6732869148254395
+    },
+    {
+        "command": "cat Makefile",
+        "returncode": 0,
+        "time": 0.6689577102661133
+    },
+    {
+        "GPT_time": 3.7417001724243164
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.04349374771118164
+    },
+    {
+        "GPT_time": 3.562068223953247
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6670987606048584
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6713547706604004
+    },
+    {
+        "command": "ls -la /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.6849620342254639
+    },
+    {
+        "command": "file /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.6784658432006836
+    },
+    {
+        "command": "realpath /repo/requirements.txt",
+        "returncode": 0,
+        "time": 1.3310325145721436
+    },
+    {
+        "GPT_time": 3.682929039001465
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6691627502441406
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 13.848631858825684
+    },
+    {
+        "GPT_time": 4.460849761962891
+    },
+    {
+        "command": "change_python_version 3.9",
+        "returncode": 0,
+        "time": 37.01079702377319
+    },
+    {
+        "GPT_time": 3.311281442642212
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6718966960906982
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.2946536540985107
+    },
+    {
+        "GPT_time": 3.186211347579956
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6708877086639404
+    },
+    {
+        "command": "sed -n '1,260p' test_requests.py",
+        "returncode": 0,
+        "time": 0.17201566696166992
+    },
+    {
+        "GPT_time": 3.307730197906494
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6719858646392822
+    },
+    {
+        "command": "find /repo -maxdepth 2 -type f | sort",
+        "returncode": 0,
+        "time": 0.669825553894043
+    },
+    {
+        "GPT_time": 3.4109206199645996
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 14.041984796524048
+    },
+    {
+        "GPT_time": 3.3541555404663086
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6786396503448486
+    },
+    {
+        "command": "test -f /repo/test_requests.py",
+        "returncode": 0,
+        "time": 1.3612749576568604
+    },
+    {
+        "command": "echo repository-restored",
+        "returncode": 0,
+        "time": 0.6685566902160645
+    },
+    {
+        "GPT_time": 3.484163522720337
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.03597712516784668
+    },
+    {
+        "GPT_time": 3.482567548751831
+    },
+    {
+        "command": "waitinglist add -p pytest -t pip",
+        "returncode": 0,
+        "time": 0.010235071182250977
+    },
+    {
+        "command": "waitinglist add -p sphinx -t pip",
+        "returncode": 0,
+        "time": 0.010009527206420898
+    },
+    {
+        "GPT_time": 3.6492292881011963
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.010679483413696289
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.006079912185668945
+    },
+    {
+        "GPT_time": 3.9126081466674805
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 12.522626638412476
+    },
+    {
+        "GPT_time": 4.533887147903442
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6752073764801025
+    },
+    {
+        "command": "sed -n '1,320p' test_requests.py",
+        "returncode": 0,
+        "time": 0.680950403213501
+    },
+    {
+        "command": "printf '\\n--- urllib3 collections ---\\n'",
+        "returncode": 0,
+        "time": 0.6739611625671387
+    },
+    {
+        "command": "sed -n '1,220p' requests/packages/urllib3/_collections.py",
+        "returncode": 0,
+        "time": 0.6730248928070068
+    },
+    {
+        "command": "printf '\\n--- package init ---\\n'",
+        "returncode": 0,
+        "time": 0.671036958694458
+    },
+    {
+        "command": "sed -n '1,180p' requests/__init__.py",
+        "returncode": 0,
+        "time": 0.6838607788085938
+    },
+    {
+        "GPT_time": 4.468926191329956
+    },
+    {
+        "diff": "\n/repo/requests/packages/urllib3/_collections.py\n<<<<<<< SEARCH\nfrom collections import MutableMapping\nfrom threading import Lock\n=======\ntry:\n    from collections.abc import MutableMapping\nexcept ImportError:\n    from collections import MutableMapping\nfrom threading import Lock\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.20139193534851074
+    },
+    {
+        "GPT_time": 3.6476731300354004
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6690950393676758
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 20.075381994247437
+    },
+    {
+        "GPT_time": 5.691880702972412
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6717565059661865
+    },
+    {
+        "command": "grep -RInE 'collections\\.(MutableMapping|Mapping|MutableSequence|Sequence|Iterable|Iterator|Callable|Set|MutableSet)' requests || true",
+        "returncode": 0,
+        "time": 0.6730029582977295
+    },
+    {
+        "command": "sed -n '1,190p' requests/cookies.py",
+        "returncode": 0,
+        "time": 0.18296575546264648
+    },
+    {
+        "GPT_time": 3.814211130142212
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 1.0604920387268066
+    },
+    {
+        "GPT_time": 3.575810670852661
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 3.989262580871582
+    },
+    {
+        "GPT_time": 5.243038654327393
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6761970520019531
+    },
+    {
+        "command": "grep -RInE 'collections\\.(MutableMapping|Mapping|MutableSequence|Sequence|Iterable|Iterator|Callable|Set|MutableSet)|from collections import (MutableMapping|Mapping|MutableSequence|Sequence|Iterable|Iterator|Callable|Set|MutableSet)|inspect\\.getargspec|time\\.clock|cgi\\.escape|base64\\.(encodestring|decodestring)|[.]isAlive\\(' requests test_requests.py || true",
+        "returncode": 0,
+        "time": 0.6773817539215088
+    },
+    {
+        "command": "sed -n '1,190p' requests/cookies.py",
+        "returncode": 0,
+        "time": 0.6789004802703857
+    },
+    {
+        "command": "sed -n '1,120p' requests/packages/urllib3/_collections.py",
+        "returncode": 0,
+        "time": 0.6757912635803223
+    },
+    {
+        "GPT_time": 4.228234529495239
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6677606105804443
+    },
+    {
+        "command": "sed -n '1,175p' requests/models.py",
+        "returncode": 0,
+        "time": 0.6744441986083984
+    },
+    {
+        "command": "sed -n '1,25p' requests/cookies.py",
+        "returncode": 0,
+        "time": 0.6778473854064941
+    },
+    {
+        "GPT_time": 5.790204763412476
+    },
+    {
+        "diff": "\n/repo/requests/packages/urllib3/_collections.py\n<<<<<<< SEARCH\nfrom collections import MutableMapping\nfrom threading import Lock\n=======\ntry:\n    from collections.abc import MutableMapping\nexcept ImportError:\n    from collections import MutableMapping\nfrom threading import Lock\n>>>>>>> REPLACE\n\n/repo/requests/cookies.py\n<<<<<<< SEARCH\nimport collections\n\nfrom .compat import cookielib, urlparse, Morsel\n=======\ntry:\n    from collections.abc import MutableMapping\nexcept ImportError:\n    from collections import MutableMapping\n\nfrom .compat import cookielib, urlparse, Morsel\n>>>>>>> REPLACE\n\n<<<<<<< SEARCH\nclass RequestsCookieJar(cookielib.CookieJar, collections.MutableMapping):\n=======\nclass RequestsCookieJar(cookielib.CookieJar, MutableMapping):\n>>>>>>> REPLACE\n\n/repo/requests/models.py\n<<<<<<< SEARCH\nimport collections\nimport logging\n=======\ntry:\n    from collections.abc import Callable\nexcept ImportError:\n    from collections import Callable\nimport logging\n>>>>>>> REPLACE\n\n<<<<<<< SEARCH\n        if isinstance(hook, collections.Callable):\n            self.hooks[event].append(hook)\n        elif hasattr(hook, '__iter__'):\n            self.hooks[event].extend(h for h in hook if isinstance(h, collections.Callable))\n=======\n        if isinstance(hook, Callable):\n            self.hooks[event].append(hook)\n        elif hasattr(hook, '__iter__'):\n            self.hooks[event].extend(h for h in hook if isinstance(h, Callable))\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.19856739044189453
+    },
+    {
+        "GPT_time": 4.92410945892334
+    },
+    {
+        "diff": "\n/repo/requests/cookies.py\n<<<<<<< SEARCH\nimport collections\nfrom .compat import cookielib, urlparse, Morsel\n=======\ntry:\n    from collections.abc import MutableMapping\nexcept ImportError:\n    from collections import MutableMapping\nfrom .compat import cookielib, urlparse, Morsel\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.18548011779785156
+    },
+    {
+        "GPT_time": 5.619218349456787
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.672877311706543
+    },
+    {
+        "command": "pip install -q -e . || true",
+        "returncode": 0,
+        "time": 3.9710419178009033
+    },
+    {
+        "GPT_time": 5.019768953323364
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6701407432556152
+    },
+    {
+        "command": "runtest || true",
+        "returncode": 0,
+        "time": 1.4184377193450928
+    },
+    {
+        "GPT_time": 5.139145851135254
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6677324771881104
+    },
+    {
+        "command": "python /home/tools/runtest.py || true",
+        "returncode": 0,
+        "time": 2.754323720932007
+    },
+    {
+        "GPT_time": 4.5498363971710205
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6859710216522217
+    },
+    {
+        "command": "grep -RIn 'strict=' requests/packages/urllib3",
+        "returncode": 0,
+        "time": 0.6829802989959717
+    },
+    {
+        "command": "sed -n '150,330p' requests/packages/urllib3/connectionpool.py",
+        "returncode": 0,
+        "time": 0.6780705451965332
+    },
+    {
+        "GPT_time": 13.73824954032898
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.674060583114624
+    },
+    {
+        "command": "sed -n '500,560p' requests/packages/urllib3/connectionpool.py",
+        "returncode": 0,
+        "time": 0.6744685173034668
+    },
+    {
+        "command": "sed -n '1,90p' requests/packages/urllib3/connectionpool.py",
+        "returncode": 0,
+        "time": 0.680412769317627
+    },
+    {
+        "GPT_time": 5.190427780151367
+    },
+    {
+        "diff": "\n/repo/requests/packages/urllib3/connectionpool.py\n<<<<<<< SEARCH\n        return HTTPConnection(host=self.host,\n                              port=self.port,\n                              strict=self.strict)\n=======\n        return HTTPConnection(host=self.host,\n                              port=self.port)\n>>>>>>> REPLACE\n\n<<<<<<< SEARCH\n            return HTTPSConnection(host=self.host,\n                                   port=self.port,\n                                   strict=self.strict)\n        connection = VerifiedHTTPSConnection(host=self.host,\n                                             port=self.port,\n                                             strict=self.strict)\n=======\n            return HTTPSConnection(host=self.host,\n                                   port=self.port)\n        connection = VerifiedHTTPSConnection(host=self.host,\n                                             port=self.port)\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.20382070541381836
+    },
+    {
+        "GPT_time": 4.954720973968506
+    },
+    {
+        "diff": "\n/repo/requests/packages/urllib3/connectionpool.py\n<<<<<<< SEARCH\n            return HTTPSConnection(host=self.host,\n                                   port=self.port,\n                                   strict=self.strict)\n=======\n            return HTTPSConnection(host=self.host,\n                                   port=self.port)\n>>>>>>> REPLACE\n\n<<<<<<< SEARCH\n        connection = VerifiedHTTPSConnection(host=self.host,\n                                             port=self.port,\n                                             strict=self.strict)\n=======\n        connection = VerifiedHTTPSConnection(host=self.host,\n                                             port=self.port)\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.1969587802886963
+    },
+    {
+        "GPT_time": 4.65374755859375
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6693446636199951
+    },
+    {
+        "command": "python /home/tools/runtest.py || true",
+        "returncode": 0,
+        "time": 20.012206554412842
+    },
+    {
+        "GPT_time": 6.92966890335083
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6700320243835449
+    },
+    {
+        "command": "sed -n '15,75p' requests/cookies.py",
+        "returncode": 0,
+        "time": 0.6764600276947021
+    },
+    {
+        "command": "sed -n '1,260p' requests/adapters.py",
+        "returncode": 0,
+        "time": 0.6817693710327148
+    },
+    {
+        "command": "printf '\\n--- cert module and bundle metadata ---\\n'",
+        "returncode": 0,
+        "time": 0.6659696102142334
+    },
+    {
+        "command": "cat requests/certs.py",
+        "returncode": 0,
+        "time": 0.6771552562713623
+    },
+    {
+        "command": "head -n 8 requests/cacert.pem",
+        "returncode": 0,
+        "time": 0.6749300956726074
+    },
+    {
+        "command": "grep -nE 'REQUESTS_CA_BUNDLE|CURL_CA_BUNDLE|cert_verify|DEFAULT_CA_BUNDLE' requests/*.py",
+        "returncode": 0,
+        "time": 0.6807510852813721
+    },
+    {
+        "GPT_time": 9.346672773361206
+    },
+    {
+        "diff": "\n/repo/requests/cookies.py\n<<<<<<< SEARCH\n        self._r = request\n        self._new_headers = {}\n        self.type = urlparse(self._r.url).scheme\n=======\n        self._r = request\n        self._new_headers = {}\n        self.type = urlparse(self._r.url).scheme\n        self.host = self.get_host()\n        self.origin_req_host = self.get_origin_req_host()\n>>>>>>> REPLACE\n\n/repo/requests/certs.py\n<<<<<<< SEARCH\nimport os.path\n\n\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # vendored bundle inside Requests\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n=======\nimport os.path\nimport ssl\n\n\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # Prefer the platform's maintained CA bundle over the vendored bundle.\n    system_bundle = ssl.get_default_verify_paths().cafile\n    if system_bundle and os.path.exists(system_bundle):\n        return system_bundle\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.21990227699279785
+    },
+    {
+        "GPT_time": 5.773822069168091
+    },
+    {
+        "diff": "\n/repo/requests/certs.py\n<<<<<<< SEARCH\nimport os.path\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # vendored bundle inside Requests\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n=======\nimport os.path\nimport ssl\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # Prefer the platform's maintained CA bundle over the vendored bundle.\n    system_bundle = ssl.get_default_verify_paths().cafile\n    if system_bundle and os.path.exists(system_bundle):\n        return system_bundle\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.18216681480407715
+    },
+    {
+        "GPT_time": 5.188134670257568
+    },
+    {
+        "diff": "\n/repo/requests/certs.py\n<<<<<<< SEARCH\nimport os.path\n\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # vendored bundle inside Requests\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n=======\nimport os.path\nimport ssl\n\ndef where():\n    \"\"\"Return the preferred certificate bundle.\"\"\"\n    # Prefer the platform's maintained CA bundle over the vendored bundle.\n    system_bundle = ssl.get_default_verify_paths().cafile\n    if system_bundle and os.path.exists(system_bundle):\n        return system_bundle\n    return os.path.join(os.path.dirname(__file__), 'cacert.pem')\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.19377970695495605
+    },
+    {
+        "GPT_time": 4.3964033126831055
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6773011684417725
+    },
+    {
+        "command": "python /home/tools/runtest.py || true",
+        "returncode": 0,
+        "time": 21.989182710647583
+    }
+]

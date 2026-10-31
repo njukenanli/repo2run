@@ -1,0 +1,1748 @@
+[
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6056723594665527,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6085481643676758,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9157829284667969,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9216532707214355,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7819859981536865,
+        "dir": "/repo"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6043274402618408,
+        "dir": "/repo"
+    },
+    {
+        "command": "sed -n '1,200p' setup.py",
+        "returncode": 0,
+        "time": 0.6075387001037598,
+        "dir": "/repo"
+    },
+    {
+        "command": "echo '---'",
+        "returncode": 0,
+        "time": 0.6049957275390625,
+        "dir": "/repo"
+    },
+    {
+        "command": "sed -n '1,200p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6068558692932129,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9070863723754883,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9195699691772461,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7767148017883301,
+        "dir": "/repo"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.605262041091919,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 4,
+        "time": 1.117232084274292,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9089722633361816,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9173984527587891,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1672496795654297,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9000065326690674,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.0928645133972168,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14676570892333984,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9065544605255127,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9137637615203857,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14468669891357422,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy",
+        "returncode": 0,
+        "time": 6.314471006393433,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy",
+        "returncode": 0,
+        "time": 12.668269157409668,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython",
+        "returncode": 0,
+        "time": 4.311436176300049,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.68131685256958,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.858036994934082,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 5.765207290649414,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 7.4600770473480225,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 7.02884578704834,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 8.67117691040039,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9888496398925781,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9899957180023193,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14412498474121094,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6064083576202393,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -e .",
+        "returncode": 1,
+        "time": 0.6997525691986084,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9911015033721924,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.0020415782928467,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14478254318237305,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo | head",
+        "returncode": 0,
+        "time": 0.6077933311462402,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.977484941482544,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2981088161468506,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.190598726272583,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /",
+        "returncode": 0,
+        "time": 0.6085174083709717,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9682765007019043,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.0296857357025146,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14390039443969727,
+        "dir": "/"
+    },
+    {
+        "command": "find / -maxdepth 3 -type d -name sklearn 2>/dev/null | head -n 20",
+        "returncode": 0,
+        "time": 0.6260421276092529,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9679708480834961,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9872958660125732,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14376616477966309,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 8.019164800643921
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9205489158630371,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9107608795166016,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7506110668182373,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo | head -n 40",
+        "returncode": 0,
+        "time": 0.6088681221008301,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9191076755523682,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9209413528442383,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7525115013122559,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.1447103023529053,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9091861248016357,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.751054048538208,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy",
+        "returncode": 0,
+        "time": 6.394053936004639,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy",
+        "returncode": 0,
+        "time": 9.093656778335571,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython",
+        "returncode": 0,
+        "time": 3.896751880645752,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.2749032974243164,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.7803535461425781,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 5.416804075241089,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 6.749174356460571,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 7.189680337905884,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 6.141912937164307,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9778323173522949,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9976186752319336,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.753676176071167,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6053152084350586,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -e . --no-build-isolation",
+        "returncode": 1,
+        "time": 10.961004495620728,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9782261848449707,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9943723678588867,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14304828643798828,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6047616004943848,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -e . --no-build-isolation -v",
+        "returncode": 1,
+        "time": 0.6416177749633789,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9974737167358398,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.0003135204315186,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14335060119628906,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6049408912658691,
+        "dir": "/"
+    },
+    {
+        "command": "python setup.py build_ext --inplace",
+        "returncode": 2,
+        "time": 0.1228785514831543,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9861702919006348,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.0139038562774658,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1435260772705078,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 6.012395620346069
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9158227443695068,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9059584140777588,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7507345676422119,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo/setup.py /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6079614162445068,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9081015586853027,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9083912372589111,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7508351802825928,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.1629655361175537,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9224989414215088,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7524313926696777,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy",
+        "returncode": 0,
+        "time": 7.120039463043213,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy",
+        "returncode": 0,
+        "time": 8.986278533935547,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython",
+        "returncode": 0,
+        "time": 4.205966234207153,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.2287991046905518,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.753962755203247,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 7.141176700592041,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 6.870236873626709,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 7.979124069213867,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 6.47935938835144,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9775242805480957,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9958148002624512,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7587854862213135,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6049172878265381,
+        "dir": "/"
+    },
+    {
+        "command": "python setup.py build_ext --inplace",
+        "returncode": 1,
+        "time": 9.80996036529541,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9790022373199463,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9991855621337891,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14363694190979004,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.605083703994751,
+        "dir": "/"
+    },
+    {
+        "command": "CYTHONIZE_NPROC=1 python setup.py build_ext --inplace",
+        "returncode": 2,
+        "time": 0.1226191520690918,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9998769760131836,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.1171433925628662,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14780282974243164,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 4.43537712097168
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9182620048522949,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9158265590667725,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7519714832305908,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9015047550201416,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9066579341888428,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7519326210021973,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy",
+        "returncode": 0,
+        "time": 6.18636679649353,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy",
+        "returncode": 0,
+        "time": 8.708704471588135,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython -v \"\"==0.29.36\"\"",
+        "returncode": 0,
+        "time": 3.8596551418304443,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.1544952392578125,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.7681570053100586,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 5.702753782272339,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 7.11400294303894,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 6.8078672885894775,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 6.087360382080078,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.969226598739624,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9862682819366455,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7516860961914062,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6047239303588867,
+        "dir": "/"
+    },
+    {
+        "command": "python setup.py build_ext --inplace",
+        "returncode": 1,
+        "time": 8.217498779296875,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9859778881072998,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.993201494216919,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1425020694732666,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 4.511852025985718
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9080533981323242,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9091815948486328,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7516069412231445,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.8994109630584717,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9067726135253906,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7497696876525879,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy -v \"\"<2.0\"\"",
+        "returncode": 1,
+        "time": 0.05240154266357422,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy -v \"\"<2.0\"\"",
+        "returncode": 1,
+        "time": 0.05248403549194336,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython -v \"\"==0.29.36\"\"",
+        "returncode": 0,
+        "time": 3.6138808727264404,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.186447858810425,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.6875889301300049,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 5.414584636688232,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 6.599298000335693,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 6.664213418960571,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 6.006772994995117,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy -v \"\"<2.0\"\"",
+        "returncode": 1,
+        "time": 0.05246734619140625,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy -v \"\"<2.0\"\"",
+        "returncode": 1,
+        "time": 0.0524444580078125,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy -v \"\"<2.0\"\"",
+        "returncode": 1,
+        "time": 0.052593231201171875,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9361538887023926,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9222958087921143,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14317584037780762,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9171147346496582,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9252164363861084,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1440601348876953,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9116048812866211,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.1356709003448486,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.145097017288208,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9216580390930176,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9238977432250977,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1443345546722412,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9224207401275635,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9377546310424805,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1428995132446289,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9111161231994629,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9151055812835693,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14380407333374023,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy -v \"\"==1.26.4\"\"",
+        "returncode": 0,
+        "time": 6.1536688804626465,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy -v \"\"==1.11.4\"\"",
+        "returncode": 0,
+        "time": 8.068530082702637,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.965895414352417,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9830329418182373,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14343023300170898,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6048784255981445,
+        "dir": "/"
+    },
+    {
+        "command": "python setup.py build_ext --inplace",
+        "returncode": 2,
+        "time": 0.12253379821777344,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9749338626861572,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.982548713684082,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14508581161499023,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo | head",
+        "returncode": 0,
+        "time": 0.6081516742706299,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9779787063598633,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9907855987548828,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14378643035888672,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 4.324007511138916
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9194703102111816,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9109303951263428,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7511131763458252,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6077055931091309,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9036638736724854,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.917975664138794,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7514452934265137,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9027419090270996,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9057800769805908,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7505583763122559,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p numpy -v \"\"==1.26.4\"\"",
+        "returncode": 0,
+        "time": 6.276310920715332,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p scipy -v \"\"==1.11.4\"\"",
+        "returncode": 0,
+        "time": 7.97057032585144,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p cython -v \"\"==0.29.36\"\"",
+        "returncode": 0,
+        "time": 3.737133502960205,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p joblib",
+        "returncode": 0,
+        "time": 2.360670804977417,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p threadpoolctl",
+        "returncode": 0,
+        "time": 1.758512258529663,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p build-essential",
+        "returncode": 0,
+        "time": 5.387821674346924,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p gfortran",
+        "returncode": 0,
+        "time": 6.756293058395386,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p libopenblas-dev",
+        "returncode": 0,
+        "time": 6.8614983558654785,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p liblapack-dev",
+        "returncode": 0,
+        "time": 5.899324417114258,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.1203935146331787,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9876160621643066,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7497148513793945,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6047666072845459,
+        "dir": "/"
+    },
+    {
+        "command": "python setup.py build_ext --inplace",
+        "returncode": 1,
+        "time": 0.9017970561981201,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9777364730834961,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9941940307617188,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14319276809692383,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9655845165252686,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.991952657699585,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14372038841247559,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3-distutils",
+        "returncode": 1,
+        "time": 2.674832582473755,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3-distutils",
+        "returncode": 1,
+        "time": 2.5857369899749756,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3-distutils",
+        "returncode": 1,
+        "time": 2.58154034614563,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9780137538909912,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9825949668884277,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1436018943786621,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9782328605651855,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.984832763671875,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14458107948303223,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3.10-distutils",
+        "returncode": 1,
+        "time": 2.8235061168670654,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3.10-distutils",
+        "returncode": 1,
+        "time": 2.79584002494812,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/apt_download.py -p python3.10-distutils",
+        "returncode": 1,
+        "time": 2.7634644508361816,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9753484725952148,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9930694103240967,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14312076568603516,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9834673404693604,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9854154586791992,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1506187915802002,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p setuptools",
+        "returncode": 0,
+        "time": 1.2208709716796875,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9654595851898193,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9957752227783203,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14227819442749023,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6066725254058838,
+        "dir": "/"
+    },
+    {
+        "command": "SETUPTOOLS_USE_DISTUTILS=local python setup.py build_ext --inplace",
+        "returncode": 2,
+        "time": 0.12261414527893066,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9806482791900635,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9818580150604248,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1441326141357422,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 4.320085525512695
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9053654670715332,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9059412479400635,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.7504303455352783,
+        "dir": "/"
+    },
+    {
+        "command": "python -c \"import distutils.msvccompiler; print('ok')\"",
+        "returncode": 1,
+        "time": 0.5046916007995605,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9129958152770996,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9122397899627686,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14412331581115723,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9035789966583252,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9129996299743652,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14248418807983398,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/pip_download.py -p setuptools",
+        "returncode": 0,
+        "time": 1.2041833400726318,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9018106460571289,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9063675403594971,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14310359954833984,
+        "dir": "/"
+    },
+    {
+        "command": "SETUPTOOLS_USE_DISTUTILS=local python -c \"import distutils.msvccompiler; print('ok')\"",
+        "returncode": 1,
+        "time": 0.5044617652893066,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9068121910095215,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9057374000549316,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14370942115783691,
+        "dir": "/"
+    },
+    {
+        "command": "python -c \"import site; print(site.getsitepackages())\"",
+        "returncode": 0,
+        "time": 0.6263420581817627,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9151866436004639,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9094109535217285,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14321446418762207,
+        "dir": "/"
+    },
+    {
+        "command": "cat > /usr/local/lib/python3.10/site-packages/sitecustomize.py <<'EOF' import sys import types  # Some environments (e.g. Debian trixie) ship Python without stdlib distutils. # NumPy's legacy numpy.distutils still imports distutils.msvccompiler even on # non-Windows platforms. Provide a minimal stub so those imports succeed. if \"distutils.msvccompiler\" not in sys.modules:     mod = types.ModuleType(\"distutils.msvccompiler\")     def get_build_version():         return None     mod.get_build_version = get_build_version     sys.modules[\"distutils.msvccompiler\"] = mod EOF",
+        "returncode": -1,
+        "time": -1,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9026279449462891,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9075589179992676,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1432816982269287,
+        "dir": "/"
+    },
+    {
+        "command": "printf '%s\\n' \"import sys\" \"import types\" \"\" \"# Some environments (e.g. Debian trixie) ship Python without stdlib distutils.\" \"# NumPy's legacy numpy.distutils still imports distutils.msvccompiler even on\" \"# non-Windows platforms. Provide a minimal stub so those imports succeed.\" \"if \\\"distutils.msvccompiler\\\" not in sys.modules:\" \"    mod = types.ModuleType(\\\"distutils.msvccompiler\\\")\" \"    def get_build_version():\" \"        return None\" \"    mod.get_build_version = get_build_version\" \"    sys.modules[\\\"distutils.msvccompiler\\\"] = mod\" > /usr/local/lib/python3.10/site-packages/sitecustomize.py",
+        "returncode": 0,
+        "time": 0.6088790893554688,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9115116596221924,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9071128368377686,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14381098747253418,
+        "dir": "/"
+    },
+    {
+        "command": "python -c \"import distutils.msvccompiler; print('ok', distutils.msvccompiler.get_build_version())\"",
+        "returncode": 1,
+        "time": 0.5162694454193115,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 0.9179017543792725,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 0.9043819904327393,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.14654970169067383,
+        "dir": "/"
+    },
+    {
+        "command": "printf '%s\\n' \"import sys\" \"import types\" \"\" \"# Provide minimal distutils stubs for projects still importing it (e.g. numpy.distutils).\" \"if \\\"distutils\\\" not in sys.modules:\" \"    dist = types.ModuleType(\\\"distutils\\\")\" \"    dist.__path__ = []\" \"    sys.modules[\\\"distutils\\\"] = dist\" \"if \\\"distutils.msvccompiler\\\" not in sys.modules:\" \"    m = types.ModuleType(\\\"distutils.msvccompiler\\\")\" \"    def get_build_version():\" \"        return None\" \"    m.get_build_version = get_build_version\" \"    sys.modules[\\\"distutils.msvccompiler\\\"] = m\" \"    sys.modules[\\\"distutils\\\"].msvccompiler = m\" > /usr/local/lib/python3.10/site-packages/sitecustomize.py",
+        "returncode": 0,
+        "time": 0.6095690727233887,
+        "dir": "/"
+    }
+]

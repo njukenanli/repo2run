@@ -1,0 +1,143 @@
+[
+    {
+        "name": "build",
+        "version": "1.5.0"
+    },
+    {
+        "name": "coverage",
+        "version": "7.15.2"
+    },
+    {
+        "name": "Cython",
+        "version": "3.2.9"
+    },
+    {
+        "name": "execnet",
+        "version": "2.1.2"
+    },
+    {
+        "name": "iniconfig",
+        "version": "2.3.0"
+    },
+    {
+        "name": "installer",
+        "version": "1.0.1"
+    },
+    {
+        "name": "joblib",
+        "version": "1.5.3"
+    },
+    {
+        "name": "meson",
+        "version": "1.11.2"
+    },
+    {
+        "name": "meson-python",
+        "version": "0.20.0"
+    },
+    {
+        "name": "nab-index",
+        "version": "0.0.11"
+    },
+    {
+        "name": "nab-python",
+        "version": "0.0.11"
+    },
+    {
+        "name": "nab-resolver",
+        "version": "0.0.11"
+    },
+    {
+        "name": "narwhals",
+        "version": "2.24.0"
+    },
+    {
+        "name": "ninja",
+        "version": "1.13.0"
+    },
+    {
+        "name": "numpy",
+        "version": "2.4.6"
+    },
+    {
+        "name": "packaging",
+        "version": "26.2"
+    },
+    {
+        "name": "pip",
+        "version": "24.0"
+    },
+    {
+        "name": "pipdeptree",
+        "version": "4.1.0"
+    },
+    {
+        "name": "pluggy",
+        "version": "1.6.0"
+    },
+    {
+        "name": "Pygments",
+        "version": "2.20.0"
+    },
+    {
+        "name": "pyproject_hooks",
+        "version": "1.2.0"
+    },
+    {
+        "name": "pyproject-metadata",
+        "version": "0.12.1"
+    },
+    {
+        "name": "pytest",
+        "version": "9.1.1"
+    },
+    {
+        "name": "pytest-cov",
+        "version": "7.1.0"
+    },
+    {
+        "name": "pytest-xdist",
+        "version": "3.8.0"
+    },
+    {
+        "name": "scikit-learn",
+        "version": "1.10.dev0",
+        "editable_project_location": "/repo"
+    },
+    {
+        "name": "scipy",
+        "version": "1.17.1"
+    },
+    {
+        "name": "setuptools",
+        "version": "79.0.1"
+    },
+    {
+        "name": "threadpoolctl",
+        "version": "3.6.0"
+    },
+    {
+        "name": "tomli",
+        "version": "2.4.1"
+    },
+    {
+        "name": "tomli_w",
+        "version": "1.2.0"
+    },
+    {
+        "name": "truststore",
+        "version": "0.10.4"
+    },
+    {
+        "name": "typing_extensions",
+        "version": "4.16.0"
+    },
+    {
+        "name": "urllib3",
+        "version": "2.7.0"
+    },
+    {
+        "name": "wheel",
+        "version": "0.46.3"
+    }
+]

@@ -1,0 +1,72 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /repo
+configfile: pyproject.toml
+testpaths: sklearn/tests/test_dummy.py
+plugins: cov-7.1.0, xdist-3.8.0
+[1mcollecting ... [0mcollected 61 items
+
+sklearn/tests/test_dummy.py::test_feature_names_in_and_n_features_in_[42] [33mSKIPPED[0m[32m [  1%][0m
+sklearn/tests/test_dummy.py::test_most_frequent_and_prior_strategy [32mPASSED[0m[32m [  3%][0m
+sklearn/tests/test_dummy.py::test_most_frequent_and_prior_strategy_with_2d_column_y [32mPASSED[0m[32m [  4%][0m
+sklearn/tests/test_dummy.py::test_most_frequent_and_prior_strategy_multioutput [32mPASSED[0m[32m [  6%][0m
+sklearn/tests/test_dummy.py::test_stratified_strategy[42] [32mPASSED[0m[32m         [  8%][0m
+sklearn/tests/test_dummy.py::test_stratified_strategy_multioutput[42] [32mPASSED[0m[32m [  9%][0m
+sklearn/tests/test_dummy.py::test_uniform_strategy[42] [32mPASSED[0m[32m            [ 11%][0m
+sklearn/tests/test_dummy.py::test_uniform_strategy_multioutput[42] [32mPASSED[0m[32m [ 13%][0m
+sklearn/tests/test_dummy.py::test_string_labels [32mPASSED[0m[32m                   [ 14%][0m
+sklearn/tests/test_dummy.py::test_classifier_score_with_None[y0-y_test0] [32mPASSED[0m[32m [ 16%][0m
+sklearn/tests/test_dummy.py::test_classifier_score_with_None[y1-y_test1] [32mPASSED[0m[32m [ 18%][0m
+sklearn/tests/test_dummy.py::test_classifier_prediction_independent_of_X[42-stratified] [32mPASSED[0m[32m [ 19%][0m
+sklearn/tests/test_dummy.py::test_classifier_prediction_independent_of_X[42-most_frequent] [32mPASSED[0m[32m [ 21%][0m
+sklearn/tests/test_dummy.py::test_classifier_prediction_independent_of_X[42-prior] [32mPASSED[0m[32m [ 22%][0m
+sklearn/tests/test_dummy.py::test_classifier_prediction_independent_of_X[42-uniform] [32mPASSED[0m[32m [ 24%][0m
+sklearn/tests/test_dummy.py::test_classifier_prediction_independent_of_X[42-constant] [32mPASSED[0m[32m [ 26%][0m
+sklearn/tests/test_dummy.py::test_mean_strategy_regressor[42] [32mPASSED[0m[32m     [ 27%][0m
+sklearn/tests/test_dummy.py::test_mean_strategy_multioutput_regressor[42] [32mPASSED[0m[32m [ 29%][0m
+sklearn/tests/test_dummy.py::test_regressor_exceptions [32mPASSED[0m[32m            [ 31%][0m
+sklearn/tests/test_dummy.py::test_median_strategy_regressor[42] [32mPASSED[0m[32m   [ 32%][0m
+sklearn/tests/test_dummy.py::test_median_strategy_multioutput_regressor[42] [32mPASSED[0m[32m [ 34%][0m
+sklearn/tests/test_dummy.py::test_quantile_strategy_regressor[42] [32mPASSED[0m[32m [ 36%][0m
+sklearn/tests/test_dummy.py::test_quantile_strategy_multioutput_regressor[42] [32mPASSED[0m[32m [ 37%][0m
+sklearn/tests/test_dummy.py::test_quantile_invalid [32mPASSED[0m[32m                [ 39%][0m
+sklearn/tests/test_dummy.py::test_quantile_strategy_empty_train [32mPASSED[0m[32m   [ 40%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_regressor[42] [32mPASSED[0m[32m [ 42%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_multioutput_regressor[42] [32mPASSED[0m[32m [ 44%][0m
+sklearn/tests/test_dummy.py::test_y_mean_attribute_regressor [32mPASSED[0m[32m      [ 45%][0m
+sklearn/tests/test_dummy.py::test_constants_not_specified_regressor [32mPASSED[0m[32m [ 47%][0m
+sklearn/tests/test_dummy.py::test_constant_size_multioutput_regressor[42] [32mPASSED[0m[32m [ 49%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy [32mPASSED[0m[32m               [ 50%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_multioutput [32mPASSED[0m[32m   [ 52%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_exceptions[no-constant] [32mPASSED[0m[32m [ 54%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_exceptions[too-many-constant] [32mPASSED[0m[32m [ 55%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_exceptions[not-enough-output] [32mPASSED[0m[32m [ 57%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_exceptions[single-output] [32mPASSED[0m[32m [ 59%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_exceptions[multi-output] [32mPASSED[0m[32m [ 60%][0m
+sklearn/tests/test_dummy.py::test_classification_sample_weight [32mPASSED[0m[32m    [ 62%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_sparse_target[csc_matrix] [32mPASSED[0m[32m [ 63%][0m
+sklearn/tests/test_dummy.py::test_constant_strategy_sparse_target[csc_array] [32mPASSED[0m[32m [ 65%][0m
+sklearn/tests/test_dummy.py::test_uniform_strategy_sparse_target_warning[42-csc_matrix] [32mPASSED[0m[32m [ 67%][0m
+sklearn/tests/test_dummy.py::test_uniform_strategy_sparse_target_warning[42-csc_array] [32mPASSED[0m[32m [ 68%][0m
+sklearn/tests/test_dummy.py::test_stratified_strategy_sparse_target[42-csc_matrix] [32mPASSED[0m[32m [ 70%][0m
+sklearn/tests/test_dummy.py::test_stratified_strategy_sparse_target[42-csc_array] [32mPASSED[0m[32m [ 72%][0m
+sklearn/tests/test_dummy.py::test_most_frequent_and_prior_strategy_sparse_target[csc_matrix] [32mPASSED[0m[32m [ 73%][0m
+sklearn/tests/test_dummy.py::test_most_frequent_and_prior_strategy_sparse_target[csc_array] [32mPASSED[0m[32m [ 75%][0m
+sklearn/tests/test_dummy.py::test_dummy_regressor_sample_weight[42] [32mPASSED[0m[32m [ 77%][0m
+sklearn/tests/test_dummy.py::test_dummy_regressor_on_3D_array [32mPASSED[0m[32m     [ 78%][0m
+sklearn/tests/test_dummy.py::test_dummy_classifier_on_3D_array [32mPASSED[0m[32m    [ 80%][0m
+sklearn/tests/test_dummy.py::test_dummy_regressor_return_std [32mPASSED[0m[32m      [ 81%][0m
+sklearn/tests/test_dummy.py::test_regressor_score_with_None[y0-y_test0] [32mPASSED[0m[32m [ 83%][0m
+sklearn/tests/test_dummy.py::test_regressor_score_with_None[y1-y_test1] [32mPASSED[0m[32m [ 85%][0m
+sklearn/tests/test_dummy.py::test_regressor_prediction_independent_of_X[mean] [32mPASSED[0m[32m [ 86%][0m
+sklearn/tests/test_dummy.py::test_regressor_prediction_independent_of_X[median] [32mPASSED[0m[32m [ 88%][0m
+sklearn/tests/test_dummy.py::test_regressor_prediction_independent_of_X[quantile] [32mPASSED[0m[32m [ 90%][0m
+sklearn/tests/test_dummy.py::test_regressor_prediction_independent_of_X[constant] [32mPASSED[0m[32m [ 91%][0m
+sklearn/tests/test_dummy.py::test_dtype_of_classifier_probas[stratified] [32mPASSED[0m[32m [ 93%][0m
+sklearn/tests/test_dummy.py::test_dtype_of_classifier_probas[most_frequent] [32mPASSED[0m[32m [ 95%][0m
+sklearn/tests/test_dummy.py::test_dtype_of_classifier_probas[prior] [32mPASSED[0m[32m [ 96%][0m
+sklearn/tests/test_dummy.py::test_dtype_of_classifier_probas[uniform] [32mPASSED[0m[32m [ 98%][0m
+sklearn/tests/test_dummy.py::test_dtype_of_classifier_probas[constant] [32mPASSED[0m[32m [100%][0m
+
+[32m======================== [32m[1m60 passed[0m, [33m1 skipped[0m[32m in 0.32s[0m[32m =========================[0m

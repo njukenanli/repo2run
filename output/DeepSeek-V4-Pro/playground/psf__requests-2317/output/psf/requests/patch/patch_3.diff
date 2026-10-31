@@ -1,0 +1,35 @@
+diff --git a/requests/cookies.py b/requests/cookies.py
+index 831c49c6..7b0498b7 100644
+--- a/requests/cookies.py
++++ b/requests/cookies.py
+@@ -8,6 +8,7 @@ requests.utils imports from here, so be careful with imports.
+ 
+ import time
+ import collections
++import collections.abc
+ from .compat import cookielib, urlparse, urlunparse, Morsel
+ 
+ try:
+diff --git a/requests/packages/urllib3/_collections.py b/requests/packages/urllib3/_collections.py
+index d77ebb8d..b82d9c59 100644
+--- a/requests/packages/urllib3/_collections.py
++++ b/requests/packages/urllib3/_collections.py
+@@ -1,4 +1,4 @@
+-from collections import Mapping, MutableMapping
++from collections.abc import Mapping, MutableMapping
+ try:
+     from threading import RLock
+ except ImportError: # Platform-specific: No threads available
+diff --git a/requests/sessions.py b/requests/sessions.py
+index d701ff2e..eb2eecb3 100644
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -9,7 +9,7 @@ requests (cookies, auth, proxies).
+ 
+ """
+ import os
+-from collections import Mapping
++from collections.abc import Mapping
+ from datetime import datetime
+ 
+ from .auth import _basic_auth_str

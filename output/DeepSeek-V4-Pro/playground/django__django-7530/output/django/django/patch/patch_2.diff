@@ -1,0 +1,26 @@
+diff --git a/django/db/models/fields/__init__.py b/django/db/models/fields/__init__.py
+index 1ab2b6d313..080b1ea950 100644
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -2,6 +2,7 @@
+ from __future__ import unicode_literals
+ 
+ import collections
++import collections.abc
+ import copy
+ import datetime
+ import decimal
+diff --git a/django/db/models/sql/query.py b/django/db/models/sql/query.py
+index 97e90aa082..74675b97a8 100644
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -8,7 +8,8 @@ all about the internals of models in order to get the information it needs.
+ """
+ import copy
+ import warnings
+-from collections import Counter, Iterator, Mapping, OrderedDict
++from collections import Counter, OrderedDict
++from collections.abc import Iterator, Mapping
+ from itertools import chain, count, product
+ from string import ascii_uppercase
+ 

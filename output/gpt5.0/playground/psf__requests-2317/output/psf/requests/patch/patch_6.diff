@@ -1,0 +1,64 @@
+diff --git a/requests/cookies.py b/requests/cookies.py
+index 831c49c6..52e1d8de 100644
+--- a/requests/cookies.py
++++ b/requests/cookies.py
+@@ -156,7 +156,7 @@ class CookieConflictError(RuntimeError):
+     Use .get and .set and include domain and path args in order to be more specific."""
+ 
+ 
+-class RequestsCookieJar(cookielib.CookieJar, collections.MutableMapping):
++class RequestsCookieJar(cookielib.CookieJar, collections.abc.MutableMapping):
+     """Compatibility class; is a cookielib.CookieJar, but exposes a dict interface.
+ 
+     This is the CookieJar we create by default for requests and sessions that
+diff --git a/requests/packages/urllib3/_collections.py b/requests/packages/urllib3/_collections.py
+index d77ebb8d..be9b1f12 100644
+--- a/requests/packages/urllib3/_collections.py
++++ b/requests/packages/urllib3/_collections.py
+@@ -1,4 +1,10 @@
+-from collections import Mapping, MutableMapping
++try:
++    from collections.abc import Mapping, MutableMapping
++except ImportError:  # pragma: no cover
++    try:
++        from collections.abc import Mapping, MutableMapping
++    except ImportError:  # pragma: no cover
++        from collections import Mapping, MutableMapping
+ try:
+     from threading import RLock
+ except ImportError: # Platform-specific: No threads available
+diff --git a/requests/structures.py b/requests/structures.py
+index 3e5f2faa..a7fe8835 100644
+--- a/requests/structures.py
++++ b/requests/structures.py
+@@ -11,7 +11,7 @@ Data structures that power Requests.
+ import collections
+ 
+ 
+-class CaseInsensitiveDict(collections.MutableMapping):
++class CaseInsensitiveDict(collections.abc.MutableMapping):
+     """
+     A case-insensitive ``dict``-like object.
+ 
+@@ -71,7 +71,7 @@ class CaseInsensitiveDict(collections.MutableMapping):
+         )
+ 
+     def __eq__(self, other):
+-        if isinstance(other, collections.Mapping):
++        if isinstance(other, collections.abc.Mapping):
+             other = CaseInsensitiveDict(other)
+         else:
+             return NotImplemented
+diff --git a/requests/utils.py b/requests/utils.py
+index 182348da..ce366dbd 100644
+--- a/requests/utils.py
++++ b/requests/utils.py
+@@ -160,7 +160,7 @@ def to_key_val_list(value):
+     if isinstance(value, (str, bytes, bool, int)):
+         raise ValueError('cannot encode objects that are not 2-tuples')
+ 
+-    if isinstance(value, collections.Mapping):
++    if isinstance(value, collections.abc.Mapping):
+         value = value.items()
+ 
+     return list(value)

@@ -1,0 +1,57 @@
+diff --git a/django/__init__.py b/django/__init__.py
+index 1584f27d4b..8b41af5ee8 100644
+--- a/django/__init__.py
++++ b/django/__init__.py
+@@ -1,5 +1,31 @@
+ from __future__ import unicode_literals
+ 
++import collections
++import inspect
++
++# Compatibility with Python versions where collection ABCs were moved to
++# collections.abc and inspect.getargspec() was removed.
++if not hasattr(collections, 'Iterator'):
++    for name in (
++        'Callable', 'Container', 'Hashable', 'Iterable', 'Iterator', 'Mapping',
++        'MutableMapping', 'MutableSequence', 'MutableSet', 'Sequence', 'Set',
++        'Sized',
++    ):
++        setattr(collections, name, getattr(collections.abc, name))
++
++if not hasattr(inspect, 'getargspec'):
++    ArgSpec = collections.namedtuple(
++        'ArgSpec', 'args varargs keywords defaults'
++    )
++
++    def getargspec(func):
++        argspec = inspect.getfullargspec(func)
++        return ArgSpec(
++            argspec.args, argspec.varargs, argspec.varkw, argspec.defaults
++        )
++
++    inspect.getargspec = getargspec
++
+ from django.utils.version import get_version
+ 
+ VERSION = (1, 11, 0, 'alpha', 0)
+diff --git a/django/db/models/base.py b/django/db/models/base.py
+index e7b3f3fd71..177ca5d311 100644
+--- a/django/db/models/base.py
++++ b/django/db/models/base.py
+@@ -88,9 +88,14 @@ class ModelBase(type):
+         if not parents:
+             return super_new(cls, name, bases, attrs)
+ 
+-        # Create the class.
++        # Create the class. __classcell__ must be passed to type.__new__ on
++        # Python 3.6+ so methods using super() can reference their class.
+         module = attrs.pop('__module__')
+-        new_class = super_new(cls, name, bases, {'__module__': module})
++        new_attrs = {'__module__': module}
++        classcell = attrs.pop('__classcell__', None)
++        if classcell is not None:
++            new_attrs['__classcell__'] = classcell
++        new_class = super_new(cls, name, bases, new_attrs)
+         attr_meta = attrs.pop('Meta', None)
+         abstract = getattr(attr_meta, 'abstract', False)
+         if not attr_meta:

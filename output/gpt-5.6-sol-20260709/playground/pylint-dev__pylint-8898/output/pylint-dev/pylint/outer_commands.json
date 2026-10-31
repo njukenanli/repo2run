@@ -1,0 +1,812 @@
+[
+    {
+        "GPT_time": 5.53042459487915
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6704695224761963
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6723372936248779
+    },
+    {
+        "GPT_time": 4.851285934448242
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6664299964904785
+    },
+    {
+        "command": "printf '%s\\n' '--- pyproject.toml ---'",
+        "returncode": 0,
+        "time": 0.6668369770050049
+    },
+    {
+        "command": "cat pyproject.toml",
+        "returncode": 0,
+        "time": 0.6742274761199951
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.6679694652557373
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6695032119750977
+    },
+    {
+        "command": "printf '%s\\n' '--- tox.ini ---'",
+        "returncode": 0,
+        "time": 0.667715311050415
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6746945381164551
+    },
+    {
+        "command": "printf '%s\\n' '--- requirements_test.txt ---'",
+        "returncode": 0,
+        "time": 0.6668257713317871
+    },
+    {
+        "command": "cat requirements_test.txt",
+        "returncode": 0,
+        "time": 0.6706757545471191
+    },
+    {
+        "command": "printf '%s\\n' '--- requirements_test_min.txt ---'",
+        "returncode": 0,
+        "time": 0.6693282127380371
+    },
+    {
+        "command": "cat requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.669910192489624
+    },
+    {
+        "command": "printf '%s\\n' '--- workflows ---'",
+        "returncode": 0,
+        "time": 0.6682083606719971
+    },
+    {
+        "command": "find .github -maxdepth 2 -type f \\( -name '*.yml' -o -name '*.yaml' \\) -print -exec sed -n '1,240p' {} \\;",
+        "returncode": 0,
+        "time": 0.7303447723388672
+    },
+    {
+        "GPT_time": 4.919507265090942
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6683511734008789
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.01192331314086914
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.010682106018066406
+    },
+    {
+        "GPT_time": 3.7463364601135254
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 0.03178739547729492
+    },
+    {
+        "GPT_time": 6.709515810012817
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6671442985534668
+    },
+    {
+        "command": "ls -l /repo/requirements_test.txt /repo/requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.6718409061431885
+    },
+    {
+        "command": "stat /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 0.748643159866333
+    },
+    {
+        "command": "realpath /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 1.9144399166107178
+    },
+    {
+        "GPT_time": 7.22660231590271
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.043241262435913086
+    },
+    {
+        "GPT_time": 8.69725227355957
+    },
+    {
+        "command": "waitinglist add -p astroid -v \"==3.0.0a8\" -t pip",
+        "returncode": 0,
+        "time": 0.01165771484375
+    },
+    {
+        "command": "waitinglist add -p typing-extensions -v \"~=4.7\" -t pip",
+        "returncode": 0,
+        "time": 0.012459039688110352
+    },
+    {
+        "command": "waitinglist add -p py -v \"~=1.11.0\" -t pip",
+        "returncode": 0,
+        "time": 0.008864879608154297
+    },
+    {
+        "command": "waitinglist add -p pytest -v \"~=7.4\" -t pip",
+        "returncode": 0,
+        "time": 0.008969545364379883
+    },
+    {
+        "command": "waitinglist add -p pytest-benchmark -v \"~=4.0\" -t pip",
+        "returncode": 0,
+        "time": 0.011545896530151367
+    },
+    {
+        "command": "waitinglist add -p pytest-timeout -v \"~=2.1\" -t pip",
+        "returncode": 0,
+        "time": 0.008645772933959961
+    },
+    {
+        "command": "waitinglist add -p towncrier -v \"~=23.6\" -t pip",
+        "returncode": 0,
+        "time": 0.008770465850830078
+    },
+    {
+        "command": "waitinglist add -p requests -t pip",
+        "returncode": 0,
+        "time": 0.019665956497192383
+    },
+    {
+        "command": "waitinglist add -p coverage -v \"~=7.2\" -t pip",
+        "returncode": 0,
+        "time": 0.010715007781982422
+    },
+    {
+        "command": "waitinglist add -p tbump -v \"~=6.10.0\" -t pip",
+        "returncode": 0,
+        "time": 0.012233972549438477
+    },
+    {
+        "command": "waitinglist add -p contributors-txt -v \">=1.0.0\" -t pip",
+        "returncode": 0,
+        "time": 0.013012409210205078
+    },
+    {
+        "command": "waitinglist add -p pytest-cov -v \"~=4.1\" -t pip",
+        "returncode": 0,
+        "time": 0.012343645095825195
+    },
+    {
+        "command": "waitinglist add -p pytest-profiling -v \"~=1.7\" -t pip",
+        "returncode": 0,
+        "time": 0.011724710464477539
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -v \"~=3.3\" -t pip",
+        "returncode": 0,
+        "time": 0.01081395149230957
+    },
+    {
+        "command": "waitinglist add -p six -t pip",
+        "returncode": 0,
+        "time": 0.015248298645019531
+    },
+    {
+        "command": "waitinglist add -p types-pkg_resources -v \"==0.1.3\" -t pip",
+        "returncode": 0,
+        "time": 0.018413782119750977
+    },
+    {
+        "command": "waitinglist add -p tox -v \">=3\" -t pip",
+        "returncode": 0,
+        "time": 0.010613441467285156
+    },
+    {
+        "command": "waitinglist add -p dill -v \">=0.2\" -t pip",
+        "returncode": 0,
+        "time": 0.008968114852905273
+    },
+    {
+        "command": "waitinglist add -p platformdirs -v \">=2.2.0\" -t pip",
+        "returncode": 0,
+        "time": 0.009049654006958008
+    },
+    {
+        "command": "waitinglist add -p isort -v \">=4.2.5,<6\" -t pip",
+        "returncode": 0,
+        "time": 0.008970499038696289
+    },
+    {
+        "command": "waitinglist add -p mccabe -v \">=0.6,<0.8\" -t pip",
+        "returncode": 0,
+        "time": 0.009026527404785156
+    },
+    {
+        "command": "waitinglist add -p tomli -v \">=1.1.0\" -t pip",
+        "returncode": 0,
+        "time": 0.009316682815551758
+    },
+    {
+        "command": "waitinglist add -p tomlkit -v \">=0.10.1\" -t pip",
+        "returncode": 0,
+        "time": 0.009217500686645508
+    },
+    {
+        "command": "waitinglist add -p GitPython -v \">3\" -t pip",
+        "returncode": 0,
+        "time": 0.013773202896118164
+    },
+    {
+        "command": "waitinglist add -p pyenchant -v \"~=3.2\" -t pip",
+        "returncode": 0,
+        "time": 0.018378496170043945
+    },
+    {
+        "command": "waitinglist add -p libenchant-2-2 -t apt",
+        "returncode": 0,
+        "time": 0.010110616683959961
+    },
+    {
+        "GPT_time": 3.536710739135742
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.013870477676391602
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.00946044921875
+    },
+    {
+        "GPT_time": 3.872109889984131
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 204.051029920578
+    },
+    {
+        "GPT_time": 4.333078384399414
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.010801553726196289
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.009876012802124023
+    },
+    {
+        "command": "python -m pip show isort mccabe 2>/dev/null || true",
+        "returncode": 0,
+        "time": 2.3577260971069336
+    },
+    {
+        "GPT_time": 3.8175861835479736
+    },
+    {
+        "command": "waitinglist clear",
+        "returncode": 0,
+        "time": 0.012195587158203125
+    },
+    {
+        "command": "waitinglist add -p isort -v \"==5.12.0\" -t pip",
+        "returncode": 0,
+        "time": 0.014889955520629883
+    },
+    {
+        "command": "waitinglist add -p mccabe -v \"==0.7.0\" -t pip",
+        "returncode": 0,
+        "time": 0.01398015022277832
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.010573148727416992
+    },
+    {
+        "GPT_time": 3.265676975250244
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 7.419799327850342
+    },
+    {
+        "GPT_time": 5.685436964035034
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6701927185058594
+    },
+    {
+        "command": "pip install -q --no-deps -e .",
+        "returncode": 0,
+        "time": 13.76675295829773
+    },
+    {
+        "command": "python -m pip check",
+        "returncode": 0,
+        "time": 2.867769241333008
+    },
+    {
+        "command": "python -c \"import pylint, astroid; print('pylint', pylint.__version__, 'astroid', astroid.__version__)\"",
+        "returncode": 0,
+        "time": 13.377336740493774
+    },
+    {
+        "GPT_time": 4.55129075050354
+    },
+    {
+        "command": "ls -ld /repo /repo/pyproject.toml /repo/pylint /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.17260479927062988
+    },
+    {
+        "command": "head -n 8 /repo/pyproject.toml",
+        "returncode": 0,
+        "time": 0.16824102401733398
+    },
+    {
+        "command": "mount | grep ' /repo ' || true",
+        "returncode": 0,
+        "time": 2.024953842163086
+    },
+    {
+        "GPT_time": 5.087236642837524
+    },
+    {
+        "command": "find / -xdev -type f -name pyproject.toml 2>/dev/null | head -50",
+        "returncode": 0,
+        "time": 5.601728677749634
+    },
+    {
+        "command": "find / -xdev -type d -path '*/pylint/checkers' 2>/dev/null | head -20",
+        "returncode": 0,
+        "time": 2.2260186672210693
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.670285701751709
+    },
+    {
+        "GPT_time": 4.2393457889556885
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 3.6714560985565186
+    },
+    {
+        "GPT_time": 3.768688678741455
+    },
+    {
+        "command": "ls -la /repo | sed -n '1,80p'",
+        "returncode": 0,
+        "time": 0.6822195053100586
+    },
+    {
+        "command": "test -f /repo/pyproject.toml",
+        "returncode": 0,
+        "time": 1.7892742156982422
+    },
+    {
+        "command": "test -d /repo/pylint",
+        "returncode": 0,
+        "time": 1.8323383331298828
+    },
+    {
+        "command": "echo repository-restored",
+        "returncode": 0,
+        "time": 0.6675643920898438
+    },
+    {
+        "GPT_time": 8.807530879974365
+    },
+    {
+        "command": "python -m pip show pytest astroid isort mccabe pyenchant 2>/dev/null || true",
+        "returncode": 0,
+        "time": 2.1730620861053467
+    },
+    {
+        "command": "python -m pip check",
+        "returncode": 0,
+        "time": 2.3514699935913086
+    },
+    {
+        "command": "dpkg-query -W -f='${Status}\\n' libenchant-2-2 2>/dev/null || true",
+        "returncode": 0,
+        "time": 1.7173898220062256
+    },
+    {
+        "GPT_time": 12.794775485992432
+    },
+    {
+        "command": "waitinglist add -p astroid -v \"==3.0.0a8\" -t pip",
+        "returncode": 0,
+        "time": 0.015102863311767578
+    },
+    {
+        "command": "waitinglist add -p typing-extensions -v \"==4.7.1\" -t pip",
+        "returncode": 0,
+        "time": 0.011594533920288086
+    },
+    {
+        "command": "waitinglist add -p py -v \"==1.11.0\" -t pip",
+        "returncode": 0,
+        "time": 0.01108407974243164
+    },
+    {
+        "command": "waitinglist add -p pytest -v \"==7.4.4\" -t pip",
+        "returncode": 0,
+        "time": 0.01119542121887207
+    },
+    {
+        "command": "waitinglist add -p pytest-benchmark -v \"==4.0.0\" -t pip",
+        "returncode": 0,
+        "time": 0.011581659317016602
+    },
+    {
+        "command": "waitinglist add -p pytest-timeout -v \"==2.1.0\" -t pip",
+        "returncode": 0,
+        "time": 0.01131749153137207
+    },
+    {
+        "command": "waitinglist add -p towncrier -v \"==23.6.0\" -t pip",
+        "returncode": 0,
+        "time": 0.011384963989257812
+    },
+    {
+        "command": "waitinglist add -p requests -t pip",
+        "returncode": 0,
+        "time": 0.011116504669189453
+    },
+    {
+        "command": "waitinglist add -p coverage -v \"==7.2.7\" -t pip",
+        "returncode": 0,
+        "time": 0.01158452033996582
+    },
+    {
+        "command": "waitinglist add -p tbump -v \"==6.10.0\" -t pip",
+        "returncode": 0,
+        "time": 0.01117396354675293
+    },
+    {
+        "command": "waitinglist add -p contributors-txt -v \"==1.0.0\" -t pip",
+        "returncode": 0,
+        "time": 0.011300325393676758
+    },
+    {
+        "command": "waitinglist add -p pytest-cov -v \"==4.1.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010635137557983398
+    },
+    {
+        "command": "waitinglist add -p pytest-profiling -v \"==1.7.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010279178619384766
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -v \"==3.3.1\" -t pip",
+        "returncode": 0,
+        "time": 0.01019430160522461
+    },
+    {
+        "command": "waitinglist add -p six -t pip",
+        "returncode": 0,
+        "time": 0.010253190994262695
+    },
+    {
+        "command": "waitinglist add -p types-pkg_resources -v \"==0.1.3\" -t pip",
+        "returncode": 0,
+        "time": 0.010157346725463867
+    },
+    {
+        "command": "waitinglist add -p tox -v \"==4.11.4\" -t pip",
+        "returncode": 0,
+        "time": 0.010061025619506836
+    },
+    {
+        "command": "waitinglist add -p dill -v \"==0.3.7\" -t pip",
+        "returncode": 0,
+        "time": 0.010101318359375
+    },
+    {
+        "command": "waitinglist add -p platformdirs -v \"==3.11.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010194778442382812
+    },
+    {
+        "command": "waitinglist add -p isort -v \"==5.12.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010107994079589844
+    },
+    {
+        "command": "waitinglist add -p mccabe -v \"==0.7.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010248422622680664
+    },
+    {
+        "command": "waitinglist add -p tomli -v \"==2.0.1\" -t pip",
+        "returncode": 0,
+        "time": 0.010082483291625977
+    },
+    {
+        "command": "waitinglist add -p tomlkit -v \"==0.12.3\" -t pip",
+        "returncode": 0,
+        "time": 0.009283065795898438
+    },
+    {
+        "command": "waitinglist add -p GitPython -v \"==3.1.40\" -t pip",
+        "returncode": 0,
+        "time": 0.00998997688293457
+    },
+    {
+        "command": "waitinglist add -p pyenchant -v \"==3.2.2\" -t pip",
+        "returncode": 0,
+        "time": 0.009442567825317383
+    },
+    {
+        "command": "waitinglist add -p libenchant-2-2 -t apt",
+        "returncode": 0,
+        "time": 0.008574962615966797
+    },
+    {
+        "GPT_time": 4.337378025054932
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.01226353645324707
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.009938716888427734
+    },
+    {
+        "GPT_time": 3.7917637825012207
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 158.47420573234558
+    },
+    {
+        "GPT_time": 5.337615251541138
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6699924468994141
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 18.10862421989441
+    },
+    {
+        "GPT_time": 5.542601108551025
+    },
+    {
+        "command": "python -c \"import pytest; print(pytest.__version__, pytest.__file__)\"",
+        "returncode": 0,
+        "time": 0.010393857955932617
+    },
+    {
+        "command": "command -v pytest",
+        "returncode": 0,
+        "time": 0.010285139083862305
+    },
+    {
+        "command": "pytest --version",
+        "returncode": 0,
+        "time": 0.009663820266723633
+    },
+    {
+        "command": "sed -n '1,240p' /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6764917373657227
+    },
+    {
+        "GPT_time": 7.751911640167236
+    },
+    {
+        "command": "python -m pip show pytest",
+        "returncode": 0,
+        "time": 2.365687608718872
+    },
+    {
+        "command": "python -m pip show astroid",
+        "returncode": 0,
+        "time": 2.39802622795105
+    },
+    {
+        "command": "printf 'PATH=%s\\n' \"$PATH\"",
+        "returncode": 0,
+        "time": 0.6700155735015869
+    },
+    {
+        "command": "ls -l /usr/local/bin | grep -E '(^| )(py|pyt)' | sed -n '1,120p'",
+        "returncode": 0,
+        "time": 0.674410343170166
+    },
+    {
+        "GPT_time": 5.764773607254028
+    },
+    {
+        "command": "head -n 20 /usr/local/bin/pytest",
+        "returncode": 0,
+        "time": 0.011524200439453125
+    },
+    {
+        "command": "python -c \"import importlib.metadata as m; print([(e.name,e.value,e.dist.name,e.dist.version) for e in m.entry_points(group='pytest11')])\"",
+        "returncode": 0,
+        "time": 0.013358592987060547
+    },
+    {
+        "GPT_time": 10.988558769226074
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6786599159240723
+    },
+    {
+        "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 runtest",
+        "returncode": 0,
+        "time": 0.014134883880615234
+    },
+    {
+        "GPT_time": 9.013534307479858
+    },
+    {
+        "command": "waitinglist add -p pytest -v \"==9.0.2\" -t pip",
+        "returncode": 0,
+        "time": 0.012744903564453125
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.009845495223999023
+    },
+    {
+        "GPT_time": 4.218102216720581
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 4.493561029434204
+    },
+    {
+        "GPT_time": 4.014979124069214
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6834180355072021
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 3.100999116897583
+    },
+    {
+        "GPT_time": 4.614755392074585
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.667083740234375
+    },
+    {
+        "command": "find tests -maxdepth 2 -type f | sed -n '1,80p'",
+        "returncode": 0,
+        "time": 0.6744143962860107
+    },
+    {
+        "command": "grep -nE '^\\[tool.pytest|testpaths|python_files|addopts' pyproject.toml setup.cfg tox.ini 2>/dev/null",
+        "returncode": 0,
+        "time": 0.011710405349731445
+    },
+    {
+        "command": "git status --short",
+        "returncode": 0,
+        "time": 17.381714344024658
+    },
+    {
+        "GPT_time": 18.547170162200928
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 7.024451971054077
+    },
+    {
+        "GPT_time": 5.8977952003479
+    },
+    {
+        "command": "pip install -q -e /repo",
+        "returncode": 0,
+        "time": 12.05656361579895
+    },
+    {
+        "GPT_time": 4.965134143829346
+    },
+    {
+        "command": "test -d /repo/tests",
+        "returncode": 0,
+        "time": 2.3150134086608887
+    },
+    {
+        "command": "test -f /repo/pyproject.toml",
+        "returncode": 0,
+        "time": 2.3921821117401123
+    },
+    {
+        "command": "python -m pip show pylint astroid pytest",
+        "returncode": 0,
+        "time": 3.0311787128448486
+    },
+    {
+        "command": "python -m pip check",
+        "returncode": 0,
+        "time": 3.0199289321899414
+    },
+    {
+        "GPT_time": 6.496376276016235
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6688282489776611
+    },
+    {
+        "command": "pip install -q -r requirements_test.txt",
+        "returncode": 0,
+        "time": 33.03505229949951
+    },
+    {
+        "GPT_time": 5.116517066955566
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6673815250396729
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 297.13359665870667
+    }
+]
