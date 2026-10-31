@@ -1,0 +1,476 @@
+[
+    {
+        "GPT_time": 4.696254253387451
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.670856237411499
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6802666187286377
+    },
+    {
+        "GPT_time": 3.3116915225982666
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.67215895652771
+    },
+    {
+        "command": "cat setup.py",
+        "returncode": 0,
+        "time": 0.6759421825408936
+    },
+    {
+        "command": "printf '\\n--- setup.cfg ---\\n'",
+        "returncode": 0,
+        "time": 0.6693472862243652
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6723325252532959
+    },
+    {
+        "command": "printf '\\n--- tox.ini ---\\n'",
+        "returncode": 0,
+        "time": 0.6684615612030029
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6756954193115234
+    },
+    {
+        "command": "printf '\\n--- CI config ---\\n'",
+        "returncode": 0,
+        "time": 0.6689755916595459
+    },
+    {
+        "command": "cat .circleci/config.yml",
+        "returncode": 0,
+        "time": 0.673316478729248
+    },
+    {
+        "GPT_time": 4.3957765102386475
+    },
+    {
+        "command": "change_python_version 3.9",
+        "returncode": 0,
+        "time": 23.45736074447632
+    },
+    {
+        "GPT_time": 5.8043317794799805
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6664149761199951
+    },
+    {
+        "command": "pip install -q -e '.[test]'",
+        "returncode": 0,
+        "time": 12.70888614654541
+    },
+    {
+        "GPT_time": 3.9520490169525146
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6743972301483154
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6667215824127197
+    },
+    {
+        "command": "stat /repo/setup.py || true",
+        "returncode": 0,
+        "time": 0.6743834018707275
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 1.2878522872924805
+    },
+    {
+        "command": "python -m pip --version",
+        "returncode": 0,
+        "time": 1.5533874034881592
+    },
+    {
+        "GPT_time": 3.221463918685913
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.4624316692352295
+    },
+    {
+        "GPT_time": 4.5798749923706055
+    },
+    {
+        "command": "ls -la /repo | sed -n '1,80p'",
+        "returncode": 0,
+        "time": 0.6689190864562988
+    },
+    {
+        "GPT_time": 3.408170223236084
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6661145687103271
+    },
+    {
+        "command": "python -m pip install -q -e '.[test]'",
+        "returncode": 0,
+        "time": 12.720509767532349
+    },
+    {
+        "GPT_time": 3.592698335647583
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6672444343566895
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 15.938357591629028
+    },
+    {
+        "GPT_time": 3.8482935428619385
+    },
+    {
+        "command": "waitinglist add -p Jinja2 -v '<3.1' -t pip",
+        "returncode": 0,
+        "time": 0.009612798690795898
+    },
+    {
+        "GPT_time": 3.325815439224243
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.010771989822387695
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.005488157272338867
+    },
+    {
+        "GPT_time": 3.0939626693725586
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 37.997621297836304
+    },
+    {
+        "GPT_time": 6.917021036148071
+    },
+    {
+        "command": "waitinglist add -p Jinja2 -v 3.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.0074825286865234375
+    },
+    {
+        "GPT_time": 5.66006875038147
+    },
+    {
+        "command": "waitinglist clear",
+        "returncode": 0,
+        "time": 0.005225658416748047
+    },
+    {
+        "command": "waitinglist add -p Jinja2 -v ==3.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.0049397945404052734
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.004858732223510742
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.005780696868896484
+    },
+    {
+        "GPT_time": 3.3125271797180176
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 2.5530691146850586
+    },
+    {
+        "GPT_time": 3.3727121353149414
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.668644905090332
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.3414359092712402
+    },
+    {
+        "GPT_time": 5.274835824966431
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.670304536819458
+    },
+    {
+        "command": "find tests -maxdepth 2 -type f | sed -n '1,40p'",
+        "returncode": 0,
+        "time": 0.6718521118164062
+    },
+    {
+        "command": "printf '\\n--- pytest config ---\\n'",
+        "returncode": 0,
+        "time": 0.009400606155395508
+    },
+    {
+        "command": "sed -n '/^\\[tool:pytest\\]/,/^\\[/p' setup.cfg",
+        "returncode": 0,
+        "time": 0.005274057388305664
+    },
+    {
+        "command": "printf '\\n--- environment ---\\n'",
+        "returncode": 0,
+        "time": 0.662351131439209
+    },
+    {
+        "command": "env | grep -E '^(PYTEST|PYTHON)' | sort || true",
+        "returncode": 0,
+        "time": 0.008306741714477539
+    },
+    {
+        "command": "printf '\\n--- pytest version/config trace ---\\n'",
+        "returncode": 0,
+        "time": 0.007024049758911133
+    },
+    {
+        "command": "python -m pytest --version",
+        "returncode": 0,
+        "time": 0.008599519729614258
+    },
+    {
+        "GPT_time": 3.989170789718628
+    },
+    {
+        "command": "ls -la /repo | sed -n '1,100p'",
+        "returncode": 0,
+        "time": 0.6698427200317383
+    },
+    {
+        "command": "find /repo -maxdepth 1 -type d -printf '%f\\n' | sort",
+        "returncode": 0,
+        "time": 0.6705551147460938
+    },
+    {
+        "GPT_time": 5.078263998031616
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.3829848766326904
+    },
+    {
+        "GPT_time": 8.037333965301514
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6747710704803467
+    },
+    {
+        "command": "test -f setup.py",
+        "returncode": 0,
+        "time": 1.3264715671539307
+    },
+    {
+        "command": "python -m pip install -q -e '.[test]'",
+        "returncode": 0,
+        "time": 15.245367288589478
+    },
+    {
+        "GPT_time": 9.427284479141235
+    },
+    {
+        "command": "waitinglist add -p Jinja2 -v ==3.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.007551670074462891
+    },
+    {
+        "command": "waitinglist add -p docutils -v ==0.16 -t pip",
+        "returncode": 0,
+        "time": 0.009124040603637695
+    },
+    {
+        "command": "waitinglist add -p pytest -v ==7.4.4 -t pip",
+        "returncode": 0,
+        "time": 0.0047321319580078125
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.004984378814697266
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.004713535308837891
+    },
+    {
+        "GPT_time": 3.3256571292877197
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 15.388110160827637
+    },
+    {
+        "GPT_time": 3.6725573539733887
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6685435771942139
+    },
+    {
+        "command": "test -d tests",
+        "returncode": 0,
+        "time": 3.4162051677703857
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 139.9517183303833
+    },
+    {
+        "GPT_time": 7.188880920410156
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5264461040496826
+    },
+    {
+        "GPT_time": 8.050032377243042
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6712372303009033
+    },
+    {
+        "command": "test -f setup.py",
+        "returncode": 0,
+        "time": 1.3523902893066406
+    },
+    {
+        "command": "python -m pip install -q -e '.[test]'",
+        "returncode": 0,
+        "time": 13.669366836547852
+    },
+    {
+        "GPT_time": 7.330973148345947
+    },
+    {
+        "command": "waitinglist add -p Jinja2 -v ==3.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.010198831558227539
+    },
+    {
+        "command": "waitinglist add -p docutils -v ==0.16 -t pip",
+        "returncode": 0,
+        "time": 0.010888099670410156
+    },
+    {
+        "command": "waitinglist add -p pytest -v ==7.4.4 -t pip",
+        "returncode": 0,
+        "time": 0.006823301315307617
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-applehelp -v ==1.0.2 -t pip",
+        "returncode": 0,
+        "time": 0.008877038955688477
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-devhelp -v ==1.0.2 -t pip",
+        "returncode": 0,
+        "time": 0.008054971694946289
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-htmlhelp -v ==1.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.0071086883544921875
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-jsmath -v ==1.0.1 -t pip",
+        "returncode": 0,
+        "time": 0.007091999053955078
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-qthelp -v ==1.0.3 -t pip",
+        "returncode": 0,
+        "time": 0.007125139236450195
+    },
+    {
+        "command": "waitinglist add -p sphinxcontrib-serializinghtml -v ==1.1.4 -t pip",
+        "returncode": 0,
+        "time": 0.009248018264770508
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.008792638778686523
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.0069866180419921875
+    },
+    {
+        "GPT_time": 4.558331251144409
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 42.95201516151428
+    },
+    {
+        "GPT_time": 3.687633991241455
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.666705846786499
+    },
+    {
+        "command": "test -d tests",
+        "returncode": 0,
+        "time": 3.3870012760162354
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 93.66381525993347
+    }
+]

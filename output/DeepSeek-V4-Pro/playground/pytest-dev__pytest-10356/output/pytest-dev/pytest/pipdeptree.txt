@@ -1,0 +1,51 @@
+[1m[36margcomplete[0m[2m==[0m[1m[32m3.7.0[0m
+[1m[36mhypothesis[0m[2m==[0m[1m[32m6.161.5[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mexceptiongroup[0m [2mrequired:[0m [94m>=1.0.0[0m [2minstalled:[0m [1m[32m1.3.1[0m
+[2m┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6.0[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36msortedcontainers[0m [2mrequired:[0m [94m>=2.1.0,<3.0.0[0m [2minstalled:[0m [1m[32m2.4.0[0m
+[1m[36mmock[0m[2m==[0m[1m[32m5.2.0[0m
+[1m[36mnose[0m[2m==[0m[1m[32m1.3.7[0m
+[1m[36mpip[0m[2m==[0m[1m[32m23.0.1[0m
+[1m[36mpipdeptree[0m[2m==[0m[1m[32m4.1.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mnab-index[0m [2mrequired:[0m [94m>=0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m┃   ┣━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[32m26.2[0m
+[2m┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtruststore[0m [2mrequired:[0m [94m>=0.10[0m [2minstalled:[0m [1m[32m0.10.4[0m
+[2m┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m┃   ┗━━ [0m[1m[32m✓[0m [1m[36murllib3[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.7.0[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mnab-python[0m [2mrequired:[0m [94m>=0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mbuild[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.5.0[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[32m26.2[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mpyproject_hooks[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=1.1.0[0m [2minstalled:[0m [1m[32m2.4.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36minstaller[0m [2mrequired:[0m [94m>=0.7[0m [2minstalled:[0m [1m[32m1.0.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mnab-index[0m [2mrequired:[0m [94m==0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[32m26.2[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtruststore[0m [2mrequired:[0m [94m>=0.10[0m [2minstalled:[0m [1m[32m0.10.4[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36murllib3[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.7.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mnab-resolver[0m [2mrequired:[0m [94m==0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mpyproject_hooks[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.4.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mtomli_w[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[1m[36mPygments[0m[2m==[0m[1m[32m2.20.0[0m
+[1m[36mpytest[0m[2m==[0m[1m[32m7.2.0.dev312+g3c1534944[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mattrs[0m [2mrequired:[0m [94m>=19.2.0[0m [2minstalled:[0m [1m[32m26.1.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mexceptiongroup[0m [2mrequired:[0m [94m>=1.0.0rc8[0m [2minstalled:[0m [1m[32m1.3.1[0m
+[2m┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6.0[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36miniconfig[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m2.3.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m26.2[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mpluggy[0m [2mrequired:[0m [94m>=0.12,<2.0[0m [2minstalled:[0m [1m[32m1.6.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mpy[0m [2mrequired:[0m [94m>=1.8.2[0m [2minstalled:[0m [1m[32m1.11.0[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=1.0.0[0m [2minstalled:[0m [1m[32m2.4.1[0m
+[1m[36mrequests[0m[2m==[0m[1m[32m2.34.2[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mcertifi[0m [2mrequired:[0m [94m>=2023.5.7[0m [2minstalled:[0m [1m[32m2026.7.22[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mcharset-normalizer[0m [2mrequired:[0m [94m>=2,<4[0m [2minstalled:[0m [1m[32m3.4.9[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36midna[0m [2mrequired:[0m [94m>=2.5,<4[0m [2minstalled:[0m [1m[32m3.18[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36murllib3[0m [2mrequired:[0m [94m>=1.26,<3[0m [2minstalled:[0m [1m[32m2.7.0[0m
+[1m[36msetuptools[0m[2m==[0m[1m[32m79.0.1[0m
+[1m[36mwheel[0m[2m==[0m[1m[32m0.46.3[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[32m26.2[0m
+[1m[36mxmlschema[0m[2m==[0m[1m[32m4.3.2[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36melementpath[0m [2mrequired:[0m [94m>=5.1.3,<6.0.0[0m [2minstalled:[0m [1m[32m5.1.3[0m

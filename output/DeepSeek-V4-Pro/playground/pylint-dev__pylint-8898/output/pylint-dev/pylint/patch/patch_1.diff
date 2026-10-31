@@ -1,0 +1,13 @@
+diff --git a/tests/checkers/unittest_unicode/unittest_invalid_encoding.py b/tests/checkers/unittest_unicode/unittest_invalid_encoding.py
+index 34e344281..fe583a1c0 100644
+--- a/tests/checkers/unittest_unicode/unittest_invalid_encoding.py
++++ b/tests/checkers/unittest_unicode/unittest_invalid_encoding.py
+@@ -139,7 +139,7 @@ class TestInvalidEncoding(pylint.testutils.CheckerTestCase):
+ 
+     @pytest.mark.parametrize(
+         "codec, msg",
+-        (pytest.param(codec, msg, id=codec) for codec, msg in CODEC_AND_MSG),
++        [pytest.param(codec, msg, id=codec) for codec, msg in CODEC_AND_MSG],
+     )
+     def test___check_codec(
+         self, codec: str, msg: tuple[pylint.testutils.MessageTest]

@@ -1,0 +1,40 @@
+diff --git a/requests/packages/urllib3/connectionpool.py b/requests/packages/urllib3/connectionpool.py
+index 51c87f58..d7ee6747 100644
+--- a/requests/packages/urllib3/connectionpool.py
++++ b/requests/packages/urllib3/connectionpool.py
+@@ -194,8 +194,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
+         log.info("Starting new HTTP connection (%d): %s" %
+                  (self.num_connections, self.host))
+         return HTTPConnection(host=self.host,
+-                              port=self.port,
+-                              strict=self.strict)
++                              port=self.port)
+ 
+     def _get_conn(self, timeout=None):
+         """
+@@ -516,8 +515,8 @@ class HTTPSConnectionPool(HTTPConnectionPool):
+                  cert_reqs=None, ca_certs=None, ssl_version=None):
+ 
+         HTTPConnectionPool.__init__(self, host, port,
+-                                    strict, timeout, maxsize,
+-                                    block, headers)
++                                    timeout=timeout, maxsize=maxsize,
++                                    block=block, headers=headers)
+         self.key_file = key_file
+         self.cert_file = cert_file
+         self.cert_reqs = cert_reqs
+@@ -538,12 +537,10 @@ class HTTPSConnectionPool(HTTPConnectionPool):
+                                "module is not available.")
+ 
+             return HTTPSConnection(host=self.host,
+-                                   port=self.port,
+-                                   strict=self.strict)
++                                   port=self.port)
+ 
+         connection = VerifiedHTTPSConnection(host=self.host,
+-                                             port=self.port,
+-                                             strict=self.strict)
++                                             port=self.port)
+         connection.set_cert(key_file=self.key_file, cert_file=self.cert_file,
+                             cert_reqs=self.cert_reqs, ca_certs=self.ca_certs)
+ 

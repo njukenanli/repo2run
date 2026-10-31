@@ -1,0 +1,463 @@
+[
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6121561527252197,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.3430249691009521,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2775323390960693,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6846585273742676,
+        "dir": "/"
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.6121606826782227,
+        "dir": "/"
+    },
+    {
+        "command": "echo \"=== setup.cfg ===\"",
+        "returncode": 0,
+        "time": 0.6130352020263672,
+        "dir": "/"
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6105742454528809,
+        "dir": "/"
+    },
+    {
+        "command": "echo \"=== pyproject.toml ===\"",
+        "returncode": 0,
+        "time": 0.6103675365447998,
+        "dir": "/"
+    },
+    {
+        "command": "cat /repo/pyproject.toml",
+        "returncode": 0,
+        "time": 0.6066606044769287,
+        "dir": "/"
+    },
+    {
+        "command": "echo \"=== requirements.txt ===\"",
+        "returncode": 0,
+        "time": 0.607792854309082,
+        "dir": "/"
+    },
+    {
+        "command": "cat /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.6162033081054688,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.3002383708953857,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.300351619720459,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6930890083312988,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6056373119354248,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 20.62159538269043,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.366687297821045,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.3921997547149658,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.661165714263916,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 4,
+        "time": 1.2605621814727783,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2357537746429443,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2710731029510498,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15960216522216797,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -q \"numpy>=1.20,<2.0\"",
+        "returncode": 0,
+        "time": 6.937740802764893,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.19569993019104,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.172189474105835,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15083551406860352,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 5,
+        "time": 0.6549146175384521,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2616853713989258,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2076151371002197,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1556713581085205,
+        "dir": "/"
+    },
+    {
+        "command": "ls /repo/xarray/tests/ | head -30",
+        "returncode": 0,
+        "time": 0.6114044189453125,
+        "dir": "/"
+    },
+    {
+        "command": "echo \"=== properties ===\"",
+        "returncode": 0,
+        "time": 0.6110148429870605,
+        "dir": "/"
+    },
+    {
+        "command": "ls /repo/properties/",
+        "returncode": 2,
+        "time": 0.10591459274291992,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2253899574279785,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2498033046722412,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15475249290466309,
+        "dir": "/"
+    },
+    {
+        "command": "ls /repo/xarray/",
+        "returncode": 2,
+        "time": 0.10951733589172363,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2923367023468018,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2400832176208496,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15236234664916992,
+        "dir": "/"
+    },
+    {
+        "command": "ls /repo/",
+        "returncode": 0,
+        "time": 0.6137745380401611,
+        "dir": "/"
+    },
+    {
+        "command": "echo \"---\"",
+        "returncode": 0,
+        "time": 0.6051816940307617,
+        "dir": "/"
+    },
+    {
+        "command": "ls /repo/xarray/ 2>/dev/null || echo \"No xarray dir\"",
+        "returncode": 0,
+        "time": 0.6104495525360107,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2516241073608398,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.269275188446045,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15587210655212402,
+        "dir": "/"
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6052124500274658,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6119415760040283,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.4521162509918213,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.214477300643921,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.1468653678894043,
+        "dir": "/"
+    },
+    {
+        "command": "python -c \"import xarray; print(xarray.__version__)\"",
+        "returncode": 1,
+        "time": 0.15238189697265625,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.258061170578003,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2450640201568604,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 1,
+        "time": 0.15958333015441895,
+        "dir": "/"
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.990551233291626
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.5458338260650635,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2468531131744385,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6382637023925781,
+        "dir": "/"
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6282398700714111,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.2868456840515137,
+        "dir": "/"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.2013392448425293,
+        "dir": "/"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6441500186920166,
+        "dir": "/"
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6039037704467773,
+        "dir": "/"
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 20.10155463218689,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.371675968170166,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.3181736469268799,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6542792320251465,
+        "dir": "/repo"
+    },
+    {
+        "command": "pip install -q \"numpy>=1.20,<2.0\"",
+        "returncode": 0,
+        "time": 6.0555994510650635,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.4006946086883545,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.3375868797302246,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.6546292304992676,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 122.94915843009949,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree --json-tree",
+        "returncode": 0,
+        "time": 1.3307139873504639,
+        "dir": "/repo"
+    },
+    {
+        "command": "pipdeptree",
+        "returncode": 0,
+        "time": 1.436227560043335,
+        "dir": "/repo"
+    },
+    {
+        "command": "python /home/tools/generate_diff.py",
+        "returncode": 0,
+        "time": 0.657827615737915,
+        "dir": "/repo"
+    }
+]

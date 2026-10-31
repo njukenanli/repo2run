@@ -1,0 +1,65 @@
+[1m[36masgiref[0m[2m==[0m[1m[32m3.6.0[0m
+[1m[36mblinker[0m[2m==[0m[1m[32m1.5[0m
+[1m[36mFlask[0m[2m==[0m[1m[32m2.3.0.dev0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mclick[0m [2mrequired:[0m [94m>=8.0[0m [2minstalled:[0m [1m[32m8.4.2[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mitsdangerous[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.2.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mJinja2[0m [2mrequired:[0m [94m>=3.0[0m [2minstalled:[0m [1m[32m3.1.6[0m
+[2m┃   ┗━━ [0m[1m[32m✓[0m [1m[36mMarkupSafe[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m3.0.3[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mWerkzeug[0m [2mrequired:[0m [94m>=2.2.2[0m [2minstalled:[0m [1m[32m2.2.3[0m
+[2m    ┗━━ [0m[1m[32m✓[0m [1m[36mMarkupSafe[0m [2mrequired:[0m [94m>=2.1.1[0m [2minstalled:[0m [1m[32m3.0.3[0m
+[1m[36mgreenlet[0m[2m==[0m[1m[32m2.0.2[0m
+[1m[36mpip[0m[2m==[0m[1m[32m23.0.1[0m
+[1m[36mpipdeptree[0m[2m==[0m[1m[32m4.1.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mnab-index[0m [2mrequired:[0m [94m>=0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m┃   ┣━━ [0m[1m[33m⚠[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[33m23.0[0m
+[2m┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtruststore[0m [2mrequired:[0m [94m>=0.10[0m [2minstalled:[0m [1m[32m0.10.4[0m
+[2m┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m┃   ┗━━ [0m[1m[32m✓[0m [1m[36murllib3[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.7.0[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mnab-python[0m [2mrequired:[0m [94m>=0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mbuild[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.5.0[0m
+[2m    ┃   ┣━━ [0m[1m[33m⚠[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[33m23.0[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mpyproject_hooks[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=1.1.0[0m [2minstalled:[0m [1m[32m2.0.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36minstaller[0m [2mrequired:[0m [94m>=0.7[0m [2minstalled:[0m [1m[32m1.0.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mnab-index[0m [2mrequired:[0m [94m==0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┃   ┣━━ [0m[1m[33m⚠[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[33m23.0[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtruststore[0m [2mrequired:[0m [94m>=0.10[0m [2minstalled:[0m [1m[32m0.10.4[0m
+[2m    ┃   ┣━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36murllib3[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.7.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mnab-resolver[0m [2mrequired:[0m [94m==0.0.11[0m [2minstalled:[0m [1m[32m0.0.11[0m
+[2m    ┃   ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mpyproject_hooks[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=2.0[0m [2minstalled:[0m [1m[32m2.0.1[0m
+[2m    ┣━━ [0m[1m[32m✓[0m [1m[36mtomli_w[0m [2mrequired:[0m [94m>=1.2[0m [2minstalled:[0m [1m[32m1.2.0[0m
+[2m    ┗━━ [0m[1m[32m✓[0m [1m[36mtyping_extensions[0m [2mrequired:[0m [94m>=4.6[0m [2minstalled:[0m [1m[32m4.16.0[0m
+[1m[36mPygments[0m[2m==[0m[1m[32m2.20.0[0m
+[1m[36mpytest[0m[2m==[0m[1m[32m7.2.2[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mattrs[0m [2mrequired:[0m [94m>=19.2.0[0m [2minstalled:[0m [1m[32m22.2.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mexceptiongroup[0m [2mrequired:[0m [94m>=1.0.0rc8[0m [2minstalled:[0m [1m[32m1.1.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36miniconfig[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m2.0.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mpackaging[0m [2mrequired:[0m [94mAny[0m [2minstalled:[0m [1m[32m23.0[0m
+[2m┣━━ [0m[1m[32m✓[0m [1m[36mpluggy[0m [2mrequired:[0m [94m>=0.12,<2.0[0m [2minstalled:[0m [1m[32m1.0.0[0m
+[2m┗━━ [0m[1m[32m✓[0m [1m[36mtomli[0m [2mrequired:[0m [94m>=1.0.0[0m [2minstalled:[0m [1m[32m2.0.1[0m
+[1m[36mpython-dotenv[0m[2m==[0m[1m[32m1.0.0[0m
+[1m[36msetuptools[0m[2m==[0m[1m[32m79.0.1[0m
+[1m[36mwheel[0m[2m==[0m[1m[32m0.46.3[0m
+[2m┗━━ [0m[1m[33m⚠[0m [1m[36mpackaging[0m [2mrequired:[0m [94m>=24.0[0m [2minstalled:[0m [1m[33m23.0[0m
+[1m[33mWarning:[0m duplicate package metadata:
+"/repo/src"
+  Flask                            2.3.0.dev0       (using 2.3.0.dev0, "/usr/local/lib/python3.10/site-packages")
+NOTE: This warning isn't a failure warning.
+------------------------------------------------------------------------
+[1m[33mWarning:[0m dependency problems found:
+* build==1.5.0
+  - packaging [required: >=24.0, installed: 23.0]
+------------------------------------------------------------------------
+
+[1m[33mWarning:[0m dependency problems found:
+* nab-index==0.0.11
+  - packaging [required: >=24.0, installed: 23.0]
+------------------------------------------------------------------------
+
+[1m[33mWarning:[0m dependency problems found:
+* wheel==0.46.3
+  - packaging [required: >=24.0, installed: 23.0]
+------------------------------------------------------------------------

@@ -1,0 +1,120 @@
+[
+    {
+        "GPT_time": 6.5357842445373535
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6739168167114258
+    },
+    {
+        "command": "printf '%s\\n' '--- Root directory ---'",
+        "returncode": 0,
+        "time": 0.6746630668640137
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6815028190612793
+    },
+    {
+        "command": "printf '%s\\n' '--- Configuration and dependency files ---'",
+        "returncode": 0,
+        "time": 0.6719415187835693
+    },
+    {
+        "command": "find . -maxdepth 3 -type f \\( -name 'pyproject.toml' -o -name 'poetry.lock' -o -name 'setup.py' -o -name 'setup.cfg' -o -name 'Pipfile' -o -name 'Pipfile.lock' -o -name 'environment.yml' -o -name 'environment.yaml' -o -name 'requirements*.txt' -o -path './.github/*' \\) -print | sort",
+        "returncode": 0,
+        "time": 0.6721668243408203
+    },
+    {
+        "GPT_time": 5.015294313430786
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6723477840423584
+    },
+    {
+        "command": "printf '%s\\n' '--- requirements tree ---'",
+        "returncode": 0,
+        "time": 0.6729941368103027
+    },
+    {
+        "command": "find requirements -maxdepth 3 -type f -print -exec sh -c 'echo \"--- $1\"; sed -n \"1,160p\" \"$1\"' _ {} \\;",
+        "returncode": 0,
+        "time": 0.6851978302001953
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.py dependency metadata ---'",
+        "returncode": 0,
+        "time": 0.6722583770751953
+    },
+    {
+        "command": "grep -nE 'python_requires|install_requires|setup_requires|tests_require|requires|setuptools|numpy|dateutil|pyparsing|kiwisolver|Pillow|cycler' setup.py setupext.py | head -200",
+        "returncode": 0,
+        "time": 0.6766622066497803
+    },
+    {
+        "command": "printf '%s\\n' '--- tox/CI versions ---'",
+        "returncode": 0,
+        "time": 0.6722886562347412
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6713464260101318
+    },
+    {
+        "command": "grep -RniE 'python-version|python:|PYTHON_VERSION|tox|pip install|requirements/' .circleci .github .travis.yml azure-pipelines.yml .appveyor.yml ci 2>/dev/null | head -240",
+        "returncode": 0,
+        "time": 1.7988908290863037
+    },
+    {
+        "GPT_time": 6.591856002807617
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6683242321014404
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 14.039472341537476
+    },
+    {
+        "GPT_time": 6.0836851596832275
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements/testing/travis_all.txt",
+        "returncode": 0,
+        "time": 0.03227829933166504
+    },
+    {
+        "GPT_time": 6.460615396499634
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6744165420532227
+    },
+    {
+        "command": "ls -ld /repo",
+        "returncode": 0,
+        "time": 0.6705210208892822
+    },
+    {
+        "command": "find /repo/requirements -maxdepth 3 -type f -print 2>/dev/null",
+        "returncode": 0,
+        "time": 12.95537281036377
+    },
+    {
+        "GPT_time": 4.364361763000488
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 2.31489634513855
+    }
+]

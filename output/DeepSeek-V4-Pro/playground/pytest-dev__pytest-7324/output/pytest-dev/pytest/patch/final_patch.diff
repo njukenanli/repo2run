@@ -1,0 +1,12 @@
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+index cec0c5501..e3fbc7401 100644
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -355,6 +355,7 @@ def _rewrite_test(fn: Path, config: Config) -> Tuple[os.stat_result, types.CodeT
+         source = f.read()
+     tree = ast.parse(source, filename=fn_)
+     rewrite_asserts(tree, source, fn_, config)
++    ast.fix_missing_locations(tree)
+     co = compile(tree, fn_, "exec", dont_inherit=True)
+     return stat, co
+ 

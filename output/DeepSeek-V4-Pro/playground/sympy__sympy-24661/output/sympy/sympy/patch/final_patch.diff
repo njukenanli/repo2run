@@ -1,0 +1,11 @@
+diff --git a/pytest.ini b/pytest.ini
+index 3ecbe0c54f..59d4cec095 100644
+--- a/pytest.ini
++++ b/pytest.ini
+@@ -1,4 +1,6 @@
+ [pytest]
++addopts = --quickcheck
++[pytest]
+ 
+ # Only run tests under the sympy/ directory. Otherwise pytest will attempt to
+ # collect tests from e.g. the bin/ directory as well.

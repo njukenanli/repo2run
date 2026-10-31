@@ -1,0 +1,36 @@
+diff --git a/django/__init__.py b/django/__init__.py
+index 1584f27d4b..8b41af5ee8 100644
+--- a/django/__init__.py
++++ b/django/__init__.py
+@@ -1,5 +1,31 @@
+ from __future__ import unicode_literals
+ 
++import collections
++import inspect
++
++# Compatibility with Python versions where collection ABCs were moved to
++# collections.abc and inspect.getargspec() was removed.
++if not hasattr(collections, 'Iterator'):
++    for name in (
++        'Callable', 'Container', 'Hashable', 'Iterable', 'Iterator', 'Mapping',
++        'MutableMapping', 'MutableSequence', 'MutableSet', 'Sequence', 'Set',
++        'Sized',
++    ):
++        setattr(collections, name, getattr(collections.abc, name))
++
++if not hasattr(inspect, 'getargspec'):
++    ArgSpec = collections.namedtuple(
++        'ArgSpec', 'args varargs keywords defaults'
++    )
++
++    def getargspec(func):
++        argspec = inspect.getfullargspec(func)
++        return ArgSpec(
++            argspec.args, argspec.varargs, argspec.varkw, argspec.defaults
++        )
++
++    inspect.getargspec = getargspec
++
+ from django.utils.version import get_version
+ 
+ VERSION = (1, 11, 0, 'alpha', 0)

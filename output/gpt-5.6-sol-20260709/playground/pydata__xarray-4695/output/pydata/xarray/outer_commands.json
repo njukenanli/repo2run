@@ -1,0 +1,304 @@
+[
+    {
+        "GPT_time": 4.952626705169678
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6724083423614502
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6749467849731445
+    },
+    {
+        "GPT_time": 3.705965280532837
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6654989719390869
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.py ---'",
+        "returncode": 0,
+        "time": 0.6733205318450928
+    },
+    {
+        "command": "cat setup.py",
+        "returncode": 0,
+        "time": 0.6631283760070801
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.6622734069824219
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6748044490814209
+    },
+    {
+        "command": "printf '%s\\n' '--- requirements.txt ---'",
+        "returncode": 0,
+        "time": 0.6696476936340332
+    },
+    {
+        "command": "cat requirements.txt",
+        "returncode": 0,
+        "time": 0.671990156173706
+    },
+    {
+        "command": "printf '%s\\n' '--- binder environment ---'",
+        "returncode": 0,
+        "time": 0.6670393943786621
+    },
+    {
+        "command": "cat .binder/environment.yml",
+        "returncode": 0,
+        "time": 0.6667578220367432
+    },
+    {
+        "command": "printf '%s\\n' '--- CI Python configuration ---'",
+        "returncode": 0,
+        "time": 0.6675605773925781
+    },
+    {
+        "command": "grep -RniE 'python.?version|python:|tox|pytest|pip install' azure-pipelines.yml .github ci 2>/dev/null | head -200",
+        "returncode": 0,
+        "time": 1.2803974151611328
+    },
+    {
+        "GPT_time": 5.076465845108032
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6739223003387451
+    },
+    {
+        "command": "git describe --tags --always 2>/dev/null || true",
+        "returncode": 0,
+        "time": 1.261479139328003
+    },
+    {
+        "command": "git log -1 --format='%H %cs %s'",
+        "returncode": 0,
+        "time": 1.3337993621826172
+    },
+    {
+        "command": "printf '%s\\n' '--- CI install ---'",
+        "returncode": 0,
+        "time": 0.6736369132995605
+    },
+    {
+        "command": "cat ci/azure/install.yml",
+        "returncode": 0,
+        "time": 0.691084623336792
+    },
+    {
+        "command": "printf '%s\\n' '--- py38 dependencies ---'",
+        "returncode": 0,
+        "time": 0.6717948913574219
+    },
+    {
+        "command": "cat ci/requirements/py38.yml",
+        "returncode": 0,
+        "time": 0.6644566059112549
+    },
+    {
+        "command": "printf '%s\\n' '--- test plugins/config ---'",
+        "returncode": 0,
+        "time": 0.6664342880249023
+    },
+    {
+        "command": "sed -n '1,220p' conftest.py",
+        "returncode": 0,
+        "time": 0.6722981929779053
+    },
+    {
+        "GPT_time": 4.047280550003052
+    },
+    {
+        "command": "change_python_version 3.8",
+        "returncode": 0,
+        "time": 21.02420139312744
+    },
+    {
+        "GPT_time": 11.401808261871338
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6743817329406738
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 1.2452244758605957
+    },
+    {
+        "GPT_time": 5.971674919128418
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6771554946899414
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.0069806575775146484
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.0047533512115478516
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.02808976173400879
+    },
+    {
+        "GPT_time": 3.651860237121582
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6679854393005371
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6691093444824219
+    },
+    {
+        "command": "find /repo -maxdepth 1 -type f -printf '%f\\n' | sort",
+        "returncode": 0,
+        "time": 0.6815648078918457
+    },
+    {
+        "GPT_time": 3.709040880203247
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5333976745605469
+    },
+    {
+        "GPT_time": 3.374521017074585
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6775052547454834
+    },
+    {
+        "command": "test -f /repo/requirements.txt",
+        "returncode": 0,
+        "time": 1.3642449378967285
+    },
+    {
+        "command": "test -f /repo/setup.py",
+        "returncode": 0,
+        "time": 1.395951509475708
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 1.7376430034637451
+    },
+    {
+        "GPT_time": 6.41060471534729
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.0107269287109375
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.00922250747680664
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements.txt",
+        "returncode": 0,
+        "time": 0.03710508346557617
+    },
+    {
+        "GPT_time": 6.3602776527404785
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.008729219436645508
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.23.5\" -t pip",
+        "returncode": 0,
+        "time": 0.008167505264282227
+    },
+    {
+        "command": "waitinglist add -p pandas -v \"==1.5.3\" -t pip",
+        "returncode": 0,
+        "time": 0.007587432861328125
+    },
+    {
+        "command": "waitinglist add -p setuptools -v \">=38.4\" -t pip",
+        "returncode": 0,
+        "time": 0.008365154266357422
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.005699634552001953
+    },
+    {
+        "GPT_time": 3.2850873470306396
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.00833892822265625
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.009387016296386719
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 20.49141001701355
+    },
+    {
+        "GPT_time": 3.335977554321289
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6716403961181641
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 8.680052042007446
+    },
+    {
+        "GPT_time": 3.885423183441162
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6788070201873779
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 100.85616302490234
+    }
+]

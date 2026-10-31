@@ -1,0 +1,13 @@
+diff --git a/setup.cfg b/setup.cfg
+index 852310c1ee..16554e35f1 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -6,6 +6,8 @@ test = pytest
+ # using yield with parametrize
+ doctest_optionflags = NORMALIZE_WHITESPACE ELLIPSIS
+ addopts =
++    -n 80
++    --dist load
+     --ignore build_tools
+     --ignore benchmarks
+     --ignore doc

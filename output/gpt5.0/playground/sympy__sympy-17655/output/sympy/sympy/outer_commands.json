@@ -1,0 +1,81 @@
+[
+    {
+        "GPT_time": 5.433430433273315
+    },
+    {
+        "command": "ls -\u10da\u10d0 /repo",
+        "returncode": 0,
+        "time": 0.19111180305480957
+    },
+    {
+        "GPT_time": 3.202913761138916
+    },
+    {
+        "command": "ls -la /repo",
+        "returncode": 0,
+        "time": 0.6918182373046875
+    },
+    {
+        "GPT_time": 3.940899610519409
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.688126802444458
+    },
+    {
+        "command": "python -c \"import pathlib; print(pathlib.Path('setup.py').read_text()[:2000])\"",
+        "returncode": 0,
+        "time": 1.7363719940185547
+    },
+    {
+        "GPT_time": 3.537288188934326
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6857109069824219
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 7.786142349243164
+    },
+    {
+        "GPT_time": 3.5135247707366943
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6825530529022217
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1201.3536109924316
+    },
+    {
+        "GPT_time": 6.743009328842163
+    },
+    {
+        "command": "python /home/tools/runtest.py --help",
+        "returncode": 1,
+        "time": 1201.7332718372345
+    },
+    {
+        "GPT_time": 6.39451003074646
+    },
+    {
+        "command": "python -c \"import pathlib; p=pathlib.Path('/home/tools/runtest.py'); print(p.read_text()[:2000])\"",
+        "returncode": 0,
+        "time": 1.8943064212799072
+    },
+    {
+        "GPT_time": 7.341473340988159
+    },
+    {
+        "command": "python -c \"import pathlib; t=pathlib.Path('/home/tools/runtest.py').read_text(); print(t[2000:4000])\"",
+        "returncode": 0,
+        "time": 1.9427011013031006
+    }
+]

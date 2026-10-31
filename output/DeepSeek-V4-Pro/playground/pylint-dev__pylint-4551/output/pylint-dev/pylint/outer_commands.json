@@ -1,0 +1,236 @@
+[
+    {
+        "GPT_time": 4.781675815582275
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6775949001312256
+    },
+    {
+        "GPT_time": 2.8458645343780518
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.665762186050415
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6823709011077881
+    },
+    {
+        "command": "cat /repo/tox.ini",
+        "returncode": 0,
+        "time": 0.6702060699462891
+    },
+    {
+        "GPT_time": 3.2607944011688232
+    },
+    {
+        "command": "cat /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 0.676067590713501
+    },
+    {
+        "command": "cat /repo/requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.6700019836425781
+    },
+    {
+        "command": "cat /repo/requirements_test_pre_commit.txt",
+        "returncode": 0,
+        "time": 0.67201828956604
+    },
+    {
+        "GPT_time": 2.7281675338745117
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 12.553646564483643
+    },
+    {
+        "GPT_time": 4.383875608444214
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6731150150299072
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 12.856966495513916
+    },
+    {
+        "GPT_time": 3.165536642074585
+    },
+    {
+        "command": "ls -la /repo/setup.py",
+        "returncode": 0,
+        "time": 0.16657710075378418
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.17252159118652344
+    },
+    {
+        "GPT_time": 3.249260187149048
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6704537868499756
+    },
+    {
+        "GPT_time": 2.88581919670105
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6661715507507324
+    },
+    {
+        "GPT_time": 3.030287504196167
+    },
+    {
+        "command": "ls -la /",
+        "returncode": 0,
+        "time": 0.6744384765625
+    },
+    {
+        "command": "ls -la /home/",
+        "returncode": 0,
+        "time": 0.6704847812652588
+    },
+    {
+        "GPT_time": 3.683753252029419
+    },
+    {
+        "command": "ls -la /home/tools/",
+        "returncode": 0,
+        "time": 0.6755540370941162
+    },
+    {
+        "GPT_time": 3.559000253677368
+    },
+    {
+        "command": "ls -la /tmp/",
+        "returncode": 0,
+        "time": 0.6710696220397949
+    },
+    {
+        "GPT_time": 2.670217514038086
+    },
+    {
+        "command": "cat /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6794869899749756
+    },
+    {
+        "GPT_time": 5.475569486618042
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 2.195751905441284
+    },
+    {
+        "GPT_time": 2.185490846633911
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6703598499298096
+    },
+    {
+        "GPT_time": 2.699145555496216
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 13.77763032913208
+    },
+    {
+        "GPT_time": 2.8095736503601074
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6665916442871094
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 14.399896621704102
+    },
+    {
+        "GPT_time": 2.7939558029174805
+    },
+    {
+        "command": "ls -la /repo/setup.py",
+        "returncode": 0,
+        "time": 0.16806483268737793
+    },
+    {
+        "command": "cat /repo/setup.py",
+        "returncode": 0,
+        "time": 0.17788362503051758
+    },
+    {
+        "GPT_time": 2.98245906829834
+    },
+    {
+        "command": "ls -la /repo/",
+        "returncode": 0,
+        "time": 0.6723577976226807
+    },
+    {
+        "GPT_time": 3.421750545501709
+    },
+    {
+        "command": "\\ls -la /repo/",
+        "returncode": 0,
+        "time": 1.3962953090667725
+    },
+    {
+        "GPT_time": 3.9740498065948486
+    },
+    {
+        "command": "clear_configuration",
+        "returncode": 0,
+        "time": 1.5597484111785889
+    },
+    {
+        "GPT_time": 2.0529098510742188
+    },
+    {
+        "command": "\\ls -la /repo/",
+        "returncode": 0,
+        "time": 1.4515337944030762
+    },
+    {
+        "GPT_time": 3.350667953491211
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6696879863739014
+    },
+    {
+        "command": "pip install -e . -q",
+        "returncode": 0,
+        "time": 8.347827196121216
+    },
+    {
+        "GPT_time": 2.5481927394866943
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 90.98761487007141
+    }
+]

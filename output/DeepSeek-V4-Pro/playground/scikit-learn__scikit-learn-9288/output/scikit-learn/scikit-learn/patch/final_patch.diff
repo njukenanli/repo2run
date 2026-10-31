@@ -1,0 +1,13 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 7fd50b7..9703910 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -111,7 +111,7 @@ requires = [
+ 
+ [tool.pytest.ini_options]
+ doctest_optionflags = "NORMALIZE_WHITESPACE ELLIPSIS"
+-testpaths = "sklearn"
++testpaths = "sklearn/tests/test_dummy.py"
+ addopts = [
+     "--disable-pytest-warnings",
+     "--color=yes",

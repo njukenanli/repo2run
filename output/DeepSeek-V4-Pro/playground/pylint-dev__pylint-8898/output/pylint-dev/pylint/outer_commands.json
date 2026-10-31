@@ -1,0 +1,77 @@
+[
+    {
+        "GPT_time": 4.261701583862305
+    },
+    {
+        "command": "ls /repo",
+        "returncode": 0,
+        "time": 0.6770870685577393
+    },
+    {
+        "GPT_time": 2.4231374263763428
+    },
+    {
+        "command": "cat /repo/pyproject.toml",
+        "returncode": 0,
+        "time": 0.6788833141326904
+    },
+    {
+        "GPT_time": 2.741486072540283
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6721475124359131
+    },
+    {
+        "command": "echo \"---\"",
+        "returncode": 0,
+        "time": 0.671525239944458
+    },
+    {
+        "command": "cat /repo/requirements_test.txt",
+        "returncode": 0,
+        "time": 0.6756405830383301
+    },
+    {
+        "command": "echo \"---\"",
+        "returncode": 0,
+        "time": 0.6665980815887451
+    },
+    {
+        "command": "cat /repo/requirements_test_min.txt",
+        "returncode": 0,
+        "time": 0.6738243103027344
+    },
+    {
+        "GPT_time": 3.769238233566284
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.669379711151123
+    },
+    {
+        "command": "pip install -e \".[testutils,spelling]\" -q",
+        "returncode": 0,
+        "time": 13.935535192489624
+    },
+    {
+        "command": "pip install -r /repo/requirements_test_min.txt -q",
+        "returncode": 0,
+        "time": 17.01339554786682
+    },
+    {
+        "command": "pip install -r /repo/requirements_test.txt -q",
+        "returncode": 0,
+        "time": 24.960383892059326
+    },
+    {
+        "GPT_time": 2.6179234981536865
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 277.9962155818939
+    }
+]

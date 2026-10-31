@@ -1,0 +1,102 @@
+[
+    {
+        "GPT_time": 5.755457639694214
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6702547073364258
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6765482425689697
+    },
+    {
+        "GPT_time": 3.144171714782715
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6709463596343994
+    },
+    {
+        "command": "cat setup.py",
+        "returncode": 0,
+        "time": 0.6725740432739258
+    },
+    {
+        "command": "printf '\\n--- setup.cfg ---\\n'",
+        "returncode": 0,
+        "time": 0.6800003051757812
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6745936870574951
+    },
+    {
+        "command": "printf '\\n--- pyproject.toml ---\\n'",
+        "returncode": 0,
+        "time": 0.6675994396209717
+    },
+    {
+        "command": "cat pyproject.toml",
+        "returncode": 0,
+        "time": 0.6785430908203125
+    },
+    {
+        "command": "printf '\\n--- tox.ini ---\\n'",
+        "returncode": 0,
+        "time": 0.6773152351379395
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6826894283294678
+    },
+    {
+        "command": "printf '\\n--- CI Python versions ---\\n'",
+        "returncode": 0,
+        "time": 0.6703319549560547
+    },
+    {
+        "command": "cat .travis.yml",
+        "returncode": 0,
+        "time": 0.6817152500152588
+    },
+    {
+        "GPT_time": 4.417925596237183
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 9.6585373878479
+    },
+    {
+        "GPT_time": 4.885142087936401
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6740610599517822
+    },
+    {
+        "command": "pip install -q -e '.[testing]'",
+        "returncode": 0,
+        "time": 25.350555658340454
+    },
+    {
+        "GPT_time": 3.704782724380493
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6711385250091553
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 302.7641706466675
+    }
+]

@@ -1,0 +1,13 @@
+diff --git a/requests/packages/urllib3/_collections.py b/requests/packages/urllib3/_collections.py
+index d77ebb8d..5bd6e1cb 100644
+--- a/requests/packages/urllib3/_collections.py
++++ b/requests/packages/urllib3/_collections.py
+@@ -1,4 +1,7 @@
+-from collections import Mapping, MutableMapping
++try:
++    from collections.abc import Mapping, MutableMapping
++except ImportError:  # pragma: no cover
++    from collections import Mapping, MutableMapping
+ try:
+     from threading import RLock
+ except ImportError: # Platform-specific: No threads available

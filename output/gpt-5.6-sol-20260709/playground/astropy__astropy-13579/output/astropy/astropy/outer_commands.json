@@ -1,0 +1,195 @@
+[
+    {
+        "GPT_time": 5.899801254272461
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.677743673324585
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | head -200",
+        "returncode": 0,
+        "time": 0.7585921287536621
+    },
+    {
+        "GPT_time": 3.964521884918213
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6644313335418701
+    },
+    {
+        "command": "printf '%s\\n' '--- pyproject.toml ---'",
+        "returncode": 0,
+        "time": 0.6645646095275879
+    },
+    {
+        "command": "cat pyproject.toml",
+        "returncode": 0,
+        "time": 0.6852660179138184
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.py ---'",
+        "returncode": 0,
+        "time": 0.6640608310699463
+    },
+    {
+        "command": "sed -n '1,240p' setup.py",
+        "returncode": 0,
+        "time": 0.6740078926086426
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.6650803089141846
+    },
+    {
+        "command": "sed -n '1,260p' setup.cfg",
+        "returncode": 0,
+        "time": 0.6773395538330078
+    },
+    {
+        "command": "printf '%s\\n' '--- pip-requirements ---'",
+        "returncode": 0,
+        "time": 0.6645069122314453
+    },
+    {
+        "command": "cat pip-requirements",
+        "returncode": 0,
+        "time": 0.6675674915313721
+    },
+    {
+        "command": "printf '%s\\n' '--- tox.ini ---'",
+        "returncode": 0,
+        "time": 0.6633636951446533
+    },
+    {
+        "command": "sed -n '1,240p' tox.ini",
+        "returncode": 0,
+        "time": 0.6860706806182861
+    },
+    {
+        "command": "printf '%s\\n' '--- CI config ---'",
+        "returncode": 0,
+        "time": 0.6660068035125732
+    },
+    {
+        "command": "sed -n '1,240p' .circleci/config.yml",
+        "returncode": 0,
+        "time": 0.6758368015289307
+    },
+    {
+        "GPT_time": 5.146687269210815
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6637511253356934
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 26.948617696762085
+    },
+    {
+        "GPT_time": 9.491026878356934
+    },
+    {
+        "command": "waitinglist add -p setuptools -v \"==65.5.1\" -t pip",
+        "returncode": 0,
+        "time": 0.00732111930847168
+    },
+    {
+        "command": "waitinglist add -p setuptools_scm -v \"==6.4.2\" -t pip",
+        "returncode": 0,
+        "time": 0.007123231887817383
+    },
+    {
+        "command": "waitinglist add -p wheel -t pip",
+        "returncode": 0,
+        "time": 0.0066149234771728516
+    },
+    {
+        "command": "waitinglist add -p cython -v \"==0.29.30\" -t pip",
+        "returncode": 0,
+        "time": 0.008167266845703125
+    },
+    {
+        "command": "waitinglist add -p oldest-supported-numpy -t pip",
+        "returncode": 0,
+        "time": 0.009746313095092773
+    },
+    {
+        "command": "waitinglist add -p extension-helpers -v \"==1.0.0\" -t pip",
+        "returncode": 0,
+        "time": 0.00977468490600586
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.23.5\" -t pip",
+        "returncode": 0,
+        "time": 0.011727094650268555
+    },
+    {
+        "command": "waitinglist add -p pyerfa -v \">=2.0\" -t pip",
+        "returncode": 0,
+        "time": 0.009586811065673828
+    },
+    {
+        "command": "waitinglist add -p PyYAML -v \">=3.13\" -t pip",
+        "returncode": 0,
+        "time": 0.009124279022216797
+    },
+    {
+        "command": "waitinglist add -p packaging -v \">=19.0\" -t pip",
+        "returncode": 0,
+        "time": 0.010721445083618164
+    },
+    {
+        "command": "waitinglist add -p pytest -v \"==7.4.4\" -t pip",
+        "returncode": 0,
+        "time": 0.008128166198730469
+    },
+    {
+        "command": "waitinglist add -p pytest-doctestplus -v \">=0.12\" -t pip",
+        "returncode": 0,
+        "time": 0.008540153503417969
+    },
+    {
+        "command": "waitinglist add -p pytest-astropy-header -v \">=0.2.1\" -t pip",
+        "returncode": 0,
+        "time": 0.00807952880859375
+    },
+    {
+        "command": "waitinglist add -p pytest-astropy -v \">=0.10\" -t pip",
+        "returncode": 0,
+        "time": 0.007828474044799805
+    },
+    {
+        "command": "waitinglist add -p pytest-xdist -t pip",
+        "returncode": 0,
+        "time": 0.009900808334350586
+    },
+    {
+        "GPT_time": 3.4700238704681396
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.008455753326416016
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.007486820220947266
+    },
+    {
+        "GPT_time": 3.812324047088623
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 108.94687128067017
+    }
+]

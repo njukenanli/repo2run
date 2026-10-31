@@ -1,0 +1,553 @@
+[
+    {
+        "key": "cython",
+        "package_name": "Cython",
+        "installed_version": "0.29.36",
+        "required_version": "0.29.36",
+        "dependencies": []
+    },
+    {
+        "key": "joblib",
+        "package_name": "joblib",
+        "installed_version": "1.3.2",
+        "required_version": "1.3.2",
+        "dependencies": []
+    },
+    {
+        "key": "numpydoc",
+        "package_name": "numpydoc",
+        "installed_version": "1.10.0",
+        "required_version": "1.10.0",
+        "dependencies": [
+            {
+                "key": "sphinx",
+                "package_name": "Sphinx",
+                "installed_version": "8.1.3",
+                "required_version": ">=6",
+                "dependencies": [
+                    {
+                        "key": "alabaster",
+                        "package_name": "alabaster",
+                        "installed_version": "1.0.0",
+                        "required_version": ">=0.7.14",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "babel",
+                        "package_name": "babel",
+                        "installed_version": "2.18.0",
+                        "required_version": ">=2.13",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "docutils",
+                        "package_name": "docutils",
+                        "installed_version": "0.21.2",
+                        "required_version": ">=0.20,<0.22",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "imagesize",
+                        "package_name": "imagesize",
+                        "installed_version": "2.0.0",
+                        "required_version": ">=1.3",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "jinja2",
+                        "package_name": "Jinja2",
+                        "installed_version": "3.1.6",
+                        "required_version": ">=3.1",
+                        "dependencies": [
+                            {
+                                "key": "markupsafe",
+                                "package_name": "MarkupSafe",
+                                "installed_version": "3.0.3",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": ">=23.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pygments",
+                        "package_name": "Pygments",
+                        "installed_version": "2.20.0",
+                        "required_version": ">=2.17",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "requests",
+                        "package_name": "requests",
+                        "installed_version": "2.34.2",
+                        "required_version": ">=2.30.0",
+                        "dependencies": [
+                            {
+                                "key": "certifi",
+                                "package_name": "certifi",
+                                "installed_version": "2026.7.22",
+                                "required_version": ">=2023.5.7",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "charset-normalizer",
+                                "package_name": "charset-normalizer",
+                                "installed_version": "3.4.9",
+                                "required_version": ">=2,<4",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "idna",
+                                "package_name": "idna",
+                                "installed_version": "3.18",
+                                "required_version": ">=2.5,<4",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "urllib3",
+                                "package_name": "urllib3",
+                                "installed_version": "2.7.0",
+                                "required_version": ">=1.26,<3",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "snowballstemmer",
+                        "package_name": "snowballstemmer",
+                        "installed_version": "3.1.1",
+                        "required_version": ">=2.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-applehelp",
+                        "package_name": "sphinxcontrib-applehelp",
+                        "installed_version": "2.0.0",
+                        "required_version": ">=1.0.7",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-devhelp",
+                        "package_name": "sphinxcontrib-devhelp",
+                        "installed_version": "2.0.0",
+                        "required_version": ">=1.0.6",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-htmlhelp",
+                        "package_name": "sphinxcontrib-htmlhelp",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=2.0.6",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-jsmath",
+                        "package_name": "sphinxcontrib-jsmath",
+                        "installed_version": "1.0.1",
+                        "required_version": ">=1.0.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-qthelp",
+                        "package_name": "sphinxcontrib-qthelp",
+                        "installed_version": "2.0.0",
+                        "required_version": ">=1.0.6",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "sphinxcontrib-serializinghtml",
+                        "package_name": "sphinxcontrib-serializinghtml",
+                        "installed_version": "2.0.0",
+                        "required_version": ">=1.1.9",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=2",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "tomli",
+                "package_name": "tomli",
+                "installed_version": "2.4.1",
+                "required_version": ">=1.1.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "pip",
+        "package_name": "pip",
+        "installed_version": "23.0.1",
+        "required_version": "23.0.1",
+        "dependencies": []
+    },
+    {
+        "key": "pipdeptree",
+        "package_name": "pipdeptree",
+        "installed_version": "4.1.0",
+        "required_version": "4.1.0",
+        "dependencies": [
+            {
+                "key": "nab-index",
+                "package_name": "nab-index",
+                "installed_version": "0.0.11",
+                "required_version": ">=0.0.11",
+                "dependencies": [
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": ">=24.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "truststore",
+                        "package_name": "truststore",
+                        "installed_version": "0.10.4",
+                        "required_version": ">=0.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "typing-extensions",
+                        "package_name": "typing_extensions",
+                        "installed_version": "4.16.0",
+                        "required_version": ">=4.6",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "urllib3",
+                        "package_name": "urllib3",
+                        "installed_version": "2.7.0",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "nab-python",
+                "package_name": "nab-python",
+                "installed_version": "0.0.11",
+                "required_version": ">=0.0.11",
+                "dependencies": [
+                    {
+                        "key": "build",
+                        "package_name": "build",
+                        "installed_version": "1.5.0",
+                        "required_version": ">=1.2",
+                        "dependencies": [
+                            {
+                                "key": "packaging",
+                                "package_name": "packaging",
+                                "installed_version": "26.2",
+                                "required_version": ">=24.0",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "pyproject-hooks",
+                                "package_name": "pyproject_hooks",
+                                "installed_version": "1.2.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "tomli",
+                                "package_name": "tomli",
+                                "installed_version": "2.4.1",
+                                "required_version": ">=1.1.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "installer",
+                        "package_name": "installer",
+                        "installed_version": "1.0.1",
+                        "required_version": ">=0.7",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "nab-index",
+                        "package_name": "nab-index",
+                        "installed_version": "0.0.11",
+                        "required_version": "==0.0.11",
+                        "dependencies": [
+                            {
+                                "key": "packaging",
+                                "package_name": "packaging",
+                                "installed_version": "26.2",
+                                "required_version": ">=24.0",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "truststore",
+                                "package_name": "truststore",
+                                "installed_version": "0.10.4",
+                                "required_version": ">=0.10",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "urllib3",
+                                "package_name": "urllib3",
+                                "installed_version": "2.7.0",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "nab-resolver",
+                        "package_name": "nab-resolver",
+                        "installed_version": "0.0.11",
+                        "required_version": "==0.0.11",
+                        "dependencies": [
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pyproject-hooks",
+                        "package_name": "pyproject_hooks",
+                        "installed_version": "1.2.0",
+                        "required_version": ">=1.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli-w",
+                        "package_name": "tomli_w",
+                        "installed_version": "1.2.0",
+                        "required_version": ">=1.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "typing-extensions",
+                        "package_name": "typing_extensions",
+                        "installed_version": "4.16.0",
+                        "required_version": ">=4.6",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pooch",
+        "package_name": "pooch",
+        "installed_version": "1.9.0",
+        "required_version": "1.9.0",
+        "dependencies": [
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "26.2",
+                "required_version": ">=20.0",
+                "dependencies": []
+            },
+            {
+                "key": "platformdirs",
+                "package_name": "platformdirs",
+                "installed_version": "4.11.0",
+                "required_version": ">=2.5.0",
+                "dependencies": []
+            },
+            {
+                "key": "requests",
+                "package_name": "requests",
+                "installed_version": "2.34.2",
+                "required_version": ">=2.19.0",
+                "dependencies": [
+                    {
+                        "key": "certifi",
+                        "package_name": "certifi",
+                        "installed_version": "2026.7.22",
+                        "required_version": ">=2023.5.7",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "charset-normalizer",
+                        "package_name": "charset-normalizer",
+                        "installed_version": "3.4.9",
+                        "required_version": ">=2,<4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "idna",
+                        "package_name": "idna",
+                        "installed_version": "3.18",
+                        "required_version": ">=2.5,<4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "urllib3",
+                        "package_name": "urllib3",
+                        "installed_version": "2.7.0",
+                        "required_version": ">=1.26,<3",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pytest-cov",
+        "package_name": "pytest-cov",
+        "installed_version": "7.1.0",
+        "required_version": "7.1.0",
+        "dependencies": [
+            {
+                "key": "coverage",
+                "package_name": "coverage",
+                "installed_version": "7.15.2",
+                "required_version": ">=7.10.6",
+                "dependencies": [
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": "Any",
+                        "extra": "toml",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "pluggy",
+                "package_name": "pluggy",
+                "installed_version": "1.6.0",
+                "required_version": ">=1.2",
+                "dependencies": []
+            },
+            {
+                "key": "pytest",
+                "package_name": "pytest",
+                "installed_version": "9.1.1",
+                "required_version": ">=7",
+                "dependencies": [
+                    {
+                        "key": "exceptiongroup",
+                        "package_name": "exceptiongroup",
+                        "installed_version": "1.3.1",
+                        "required_version": ">=1",
+                        "dependencies": [
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "iniconfig",
+                        "package_name": "iniconfig",
+                        "installed_version": "2.3.0",
+                        "required_version": ">=1.0.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": ">=22",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pluggy",
+                        "package_name": "pluggy",
+                        "installed_version": "1.6.0",
+                        "required_version": ">=1.5,<2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pygments",
+                        "package_name": "Pygments",
+                        "installed_version": "2.20.0",
+                        "required_version": ">=2.7.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=1",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "scipy",
+        "package_name": "scipy",
+        "installed_version": "1.10.1",
+        "required_version": "1.10.1",
+        "dependencies": [
+            {
+                "key": "numpy",
+                "package_name": "numpy",
+                "installed_version": "1.24.4",
+                "required_version": ">=1.19.5,<1.27.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "setuptools",
+        "package_name": "setuptools",
+        "installed_version": "79.0.1",
+        "required_version": "79.0.1",
+        "dependencies": []
+    },
+    {
+        "key": "threadpoolctl",
+        "package_name": "threadpoolctl",
+        "installed_version": "3.2.0",
+        "required_version": "3.2.0",
+        "dependencies": []
+    },
+    {
+        "key": "wheel",
+        "package_name": "wheel",
+        "installed_version": "0.46.3",
+        "required_version": "0.46.3",
+        "dependencies": [
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "26.2",
+                "required_version": ">=24.0",
+                "dependencies": []
+            }
+        ]
+    }
+]

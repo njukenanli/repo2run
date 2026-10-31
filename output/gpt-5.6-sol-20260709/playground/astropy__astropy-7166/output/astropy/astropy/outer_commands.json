@@ -1,0 +1,826 @@
+[
+    {
+        "GPT_time": 5.9916393756866455
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6701090335845947
+    },
+    {
+        "command": "find . -maxdepth 2 -type f | sort | sed -n '1,200p'",
+        "returncode": 0,
+        "time": 0.6778743267059326
+    },
+    {
+        "GPT_time": 3.9363675117492676
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6658508777618408
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.py ---'",
+        "returncode": 0,
+        "time": 0.6660609245300293
+    },
+    {
+        "command": "sed -n '1,240p' setup.py",
+        "returncode": 0,
+        "time": 0.6762800216674805
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.6637094020843506
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6644299030303955
+    },
+    {
+        "command": "printf '%s\\n' '--- pip-requirements ---'",
+        "returncode": 0,
+        "time": 0.6678013801574707
+    },
+    {
+        "command": "cat pip-requirements",
+        "returncode": 0,
+        "time": 0.6693072319030762
+    },
+    {
+        "command": "printf '%s\\n' '--- pip-requirements-dev ---'",
+        "returncode": 0,
+        "time": 0.6665055751800537
+    },
+    {
+        "command": "cat pip-requirements-dev",
+        "returncode": 0,
+        "time": 0.671227216720581
+    },
+    {
+        "command": "printf '%s\\n' '--- CI version references ---'",
+        "returncode": 0,
+        "time": 0.6623826026916504
+    },
+    {
+        "command": "grep -RInE 'python([_: -]?version)?|PYTHON_VERSION|tox|numpy' .travis.yml appveyor.yml .circleci/config.yml setup.py setup.cfg | head -200",
+        "returncode": 0,
+        "time": 0.6710789203643799
+    },
+    {
+        "GPT_time": 4.83079195022583
+    },
+    {
+        "command": "change_python_version 3.6",
+        "returncode": 0,
+        "time": 5.996499061584473
+    },
+    {
+        "GPT_time": 5.01215934753418
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6632776260375977
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 266.29978585243225
+    },
+    {
+        "GPT_time": 3.3563907146453857
+    },
+    {
+        "command": "waitinglist addfile /repo/pip-requirements",
+        "returncode": 0,
+        "time": 0.04468655586242676
+    },
+    {
+        "GPT_time": 3.7966716289520264
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6694033145904541
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6694464683532715
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6756925582885742
+    },
+    {
+        "command": "stat /repo/pip-requirements",
+        "returncode": 0,
+        "time": 0.7014570236206055
+    },
+    {
+        "GPT_time": 3.4597952365875244
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6709568500518799
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 15.741149425506592
+    },
+    {
+        "GPT_time": 4.288637638092041
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 7.789101839065552
+    },
+    {
+        "GPT_time": 4.416110038757324
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.663346529006958
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 327.52992129325867
+    },
+    {
+        "GPT_time": 3.0771844387054443
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.666633129119873
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 20.93292212486267
+    },
+    {
+        "GPT_time": 3.80861496925354
+    },
+    {
+        "command": "waitinglist add -p numpy -v \"==1.19.5\" -t pip",
+        "returncode": 0,
+        "time": 0.010212898254394531
+    },
+    {
+        "GPT_time": 3.964172840118408
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.011931180953979492
+    },
+    {
+        "command": "conflictlist show",
+        "returncode": 0,
+        "time": 0.007931947708129883
+    },
+    {
+        "GPT_time": 4.093171119689941
+    },
+    {
+        "command": "waitinglist clear",
+        "returncode": 0,
+        "time": 0.006554126739501953
+    },
+    {
+        "command": "waitinglist add -p numpy -v ==1.19.5 -t pip",
+        "returncode": 0,
+        "time": 0.005431652069091797
+    },
+    {
+        "command": "waitinglist show",
+        "returncode": 0,
+        "time": 0.005568981170654297
+    },
+    {
+        "GPT_time": 3.076482057571411
+    },
+    {
+        "command": "download",
+        "returncode": 0,
+        "time": 771.5615203380585
+    },
+    {
+        "GPT_time": 5.583441495895386
+    },
+    {
+        "command": "python -c \"import platform,sys; print(platform.machine()); print(sys.version)\"",
+        "returncode": 0,
+        "time": 2.1575207710266113
+    },
+    {
+        "command": "pip index versions numpy --python-version 3.7 | head -30",
+        "returncode": 0,
+        "time": 5.555055379867554
+    },
+    {
+        "command": "pip debug --verbose | sed -n '/Compatible tags:/,+15p'",
+        "returncode": 0,
+        "time": 3.412501811981201
+    },
+    {
+        "GPT_time": 5.775704383850098
+    },
+    {
+        "command": "printf '%s\\n' '--- root context ---'",
+        "returncode": 0,
+        "time": 0.6685693264007568
+    },
+    {
+        "command": "command -v python",
+        "returncode": 0,
+        "time": 2.3845832347869873
+    },
+    {
+        "command": "command -v pip",
+        "returncode": 0,
+        "time": 2.2859928607940674
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 2.111840009689331
+    },
+    {
+        "command": "pip --version",
+        "returncode": 0,
+        "time": 2.768263578414917
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.675048828125
+    },
+    {
+        "command": "printf '%s\\n' '--- repo context ---'",
+        "returncode": 0,
+        "time": 0.6762046813964844
+    },
+    {
+        "command": "command -v python",
+        "returncode": 0,
+        "time": 2.16927170753479
+    },
+    {
+        "command": "command -v pip",
+        "returncode": 0,
+        "time": 2.338629722595215
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 2.327918291091919
+    },
+    {
+        "command": "pip --version",
+        "returncode": 0,
+        "time": 2.550767421722412
+    },
+    {
+        "command": "type -a python pip",
+        "returncode": 0,
+        "time": 2.446533441543579
+    },
+    {
+        "GPT_time": 4.183759927749634
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 11.497256994247437
+    },
+    {
+        "GPT_time": 5.567077398300171
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 2.4135048389434814
+    },
+    {
+        "command": "pip --version",
+        "returncode": 0,
+        "time": 3.0725581645965576
+    },
+    {
+        "command": "pip install -q numpy==1.19.5",
+        "returncode": 0,
+        "time": 12.256877899169922
+    },
+    {
+        "GPT_time": 3.37178635597229
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6845028400421143
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 16.187865018844604
+    },
+    {
+        "GPT_time": 3.3754026889801025
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6774611473083496
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 22.865034341812134
+    },
+    {
+        "GPT_time": 4.370288133621216
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6987655162811279
+    },
+    {
+        "command": "python setup.py clean --all -q",
+        "returncode": 0,
+        "time": 14.90897011756897
+    },
+    {
+        "command": "python setup.py build_ext --inplace --force -q",
+        "returncode": 0,
+        "time": 14.563355445861816
+    },
+    {
+        "GPT_time": 5.313419342041016
+    },
+    {
+        "command": "python /repo/setup.py clean --all -q",
+        "returncode": 0,
+        "time": 14.812079429626465
+    },
+    {
+        "command": "python /repo/setup.py build_ext --inplace --force -q",
+        "returncode": 0,
+        "time": 17.030051708221436
+    },
+    {
+        "GPT_time": 3.5868842601776123
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6835343837738037
+    },
+    {
+        "command": "ls -la /",
+        "returncode": 0,
+        "time": 0.6838018894195557
+    },
+    {
+        "command": "ls -la /repo 2>&1 || true",
+        "returncode": 0,
+        "time": 2.3752400875091553
+    },
+    {
+        "command": "find / -maxdepth 3 -name setup.py 2>/dev/null | head -30",
+        "returncode": 0,
+        "time": 3.0004098415374756
+    },
+    {
+        "GPT_time": 4.431128263473511
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 11.888907194137573
+    },
+    {
+        "GPT_time": 4.2169458866119385
+    },
+    {
+        "command": "ls -la /repo | head -40",
+        "returncode": 0,
+        "time": 0.6775989532470703
+    },
+    {
+        "command": "find /repo/astropy -type f \\( -name '*.so' -o -name '*.o' \\) | head -40",
+        "returncode": 0,
+        "time": 0.6922986507415771
+    },
+    {
+        "command": "python --version",
+        "returncode": 0,
+        "time": 2.260307550430298
+    },
+    {
+        "GPT_time": 6.479865312576294
+    },
+    {
+        "command": "pip install -q numpy==1.19.5",
+        "returncode": 0,
+        "time": 12.740606307983398
+    },
+    {
+        "command": "(cd /repo",
+        "returncode": 1,
+        "time": 1203.717357158661
+    },
+    {
+        "command": "python setup.py clean --all -q",
+        "returncode": 0,
+        "time": 21.516711950302124
+    },
+    {
+        "command": "python setup.py build_ext --inplace --force -q",
+        "returncode": 0,
+        "time": 17.260782718658447
+    },
+    {
+        "command": "pip install -q -e .)",
+        "returncode": 0,
+        "time": 18.686749696731567
+    },
+    {
+        "GPT_time": 9.148265838623047
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6738629341125488
+    },
+    {
+        "command": "python setup.py clean --all -q",
+        "returncode": 0,
+        "time": 18.6750431060791
+    },
+    {
+        "GPT_time": 9.385332822799683
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 65.56311988830566
+    },
+    {
+        "GPT_time": 4.477605819702148
+    },
+    {
+        "command": "pip install -q numpy==1.19.5",
+        "returncode": 0,
+        "time": 11.955098390579224
+    },
+    {
+        "command": "find /repo/astropy -type f -name '*.cpython-37m-*.so' -delete",
+        "returncode": 0,
+        "time": 0.6934807300567627
+    },
+    {
+        "command": "rm -rf /repo/build",
+        "returncode": 0,
+        "time": 5.663827180862427
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6677544116973877
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 403.47772216796875
+    },
+    {
+        "GPT_time": 4.741822004318237
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.7133035659790039
+    },
+    {
+        "command": "python -c \"import numpy; import astropy; from astropy import _erfa; from astropy.table import Table; print(numpy.__version__, astropy.__version__)\"",
+        "returncode": 0,
+        "time": 7.607430458068848
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 23.760640859603882
+    },
+    {
+        "GPT_time": 7.6797473430633545
+    },
+    {
+        "command": "grep -RInE 'simplefilter|filterwarnings|DeprecationWarning|warnings.*error' /repo/conftest.py /repo/astropy/conftest.py /repo/astropy/tests /repo/astropy/utils 2>/dev/null | head -120",
+        "returncode": 0,
+        "time": 2.5519821643829346
+    },
+    {
+        "GPT_time": 5.928877592086792
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6719131469726562
+    },
+    {
+        "command": "env | grep -i warning || true",
+        "returncode": 0,
+        "time": 0.6737689971923828
+    },
+    {
+        "command": "pytest --trace-config --collect-only 2>&1 | grep -E 'warnings|pytest_astropy|astropy.*plugin|registered third-party' | head -100",
+        "returncode": 0,
+        "time": 0.008858442306518555
+    },
+    {
+        "command": "pip list | grep -Ei 'pytest|astropy'",
+        "returncode": 0,
+        "time": 4.0449583530426025
+    },
+    {
+        "GPT_time": 6.7817792892456055
+    },
+    {
+        "command": "sed -n '1,260p' /repo/conftest.py",
+        "returncode": 0,
+        "time": 0.1723623275756836
+    },
+    {
+        "command": "printf '\\n--- astropy/conftest.py ---\\n'",
+        "returncode": 0,
+        "time": 0.6881389617919922
+    },
+    {
+        "command": "sed -n '1,320p' /repo/astropy/conftest.py",
+        "returncode": 0,
+        "time": 0.17741179466247559
+    },
+    {
+        "command": "printf '\\n--- broad warning API search ---\\n'",
+        "returncode": 0,
+        "time": 0.6746976375579834
+    },
+    {
+        "command": "grep -RInE 'warnings\\.|catch_warnings|filterwarnings|warnoptions' /repo/astropy /repo/astropy_helpers --include='*.py' | head -200",
+        "returncode": 0,
+        "time": 0.6905300617218018
+    },
+    {
+        "GPT_time": 6.721743822097778
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 11.240708827972412
+    },
+    {
+        "GPT_time": 6.264063835144043
+    },
+    {
+        "command": "sed -n '1,260p' /repo/conftest.py",
+        "returncode": 0,
+        "time": 0.6767380237579346
+    },
+    {
+        "command": "printf '\\n--- astropy/conftest.py ---\\n'",
+        "returncode": 0,
+        "time": 0.6756365299224854
+    },
+    {
+        "command": "sed -n '1,340p' /repo/astropy/conftest.py",
+        "returncode": 0,
+        "time": 0.689378023147583
+    },
+    {
+        "command": "printf '\\n--- warning API search ---\\n'",
+        "returncode": 0,
+        "time": 0.6759274005889893
+    },
+    {
+        "command": "grep -RInE 'simplefilter|filterwarnings|warnings\\.filter|warnoptions' /repo/astropy /repo/astropy_helpers --include='*.py' | head -200",
+        "returncode": 0,
+        "time": 0.787550687789917
+    },
+    {
+        "GPT_time": 5.502963542938232
+    },
+    {
+        "command": "sed -n '190,285p' /repo/astropy/tests/helper.py",
+        "returncode": 0,
+        "time": 0.6902141571044922
+    },
+    {
+        "command": "grep -RIn 'enable_deprecations_as_exceptions' /repo --include='*.py'",
+        "returncode": 0,
+        "time": 0.7610824108123779
+    },
+    {
+        "GPT_time": 5.021323919296265
+    },
+    {
+        "command": "sed -n '130,205p' /repo/astropy/tests/helper.py",
+        "returncode": 0,
+        "time": 0.6817917823791504
+    },
+    {
+        "command": "grep -RIn 'warnings_to_ignore_by_pyver' /repo --include='*.py'",
+        "returncode": 0,
+        "time": 0.7495903968811035
+    },
+    {
+        "GPT_time": 8.622917413711548
+    },
+    {
+        "command": "grep -RInE 'collections\\.(Sequence|Mapping|MutableMapping|Iterable|Iterator|Callable|Container|Hashable|Set|MutableSet|MappingView|KeysView|ItemsView|ValuesView)' /repo/astropy --include='*.py'",
+        "returncode": 0,
+        "time": 0.7171242237091064
+    },
+    {
+        "GPT_time": 8.135303497314453
+    },
+    {
+        "diff": "\n/repo/astropy/conftest.py\n<<<<<<< SEARCH\nenable_deprecations_as_exceptions(\n    include_astropy_deprecations=False,\n    # This is a workaround for the OpenSSL deprecation warning that comes from\n    # the `requests` module. It only appears when both asdf and sphinx are\n    # installed. This can be removed once pyopenssl 1.7.20+ is released.\n    modules_to_ignore_on_import=['requests'])\n=======\nenable_deprecations_as_exceptions(\n    include_astropy_deprecations=False,\n    # Python 3.7 deprecated importing ABCs directly from collections, but\n    # still provides the aliases used throughout this version of Astropy.\n    warnings_to_ignore_by_pyver={\n        (3, 7): [r\"Using or importing the ABCs from 'collections' instead of \"\n                 r\"from 'collections\\.abc' is deprecated.*\"]},\n    # This is a workaround for the OpenSSL deprecation warning that comes from\n    # the `requests` module. It only appears when both asdf and sphinx are\n    # installed. This can be removed once pyopenssl 1.7.20+ is released.\n    modules_to_ignore_on_import=['requests'])\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.2561342716217041
+    },
+    {
+        "GPT_time": 5.846338272094727
+    },
+    {
+        "command": "pip install -q numpy==1.19.5",
+        "returncode": 0,
+        "time": 14.225171566009521
+    },
+    {
+        "command": "find /repo/astropy -type f -name '*.cpython-37m-*.so' -delete",
+        "returncode": 0,
+        "time": 0.7203824520111084
+    },
+    {
+        "command": "rm -rf /repo/build",
+        "returncode": 0,
+        "time": 5.830184698104858
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6743021011352539
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 390.01273107528687
+    },
+    {
+        "GPT_time": 4.4401326179504395
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6646523475646973
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 58.431358098983765
+    },
+    {
+        "GPT_time": 7.7163732051849365
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 9.034944534301758
+    },
+    {
+        "GPT_time": 5.901973009109497
+    },
+    {
+        "command": "pip install -q numpy==1.14.5",
+        "returncode": 0,
+        "time": 9.267654657363892
+    },
+    {
+        "command": "find /repo/astropy -type f -name '*.cpython-37m-*.so' -delete",
+        "returncode": 0,
+        "time": 0.7396087646484375
+    },
+    {
+        "command": "rm -rf /repo/build",
+        "returncode": 0,
+        "time": 3.3658175468444824
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6704082489013672
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 277.1910665035248
+    },
+    {
+        "GPT_time": 4.660005807876587
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6638412475585938
+    },
+    {
+        "command": "runtest",
+        "returncode": 1,
+        "time": 1203.693018913269
+    },
+    {
+        "GPT_time": 7.491137742996216
+    },
+    {
+        "command": "change_python_version 3.7",
+        "returncode": 0,
+        "time": 14.297626256942749
+    },
+    {
+        "GPT_time": 5.288658142089844
+    },
+    {
+        "command": "sed -n '1,220p' /home/tools/runtest.py",
+        "returncode": 0,
+        "time": 0.6807897090911865
+    },
+    {
+        "command": "printf '\\n--- setup.cfg ---\\n'",
+        "returncode": 0,
+        "time": 0.6691076755523682
+    },
+    {
+        "command": "cat /repo/setup.cfg",
+        "returncode": 0,
+        "time": 0.6672348976135254
+    },
+    {
+        "command": "printf '\\n--- dependency lists ---\\n'",
+        "returncode": 0,
+        "time": 0.6706392765045166
+    },
+    {
+        "command": "cat /repo/pip-requirements /repo/pip-requirements-dev",
+        "returncode": 0,
+        "time": 0.6703581809997559
+    },
+    {
+        "GPT_time": 6.517458915710449
+    },
+    {
+        "command": "pip install -q numpy==1.14.5 pytest-xdist==3.4.0",
+        "returncode": 0,
+        "time": 12.029250621795654
+    },
+    {
+        "command": "find /repo/astropy -type f -name '*.cpython-37m-*.so' -delete",
+        "returncode": 0,
+        "time": 0.6832921504974365
+    },
+    {
+        "command": "rm -rf /repo/build",
+        "returncode": 0,
+        "time": 3.9716877937316895
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6684761047363281
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 363.5534358024597
+    },
+    {
+        "GPT_time": 5.9414777755737305
+    },
+    {
+        "diff": "\n/repo/setup.cfg\n<<<<<<< SEARCH\naddopts = -p no:warnings\n=======\naddopts = -p no:warnings -n 4\n>>>>>>> REPLACE\n",
+        "returncode": 0,
+        "time": 0.23852300643920898
+    }
+]

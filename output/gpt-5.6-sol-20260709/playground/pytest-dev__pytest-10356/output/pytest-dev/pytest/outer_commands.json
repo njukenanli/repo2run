@@ -1,0 +1,139 @@
+[
+    {
+        "GPT_time": 6.028632164001465
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6723601818084717
+    },
+    {
+        "command": "printf '%s\\n' '--- root ---'",
+        "returncode": 0,
+        "time": 0.6693942546844482
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6752691268920898
+    },
+    {
+        "command": "printf '%s\\n' '--- files (depth <= 2) ---'",
+        "returncode": 0,
+        "time": 0.6717789173126221
+    },
+    {
+        "command": "find . -maxdepth 2 -type f -not -path './.git/*' | sort",
+        "returncode": 0,
+        "time": 0.6775240898132324
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6691436767578125
+    },
+    {
+        "command": "printf '%s\\n' '--- root ---'",
+        "returncode": 0,
+        "time": 0.6712641716003418
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6734545230865479
+    },
+    {
+        "command": "printf '%s\\n' '--- files (depth <= 2) ---'",
+        "returncode": 0,
+        "time": 0.6684479713439941
+    },
+    {
+        "command": "find . -maxdepth 2 -type f -not -path './.git/*' | sort",
+        "returncode": 0,
+        "time": 0.6792042255401611
+    },
+    {
+        "GPT_time": 3.7508113384246826
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6694636344909668
+    },
+    {
+        "command": "printf '%s\\n' '--- pyproject.toml ---'",
+        "returncode": 0,
+        "time": 0.6720726490020752
+    },
+    {
+        "command": "cat pyproject.toml",
+        "returncode": 0,
+        "time": 0.674551248550415
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.6734306812286377
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6738381385803223
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.py ---'",
+        "returncode": 0,
+        "time": 0.6689057350158691
+    },
+    {
+        "command": "cat setup.py",
+        "returncode": 0,
+        "time": 0.670893669128418
+    },
+    {
+        "command": "printf '%s\\n' '--- tox.ini ---'",
+        "returncode": 0,
+        "time": 0.6674864292144775
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6820147037506104
+    },
+    {
+        "command": "printf '%s\\n' '--- workflows ---'",
+        "returncode": 0,
+        "time": 0.6663486957550049
+    },
+    {
+        "command": "find .github -maxdepth 3 -type f -print -exec sh -c 'echo \"--- $1\"; sed -n \"1,240p\" \"$1\"' _ {} \\;",
+        "returncode": 0,
+        "time": 0.7377586364746094
+    },
+    {
+        "GPT_time": 4.523561000823975
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6698012351989746
+    },
+    {
+        "command": "python -m pip install -q -e '.[testing]'",
+        "returncode": 0,
+        "time": 18.35031032562256
+    },
+    {
+        "GPT_time": 3.4506397247314453
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6686053276062012
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 336.43470191955566
+    }
+]

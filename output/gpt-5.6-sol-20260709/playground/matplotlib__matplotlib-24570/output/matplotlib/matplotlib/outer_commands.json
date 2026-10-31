@@ -1,0 +1,213 @@
+[
+    {
+        "GPT_time": 91.1737163066864
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6690905094146729
+    },
+    {
+        "command": "printf '%s\\n' '--- Root directory ---'",
+        "returncode": 0,
+        "time": 0.6698567867279053
+    },
+    {
+        "command": "ls -la",
+        "returncode": 0,
+        "time": 0.6736819744110107
+    },
+    {
+        "command": "printf '%s\\n' '--- Configuration and dependency files ---'",
+        "returncode": 0,
+        "time": 0.669525146484375
+    },
+    {
+        "command": "find . -maxdepth 3 -type f \\( -name 'pyproject.toml' -o -name 'poetry.lock' -o -name 'setup.py' -o -name 'setup.cfg' -o -name 'requirements*.txt' -o -name 'Pipfile' -o -name 'Pipfile.lock' -o -name 'environment.yml' -o -name 'tox.ini' -o -name '.python-version' -o -path './.github/*' \\) -print | sort",
+        "returncode": 0,
+        "time": 0.6814494132995605
+    },
+    {
+        "GPT_time": 4.748179197311401
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6718263626098633
+    },
+    {
+        "command": "printf '%s\\n' '--- pyproject.toml ---'",
+        "returncode": 0,
+        "time": 0.6736962795257568
+    },
+    {
+        "command": "cat pyproject.toml",
+        "returncode": 0,
+        "time": 0.6745171546936035
+    },
+    {
+        "command": "printf '%s\\n' '--- setup.cfg ---'",
+        "returncode": 0,
+        "time": 0.667900562286377
+    },
+    {
+        "command": "cat setup.cfg",
+        "returncode": 0,
+        "time": 0.6757440567016602
+    },
+    {
+        "command": "printf '%s\\n' '--- tox.ini ---'",
+        "returncode": 0,
+        "time": 0.6673214435577393
+    },
+    {
+        "command": "cat tox.ini",
+        "returncode": 0,
+        "time": 0.6697983741760254
+    },
+    {
+        "command": "printf '%s\\n' '--- environment.yml ---'",
+        "returncode": 0,
+        "time": 0.6651802062988281
+    },
+    {
+        "command": "cat environment.yml",
+        "returncode": 0,
+        "time": 0.6713383197784424
+    },
+    {
+        "command": "printf '%s\\n' '--- requirement files ---'",
+        "returncode": 0,
+        "time": 0.6674489974975586
+    },
+    {
+        "command": "find requirements -maxdepth 3 -type f -print -exec sh -c 'echo \"--- $1\"; cat \"$1\"' _ {} \\;",
+        "returncode": 0,
+        "time": 0.6865744590759277
+    },
+    {
+        "command": "printf '%s\\n' '--- setup metadata/dependencies ---'",
+        "returncode": 0,
+        "time": 0.6669299602508545
+    },
+    {
+        "command": "grep -nE 'python_requires|install_requires|setup_requires|tests_require|extras_require|setuptools|numpy|pybind11' setup.py setupext.py",
+        "returncode": 0,
+        "time": 0.6744697093963623
+    },
+    {
+        "GPT_time": 6.580561876296997
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6717624664306641
+    },
+    {
+        "command": "sed -n '270,355p' setup.py",
+        "returncode": 0,
+        "time": 0.6812636852264404
+    },
+    {
+        "command": "printf '%s\\n' '--- native dependency configuration ---'",
+        "returncode": 0,
+        "time": 0.6720190048217773
+    },
+    {
+        "command": "grep -nE 'freetype|qhull|pkg-config|download|system' mplsetup.cfg.template setupext.py | head -120",
+        "returncode": 0,
+        "time": 0.6769824028015137
+    },
+    {
+        "command": "printf '%s\\n' '--- CI system package clues ---'",
+        "returncode": 0,
+        "time": 0.6661837100982666
+    },
+    {
+        "command": "grep -RniE 'apt-get|apt install|libfreetype|libpng|qhull|pkg-config' .github/workflows ci .circleci | head -160",
+        "returncode": 0,
+        "time": 0.6740264892578125
+    },
+    {
+        "command": "printf '%s\\n' '--- repository version ---'",
+        "returncode": 0,
+        "time": 0.6674818992614746
+    },
+    {
+        "command": "git describe --tags --always --dirty",
+        "returncode": 0,
+        "time": 2.1708528995513916
+    },
+    {
+        "GPT_time": 5.798387289047241
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6691527366638184
+    },
+    {
+        "command": "pip install -q -e .",
+        "returncode": 0,
+        "time": 147.3114414215088
+    },
+    {
+        "GPT_time": 5.093553781509399
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6735506057739258
+    },
+    {
+        "command": "waitinglist addfile /repo/requirements/testing/all.txt",
+        "returncode": 0,
+        "time": 0.040036916732788086
+    },
+    {
+        "GPT_time": 3.8765921592712402
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6801960468292236
+    },
+    {
+        "command": "pwd",
+        "returncode": 0,
+        "time": 0.6741323471069336
+    },
+    {
+        "command": "ls -la /repo/requirements /repo/requirements/testing",
+        "returncode": 0,
+        "time": 0.6796138286590576
+    },
+    {
+        "command": "stat /repo/requirements/testing/all.txt",
+        "returncode": 0,
+        "time": 0.6706802845001221
+    },
+    {
+        "command": "realpath /repo/requirements/testing/all.txt",
+        "returncode": 0,
+        "time": 3.3671061992645264
+    },
+    {
+        "command": "git status --short",
+        "returncode": 0,
+        "time": 3.338787317276001
+    },
+    {
+        "GPT_time": 4.7067551612854
+    },
+    {
+        "command": "cd /repo",
+        "returncode": 0,
+        "time": 0.6680655479431152
+    },
+    {
+        "command": "runtest",
+        "returncode": 0,
+        "time": 16.388980388641357
+    }
+]

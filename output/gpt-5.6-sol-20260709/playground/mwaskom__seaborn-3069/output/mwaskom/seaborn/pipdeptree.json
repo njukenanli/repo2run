@@ -1,0 +1,776 @@
+[
+    {
+        "key": "flake8",
+        "package_name": "flake8",
+        "installed_version": "7.3.0",
+        "required_version": "7.3.0",
+        "dependencies": [
+            {
+                "key": "mccabe",
+                "package_name": "mccabe",
+                "installed_version": "0.7.0",
+                "required_version": ">=0.7.0,<0.8.0",
+                "dependencies": []
+            },
+            {
+                "key": "pycodestyle",
+                "package_name": "pycodestyle",
+                "installed_version": "2.14.0",
+                "required_version": ">=2.14.0,<2.15.0",
+                "dependencies": []
+            },
+            {
+                "key": "pyflakes",
+                "package_name": "pyflakes",
+                "installed_version": "3.4.0",
+                "required_version": ">=3.4.0,<3.5.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "mypy",
+        "package_name": "mypy",
+        "installed_version": "2.3.0",
+        "required_version": "2.3.0",
+        "dependencies": [
+            {
+                "key": "ast-serialize",
+                "package_name": "ast_serialize",
+                "installed_version": "0.6.0",
+                "required_version": ">=0.6.0,<1.0.0",
+                "dependencies": []
+            },
+            {
+                "key": "librt",
+                "package_name": "librt",
+                "installed_version": "0.13.0",
+                "required_version": ">=0.13.0",
+                "dependencies": []
+            },
+            {
+                "key": "mypy-extensions",
+                "package_name": "mypy_extensions",
+                "installed_version": "1.1.0",
+                "required_version": ">=1.0.0",
+                "dependencies": []
+            },
+            {
+                "key": "pathspec",
+                "package_name": "pathspec",
+                "installed_version": "1.1.1",
+                "required_version": ">=1.0.0",
+                "dependencies": []
+            },
+            {
+                "key": "tomli",
+                "package_name": "tomli",
+                "installed_version": "2.4.1",
+                "required_version": ">=1.1.0",
+                "dependencies": []
+            },
+            {
+                "key": "typing-extensions",
+                "package_name": "typing_extensions",
+                "installed_version": "4.16.0",
+                "required_version": ">=4.6.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "pandas-stubs",
+        "package_name": "pandas-stubs",
+        "installed_version": "2.3.3.260113",
+        "required_version": "2.3.3.260113",
+        "dependencies": [
+            {
+                "key": "numpy",
+                "package_name": "numpy",
+                "installed_version": "1.23.5",
+                "required_version": ">=1.23.5",
+                "dependencies": []
+            },
+            {
+                "key": "types-pytz",
+                "package_name": "types-pytz",
+                "installed_version": "2026.2.0.20260518",
+                "required_version": ">=2022.1.1",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "pip",
+        "package_name": "pip",
+        "installed_version": "23.0.1",
+        "required_version": "23.0.1",
+        "dependencies": []
+    },
+    {
+        "key": "pipdeptree",
+        "package_name": "pipdeptree",
+        "installed_version": "4.1.0",
+        "required_version": "4.1.0",
+        "dependencies": [
+            {
+                "key": "nab-index",
+                "package_name": "nab-index",
+                "installed_version": "0.0.11",
+                "required_version": ">=0.0.11",
+                "dependencies": [
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": ">=24.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "truststore",
+                        "package_name": "truststore",
+                        "installed_version": "0.10.4",
+                        "required_version": ">=0.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "typing-extensions",
+                        "package_name": "typing_extensions",
+                        "installed_version": "4.16.0",
+                        "required_version": ">=4.6",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "urllib3",
+                        "package_name": "urllib3",
+                        "installed_version": "2.7.0",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "nab-python",
+                "package_name": "nab-python",
+                "installed_version": "0.0.11",
+                "required_version": ">=0.0.11",
+                "dependencies": [
+                    {
+                        "key": "build",
+                        "package_name": "build",
+                        "installed_version": "1.5.0",
+                        "required_version": ">=1.2",
+                        "dependencies": [
+                            {
+                                "key": "packaging",
+                                "package_name": "packaging",
+                                "installed_version": "26.2",
+                                "required_version": ">=24.0",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "pyproject-hooks",
+                                "package_name": "pyproject_hooks",
+                                "installed_version": "1.2.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "tomli",
+                                "package_name": "tomli",
+                                "installed_version": "2.4.1",
+                                "required_version": ">=1.1.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "installer",
+                        "package_name": "installer",
+                        "installed_version": "1.0.1",
+                        "required_version": ">=0.7",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "nab-index",
+                        "package_name": "nab-index",
+                        "installed_version": "0.0.11",
+                        "required_version": "==0.0.11",
+                        "dependencies": [
+                            {
+                                "key": "packaging",
+                                "package_name": "packaging",
+                                "installed_version": "26.2",
+                                "required_version": ">=24.0",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "truststore",
+                                "package_name": "truststore",
+                                "installed_version": "0.10.4",
+                                "required_version": ">=0.10",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "urllib3",
+                                "package_name": "urllib3",
+                                "installed_version": "2.7.0",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "nab-resolver",
+                        "package_name": "nab-resolver",
+                        "installed_version": "0.0.11",
+                        "required_version": "==0.0.11",
+                        "dependencies": [
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pyproject-hooks",
+                        "package_name": "pyproject_hooks",
+                        "installed_version": "1.2.0",
+                        "required_version": ">=1.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli-w",
+                        "package_name": "tomli_w",
+                        "installed_version": "1.2.0",
+                        "required_version": ">=1.2",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "typing-extensions",
+                        "package_name": "typing_extensions",
+                        "installed_version": "4.16.0",
+                        "required_version": ">=4.6",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pre-commit",
+        "package_name": "pre_commit",
+        "installed_version": "4.6.1",
+        "required_version": "4.6.1",
+        "dependencies": [
+            {
+                "key": "cfgv",
+                "package_name": "cfgv",
+                "installed_version": "3.5.0",
+                "required_version": ">=2.0.0",
+                "dependencies": []
+            },
+            {
+                "key": "identify",
+                "package_name": "identify",
+                "installed_version": "2.6.19",
+                "required_version": ">=1.0.0",
+                "dependencies": []
+            },
+            {
+                "key": "nodeenv",
+                "package_name": "nodeenv",
+                "installed_version": "1.10.0",
+                "required_version": ">=0.11.1",
+                "dependencies": []
+            },
+            {
+                "key": "pyyaml",
+                "package_name": "PyYAML",
+                "installed_version": "6.0.3",
+                "required_version": ">=5.1",
+                "dependencies": []
+            },
+            {
+                "key": "virtualenv",
+                "package_name": "virtualenv",
+                "installed_version": "21.7.0",
+                "required_version": ">=20.10.0",
+                "dependencies": [
+                    {
+                        "key": "distlib",
+                        "package_name": "distlib",
+                        "installed_version": "0.4.3",
+                        "required_version": ">=0.3.7,<1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "filelock",
+                        "package_name": "filelock",
+                        "installed_version": "3.32.0",
+                        "required_version": ">=3.24.2,<4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "platformdirs",
+                        "package_name": "platformdirs",
+                        "installed_version": "4.11.0",
+                        "required_version": ">=3.9.1,<5",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "python-discovery",
+                        "package_name": "python-discovery",
+                        "installed_version": "1.5.0",
+                        "required_version": ">=1.4.2",
+                        "dependencies": [
+                            {
+                                "key": "filelock",
+                                "package_name": "filelock",
+                                "installed_version": "3.32.0",
+                                "required_version": ">=3.15.4",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "platformdirs",
+                                "package_name": "platformdirs",
+                                "installed_version": "4.11.0",
+                                "required_version": ">=4.3.6,<5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "typing-extensions",
+                        "package_name": "typing_extensions",
+                        "installed_version": "4.16.0",
+                        "required_version": ">=4.13.2",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pygments",
+        "package_name": "Pygments",
+        "installed_version": "2.20.0",
+        "required_version": "2.20.0",
+        "dependencies": []
+    },
+    {
+        "key": "pytest-cov",
+        "package_name": "pytest-cov",
+        "installed_version": "7.1.0",
+        "required_version": "7.1.0",
+        "dependencies": [
+            {
+                "key": "coverage",
+                "package_name": "coverage",
+                "installed_version": "7.15.2",
+                "required_version": ">=7.10.6",
+                "dependencies": [
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": "Any",
+                        "extra": "toml",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "pluggy",
+                "package_name": "pluggy",
+                "installed_version": "1.6.0",
+                "required_version": ">=1.2",
+                "dependencies": []
+            },
+            {
+                "key": "pytest",
+                "package_name": "pytest",
+                "installed_version": "7.4.4",
+                "required_version": ">=7",
+                "dependencies": [
+                    {
+                        "key": "exceptiongroup",
+                        "package_name": "exceptiongroup",
+                        "installed_version": "1.3.1",
+                        "required_version": ">=1.0.0rc8",
+                        "dependencies": [
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "iniconfig",
+                        "package_name": "iniconfig",
+                        "installed_version": "2.3.0",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pluggy",
+                        "package_name": "pluggy",
+                        "installed_version": "1.6.0",
+                        "required_version": ">=0.12,<2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=1.0.0",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "pytest-xdist",
+        "package_name": "pytest-xdist",
+        "installed_version": "3.8.0",
+        "required_version": "3.8.0",
+        "dependencies": [
+            {
+                "key": "execnet",
+                "package_name": "execnet",
+                "installed_version": "2.1.2",
+                "required_version": ">=2.1",
+                "dependencies": []
+            },
+            {
+                "key": "pytest",
+                "package_name": "pytest",
+                "installed_version": "7.4.4",
+                "required_version": ">=7.0.0",
+                "dependencies": [
+                    {
+                        "key": "exceptiongroup",
+                        "package_name": "exceptiongroup",
+                        "installed_version": "1.3.1",
+                        "required_version": ">=1.0.0rc8",
+                        "dependencies": [
+                            {
+                                "key": "typing-extensions",
+                                "package_name": "typing_extensions",
+                                "installed_version": "4.16.0",
+                                "required_version": ">=4.6.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "iniconfig",
+                        "package_name": "iniconfig",
+                        "installed_version": "2.3.0",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pluggy",
+                        "package_name": "pluggy",
+                        "installed_version": "1.6.0",
+                        "required_version": ">=0.12,<2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "tomli",
+                        "package_name": "tomli",
+                        "installed_version": "2.4.1",
+                        "required_version": ">=1.0.0",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "seaborn",
+        "package_name": "seaborn",
+        "installed_version": "0.12.1.dev0",
+        "required_version": "0.12.1.dev0",
+        "dependencies": [
+            {
+                "key": "matplotlib",
+                "package_name": "matplotlib",
+                "installed_version": "3.6.2",
+                "required_version": ">=3.1,!=3.6.1",
+                "dependencies": [
+                    {
+                        "key": "contourpy",
+                        "package_name": "contourpy",
+                        "installed_version": "1.3.2",
+                        "required_version": ">=1.0.1",
+                        "dependencies": [
+                            {
+                                "key": "numpy",
+                                "package_name": "numpy",
+                                "installed_version": "1.23.5",
+                                "required_version": ">=1.23",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "cycler",
+                        "package_name": "cycler",
+                        "installed_version": "0.12.1",
+                        "required_version": ">=0.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "fonttools",
+                        "package_name": "fonttools",
+                        "installed_version": "4.63.0",
+                        "required_version": ">=4.22.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "kiwisolver",
+                        "package_name": "kiwisolver",
+                        "installed_version": "1.5.0",
+                        "required_version": ">=1.0.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.23.5",
+                        "required_version": ">=1.19",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "26.2",
+                        "required_version": ">=20.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pillow",
+                        "package_name": "pillow",
+                        "installed_version": "12.3.0",
+                        "required_version": ">=6.2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pyparsing",
+                        "package_name": "pyparsing",
+                        "installed_version": "3.3.2",
+                        "required_version": ">=2.2.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "python-dateutil",
+                        "package_name": "python-dateutil",
+                        "installed_version": "2.9.0.post0",
+                        "required_version": ">=2.7",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.17.0",
+                                "required_version": ">=1.5",
+                                "dependencies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "numpy",
+                "package_name": "numpy",
+                "installed_version": "1.23.5",
+                "required_version": ">=1.17",
+                "dependencies": []
+            },
+            {
+                "key": "pandas",
+                "package_name": "pandas",
+                "installed_version": "1.5.3",
+                "required_version": ">=0.25",
+                "dependencies": [
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.23.5",
+                        "required_version": ">=1.21.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "python-dateutil",
+                        "package_name": "python-dateutil",
+                        "installed_version": "2.9.0.post0",
+                        "required_version": ">=2.8.1",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.17.0",
+                                "required_version": ">=1.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pytz",
+                        "package_name": "pytz",
+                        "installed_version": "2026.3.post1",
+                        "required_version": ">=2020.1",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "setuptools",
+        "package_name": "setuptools",
+        "installed_version": "79.0.1",
+        "required_version": "79.0.1",
+        "dependencies": []
+    },
+    {
+        "key": "statsmodels",
+        "package_name": "statsmodels",
+        "installed_version": "0.13.5",
+        "required_version": "0.13.5",
+        "dependencies": [
+            {
+                "key": "numpy",
+                "package_name": "numpy",
+                "installed_version": "1.23.5",
+                "required_version": ">=1.17",
+                "dependencies": []
+            },
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "26.2",
+                "required_version": ">=21.3",
+                "dependencies": []
+            },
+            {
+                "key": "pandas",
+                "package_name": "pandas",
+                "installed_version": "1.5.3",
+                "required_version": ">=0.25",
+                "dependencies": [
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.23.5",
+                        "required_version": ">=1.21.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "python-dateutil",
+                        "package_name": "python-dateutil",
+                        "installed_version": "2.9.0.post0",
+                        "required_version": ">=2.8.1",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.17.0",
+                                "required_version": ">=1.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pytz",
+                        "package_name": "pytz",
+                        "installed_version": "2026.3.post1",
+                        "required_version": ">=2020.1",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "patsy",
+                "package_name": "patsy",
+                "installed_version": "1.0.2",
+                "required_version": ">=0.5.2",
+                "dependencies": [
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.23.5",
+                        "required_version": ">=1.4",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "scipy",
+                "package_name": "scipy",
+                "installed_version": "1.9.3",
+                "required_version": ">=1.3",
+                "dependencies": [
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.23.5",
+                        "required_version": ">=1.18.5,<1.26.0",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "wheel",
+        "package_name": "wheel",
+        "installed_version": "0.46.3",
+        "required_version": "0.46.3",
+        "dependencies": [
+            {
+                "key": "packaging",
+                "package_name": "packaging",
+                "installed_version": "26.2",
+                "required_version": ">=24.0",
+                "dependencies": []
+            }
+        ]
+    }
+]

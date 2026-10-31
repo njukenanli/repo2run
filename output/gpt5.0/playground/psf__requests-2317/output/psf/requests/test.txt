@@ -1,0 +1,183 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.19, pytest-9.0.2, pluggy-1.6.0 -- /usr/local/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /repo
+plugins: cov-7.0.0
+collecting ... collected 142 items
+
+test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET PASSED [  0%]
+test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE PASSED [  1%]
+test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET PASSED [  2%]
+test_requests.py::RequestsTestCase::test_DIGEST_AUTH_RETURNS_COOKIE FAILED [  2%]
+test_requests.py::RequestsTestCase::test_DIGEST_AUTH_SETS_SESSION_COOKIES PASSED [  3%]
+test_requests.py::RequestsTestCase::test_DIGEST_HTTP_200_OK_GET PASSED   [  4%]
+test_requests.py::RequestsTestCase::test_DIGEST_STREAM PASSED            [  4%]
+test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_ALTERNATIVE PASSED [  5%]
+test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_WITH_MIXED_PARAMS PASSED [  6%]
+test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_WITH_PARAMS PASSED [  7%]
+test_requests.py::RequestsTestCase::test_HTTP_200_OK_HEAD PASSED         [  7%]
+test_requests.py::RequestsTestCase::test_HTTP_200_OK_PUT PASSED          [  8%]
+test_requests.py::RequestsTestCase::test_HTTP_302_ALLOW_REDIRECT_GET PASSED [  9%]
+test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES PASSED   [  9%]
+test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES_WITH_DATA PASSED [ 10%]
+test_requests.py::RequestsTestCase::test_auth_is_retained_for_redirect_on_host PASSED [ 11%]
+test_requests.py::RequestsTestCase::test_auth_is_stripped_on_redirect_off_host PASSED [ 11%]
+test_requests.py::RequestsTestCase::test_autoset_header_values_are_native PASSED [ 12%]
+test_requests.py::RequestsTestCase::test_basic_auth_str_is_always_native PASSED [ 13%]
+test_requests.py::RequestsTestCase::test_basic_building PASSED           [ 14%]
+test_requests.py::RequestsTestCase::test_basicauth_with_netrc PASSED     [ 14%]
+test_requests.py::RequestsTestCase::test_can_send_nonstring_objects_with_files PASSED [ 15%]
+test_requests.py::RequestsTestCase::test_cannot_send_unprepared_requests PASSED [ 16%]
+test_requests.py::RequestsTestCase::test_conflicting_post_params FAILED  [ 16%]
+test_requests.py::RequestsTestCase::test_connection_error PASSED         [ 17%]
+test_requests.py::RequestsTestCase::test_cookie_as_dict_items PASSED     [ 18%]
+test_requests.py::RequestsTestCase::test_cookie_as_dict_keeps_items PASSED [ 19%]
+test_requests.py::RequestsTestCase::test_cookie_as_dict_keeps_len PASSED [ 19%]
+test_requests.py::RequestsTestCase::test_cookie_as_dict_keys PASSED      [ 20%]
+test_requests.py::RequestsTestCase::test_cookie_as_dict_values PASSED    [ 21%]
+test_requests.py::RequestsTestCase::test_cookie_parameters PASSED        [ 21%]
+test_requests.py::RequestsTestCase::test_cookie_persists_via_api PASSED  [ 22%]
+test_requests.py::RequestsTestCase::test_cookie_quote_wrapped PASSED     [ 23%]
+test_requests.py::RequestsTestCase::test_cookie_removed_on_expire PASSED [ 23%]
+test_requests.py::RequestsTestCase::test_cookie_sent_on_redirect PASSED  [ 24%]
+test_requests.py::RequestsTestCase::test_custom_content_type PASSED      [ 25%]
+test_requests.py::RequestsTestCase::test_decompress_gzip PASSED          [ 26%]
+test_requests.py::RequestsTestCase::test_different_encodings_dont_break_post PASSED [ 26%]
+test_requests.py::RequestsTestCase::test_entry_points PASSED             [ 27%]
+test_requests.py::RequestsTestCase::test_fixes_1329 PASSED               [ 28%]
+test_requests.py::RequestsTestCase::test_generic_cookiejar_works PASSED  [ 28%]
+test_requests.py::RequestsTestCase::test_get_auth_from_url PASSED        [ 29%]
+test_requests.py::RequestsTestCase::test_get_auth_from_url_encoded_hashes PASSED [ 30%]
+test_requests.py::RequestsTestCase::test_get_auth_from_url_encoded_spaces PASSED [ 30%]
+test_requests.py::RequestsTestCase::test_get_auth_from_url_not_encoded_spaces PASSED [ 31%]
+test_requests.py::RequestsTestCase::test_get_auth_from_url_percent_chars PASSED [ 32%]
+test_requests.py::RequestsTestCase::test_header_keys_are_native PASSED   [ 33%]
+test_requests.py::RequestsTestCase::test_header_remove_is_case_insensitive PASSED [ 33%]
+test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent PASSED [ 34%]
+test_requests.py::RequestsTestCase::test_history_is_always_a_list PASSED [ 35%]
+test_requests.py::RequestsTestCase::test_hook_receives_request_arguments PASSED [ 35%]
+test_requests.py::RequestsTestCase::test_http_error PASSED               [ 36%]
+test_requests.py::RequestsTestCase::test_invalid_url PASSED              [ 37%]
+test_requests.py::RequestsTestCase::test_json_param_post_content_type_works PASSED [ 38%]
+test_requests.py::RequestsTestCase::test_links PASSED                    [ 38%]
+test_requests.py::RequestsTestCase::test_long_authinfo_in_url PASSED     [ 39%]
+test_requests.py::RequestsTestCase::test_manual_redirect_with_partial_body_read PASSED [ 40%]
+test_requests.py::RequestsTestCase::test_mixed_case_scheme_acceptable PASSED [ 40%]
+test_requests.py::RequestsTestCase::test_no_content_length PASSED        [ 41%]
+test_requests.py::RequestsTestCase::test_nonhttp_schemes_dont_check_URLs PASSED [ 42%]
+test_requests.py::RequestsTestCase::test_param_cookiejar_works PASSED    [ 42%]
+test_requests.py::RequestsTestCase::test_params_are_added_before_fragment PASSED [ 43%]
+test_requests.py::RequestsTestCase::test_params_are_merged_case_sensitive PASSED [ 44%]
+test_requests.py::RequestsTestCase::test_path_is_not_double_encoded PASSED [ 45%]
+test_requests.py::RequestsTestCase::test_prepare_request_with_bytestring_url PASSED [ 45%]
+test_requests.py::RequestsTestCase::test_prepared_from_session PASSED    [ 46%]
+test_requests.py::RequestsTestCase::test_prepared_request_hook PASSED    [ 47%]
+test_requests.py::RequestsTestCase::test_pyopenssl_redirect PASSED       [ 47%]
+test_requests.py::RequestsTestCase::test_redirect_with_wrong_gzipped_header PASSED [ 48%]
+test_requests.py::RequestsTestCase::test_request_and_response_are_pickleable PASSED [ 49%]
+test_requests.py::RequestsTestCase::test_request_cookie_overrides_session_cookie PASSED [ 50%]
+test_requests.py::RequestsTestCase::test_request_cookies_not_persisted PASSED [ 50%]
+test_requests.py::RequestsTestCase::test_request_ok_set PASSED           [ 51%]
+test_requests.py::RequestsTestCase::test_requests_history_is_saved PASSED [ 52%]
+test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden PASSED [ 52%]
+test_requests.py::RequestsTestCase::test_response_decode_unicode PASSED  [ 53%]
+test_requests.py::RequestsTestCase::test_response_is_iterable PASSED     [ 54%]
+test_requests.py::RequestsTestCase::test_session_hooks_are_overriden_by_request_hooks PASSED [ 54%]
+test_requests.py::RequestsTestCase::test_session_hooks_are_used_with_no_request_hooks PASSED [ 55%]
+test_requests.py::RequestsTestCase::test_session_pickling PASSED         [ 56%]
+test_requests.py::RequestsTestCase::test_set_cookie_on_301 PASSED        [ 57%]
+test_requests.py::RequestsTestCase::test_status_raising PASSED           [ 57%]
+test_requests.py::RequestsTestCase::test_time_elapsed_blank PASSED       [ 58%]
+test_requests.py::RequestsTestCase::test_transport_adapter_ordering PASSED [ 59%]
+test_requests.py::RequestsTestCase::test_unicode_get PASSED              [ 59%]
+test_requests.py::RequestsTestCase::test_unicode_header_name PASSED      [ 60%]
+test_requests.py::RequestsTestCase::test_unicode_method_name PASSED      [ 61%]
+test_requests.py::RequestsTestCase::test_unicode_multipart_post PASSED   [ 61%]
+test_requests.py::RequestsTestCase::test_unicode_multipart_post_fieldnames PASSED [ 62%]
+test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect PASSED [ 63%]
+test_requests.py::RequestsTestCase::test_urlencoded_get_query_multivalued_param PASSED [ 64%]
+test_requests.py::RequestsTestCase::test_user_agent_transfers PASSED     [ 64%]
+test_requests.py::TestContentEncodingDetection::test_html4_pragma PASSED [ 65%]
+test_requests.py::TestContentEncodingDetection::test_html_charset PASSED [ 66%]
+test_requests.py::TestContentEncodingDetection::test_none PASSED         [ 66%]
+test_requests.py::TestContentEncodingDetection::test_precedence PASSED   [ 67%]
+test_requests.py::TestContentEncodingDetection::test_xhtml_pragma PASSED [ 68%]
+test_requests.py::TestContentEncodingDetection::test_xml PASSED          [ 69%]
+test_requests.py::TestCaseInsensitiveDict::test_contains PASSED          [ 69%]
+test_requests.py::TestCaseInsensitiveDict::test_delitem PASSED           [ 70%]
+test_requests.py::TestCaseInsensitiveDict::test_docstring_example PASSED [ 71%]
+test_requests.py::TestCaseInsensitiveDict::test_equality PASSED          [ 71%]
+test_requests.py::TestCaseInsensitiveDict::test_fixes_649 PASSED         [ 72%]
+test_requests.py::TestCaseInsensitiveDict::test_get PASSED               [ 73%]
+test_requests.py::TestCaseInsensitiveDict::test_getitem PASSED           [ 73%]
+test_requests.py::TestCaseInsensitiveDict::test_iter PASSED              [ 74%]
+test_requests.py::TestCaseInsensitiveDict::test_iterable_init PASSED     [ 75%]
+test_requests.py::TestCaseInsensitiveDict::test_kwargs_init PASSED       [ 76%]
+test_requests.py::TestCaseInsensitiveDict::test_len PASSED               [ 76%]
+test_requests.py::TestCaseInsensitiveDict::test_lower_items PASSED       [ 77%]
+test_requests.py::TestCaseInsensitiveDict::test_mapping_init PASSED      [ 78%]
+test_requests.py::TestCaseInsensitiveDict::test_preserve_key_case PASSED [ 78%]
+test_requests.py::TestCaseInsensitiveDict::test_preserve_last_key_case PASSED [ 79%]
+test_requests.py::TestCaseInsensitiveDict::test_setdefault PASSED        [ 80%]
+test_requests.py::TestCaseInsensitiveDict::test_update PASSED            [ 80%]
+test_requests.py::TestCaseInsensitiveDict::test_update_retains_unchanged PASSED [ 81%]
+test_requests.py::UtilsTestCase::test_address_in_network PASSED          [ 82%]
+test_requests.py::UtilsTestCase::test_dotted_netmask PASSED              [ 83%]
+test_requests.py::UtilsTestCase::test_get_auth_from_url PASSED           [ 83%]
+test_requests.py::UtilsTestCase::test_get_environ_proxies PASSED         [ 84%]
+test_requests.py::UtilsTestCase::test_get_environ_proxies_ip_ranges PASSED [ 85%]
+test_requests.py::UtilsTestCase::test_is_ipv4_address PASSED             [ 85%]
+test_requests.py::UtilsTestCase::test_is_valid_cidr PASSED               [ 86%]
+test_requests.py::UtilsTestCase::test_super_len_io_streams PASSED        [ 87%]
+test_requests.py::TestMorselToCookieExpires::test_expires_invalid_int PASSED [ 88%]
+test_requests.py::TestMorselToCookieExpires::test_expires_invalid_str PASSED [ 88%]
+test_requests.py::TestMorselToCookieExpires::test_expires_none PASSED    [ 89%]
+test_requests.py::TestMorselToCookieExpires::test_expires_valid_str PASSED [ 90%]
+test_requests.py::TestMorselToCookieMaxAge::test_max_age_invalid_str PASSED [ 90%]
+test_requests.py::TestMorselToCookieMaxAge::test_max_age_valid_int PASSED [ 91%]
+test_requests.py::TestTimeout::test_stream_timeout PASSED                [ 92%]
+test_requests.py::TestTimeout::test_invalid_timeout PASSED               [ 92%]
+test_requests.py::TestTimeout::test_none_timeout PASSED                  [ 93%]
+test_requests.py::TestTimeout::test_read_timeout PASSED                  [ 94%]
+test_requests.py::TestTimeout::test_connect_timeout PASSED               [ 95%]
+test_requests.py::TestTimeout::test_total_timeout_connect PASSED         [ 95%]
+test_requests.py::TestRedirects::test_requests_are_updated_each_time PASSED [ 96%]
+test_requests.py::test_data_argument_accepts_tuples PASSED               [ 97%]
+test_requests.py::test_prepared_request_empty_copy PASSED                [ 97%]
+test_requests.py::test_prepared_request_no_cookies_copy PASSED           [ 98%]
+test_requests.py::test_prepared_request_complete_copy PASSED             [ 99%]
+test_requests.py::test_prepare_unicode_url PASSED                        [100%]
+
+=================================== FAILURES ===================================
+_______________ RequestsTestCase.test_DIGEST_AUTH_RETURNS_COOKIE _______________
+
+self = <test_requests.RequestsTestCase testMethod=test_DIGEST_AUTH_RETURNS_COOKIE>
+
+    def test_DIGEST_AUTH_RETURNS_COOKIE(self):
+        url = httpbin('digest-auth', 'auth', 'user', 'pass')
+        auth = HTTPDigestAuth('user', 'pass')
+        r = requests.get(url)
+        assert r.cookies['fake'] == 'fake_value'
+    
+        r = requests.get(url, auth=auth)
+>       assert r.status_code == 200
+E       assert 502 == 200
+E        +  where 502 = <Response [502]>.status_code
+
+test_requests.py:355: AssertionError
+________________ RequestsTestCase.test_conflicting_post_params _________________
+
+self = <test_requests.RequestsTestCase testMethod=test_conflicting_post_params>
+
+    def test_conflicting_post_params(self):
+        url = httpbin('post')
+        with open('requirements.txt') as f:
+>           pytest.raises(ValueError, "requests.post(url, data='[{\"some\": \"data\"}]', files={'some': f})")
+E           TypeError: 'requests.post(url, data=\'[{"some": "data"}]\', files={\'some\': f})' object (type: <class 'str'>) must be callable
+
+test_requests.py:439: TypeError
+=========================== short test summary info ============================
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_AUTH_RETURNS_COOKIE - assert 502 == 200
+ +  where 502 = <Response [502]>.status_code
+FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - TypeError: 'requests.post(url, data=\'[{"some": "data"}]\', files={\'some\': f})' object (type: <class 'str'>) must be callable
+============ 2 failed, 140 passed, 8 warnings in 891.93s (0:14:51) =============

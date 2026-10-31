@@ -1,0 +1,75 @@
+diff --git a/sympy/__init__.py b/sympy/__init__.py
+index 01936a0045..2b99e3b331 100644
+--- a/sympy/__init__.py
++++ b/sympy/__init__.py
+@@ -14,6 +14,23 @@
+ from __future__ import absolute_import, print_function
+ del absolute_import, print_function
+ 
++# Python 3.10 removed abstract base class aliases from ``collections``.
++# Restore the historical interface used by this SymPy release.
++try:
++    import collections
++    import collections.abc
++    for _collections_abc in (
++            'Callable', 'Container', 'Hashable', 'Iterable', 'Iterator',
++            'Mapping', 'MutableMapping', 'Sequence', 'MutableSequence',
++            'Set', 'MutableSet'):
++        if not hasattr(collections, _collections_abc):
++            setattr(collections, _collections_abc,
++                    getattr(collections.abc, _collections_abc))
++    del _collections_abc
++    del collections
++except ImportError:
++    pass
++
+ try:
+     import mpmath
+ except ImportError:
+diff --git a/sympy/assumptions/sathandlers.py b/sympy/assumptions/sathandlers.py
+index fd4584e8fe..26f01fa136 100644
+--- a/sympy/assumptions/sathandlers.py
++++ b/sympy/assumptions/sathandlers.py
+@@ -1,6 +1,10 @@
+ from __future__ import print_function, division
+ 
+-from collections import MutableMapping, defaultdict
++from collections import defaultdict
++try:
++    from collections.abc import MutableMapping
++except ImportError:
++    from collections import MutableMapping
+ 
+ from sympy.core import (Add, Mul, Pow, Integer, Number, NumberSymbol,)
+ from sympy.core.numbers import ImaginaryUnit
+diff --git a/sympy/core/basic.py b/sympy/core/basic.py
+index 627630fea7..371de6607c 100644
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -1,6 +1,9 @@
+ """Base class for all the objects in SymPy"""
+ from __future__ import print_function, division
+-from collections import Mapping
++try:
++    from collections.abc import Mapping
++except ImportError:
++    from collections import Mapping
+ 
+ from .assumptions import BasicMeta, ManagedProperties
+ from .cache import cacheit
+diff --git a/sympy/plotting/plot.py b/sympy/plotting/plot.py
+index b1ead153ef..e9a6aadc73 100644
+--- a/sympy/plotting/plot.py
++++ b/sympy/plotting/plot.py
+@@ -25,7 +25,10 @@
+ from __future__ import print_function, division
+ 
+ import inspect
+-from collections import Callable
++try:
++    from collections.abc import Callable
++except ImportError:
++    from collections import Callable
+ import warnings
+ import sys
+ 

@@ -1,0 +1,21 @@
+diff --git a/astropy/wcs/setup_package.py b/astropy/wcs/setup_package.py
+index eb37ffd434..849dad5355 100644
+--- a/astropy/wcs/setup_package.py
++++ b/astropy/wcs/setup_package.py
+@@ -10,7 +10,15 @@ from os.path import join
+ 
+ import numpy
+ from setuptools import Extension
+-from setuptools.dep_util import newer_group
++def newer_group(sources, target, missing="newer"):
++    """Return True if target is missing or any source is newer than target."""
++    if not os.path.exists(target):
++        return True
++    target_mtime = os.path.getmtime(target)
++    for source in sources:
++        if os.path.getmtime(source) > target_mtime:
++            return True
++    return False
+ 
+ from extension_helpers import get_compiler, import_file, pkg_config, write_if_different
+ 

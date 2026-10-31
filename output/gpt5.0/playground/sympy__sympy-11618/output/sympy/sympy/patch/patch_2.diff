@@ -1,0 +1,15 @@
+diff --git a/sympy/core/basic.py b/sympy/core/basic.py
+index 627630fea7..8a9b1ab31d 100644
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -1,6 +1,9 @@
+ """Base class for all the objects in SymPy"""
+ from __future__ import print_function, division
+-from collections import Mapping
++try:
++    from collections.abc import Mapping
++except ImportError:  # pragma: no cover (for older Python)
++    from collections import Mapping
+ 
+ from .assumptions import BasicMeta, ManagedProperties
+ from .cache import cacheit
