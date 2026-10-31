@@ -1,2 +1,0 @@
-integrate_docker failed, reason:
- name 'outer_command' is not defined
